@@ -1,13 +1,14 @@
 import React from 'react';
-import { getLeadsAction, getJurisdictionsAction } from '@/app/actions';
+import { getLeadsAction, getJurisdictionsAction, getSuppressionsAction } from '@/app/actions';
 import LeadsTable from '@/components/LeadsTable';
 
 export const revalidate = 0; // Disable caching for leads list
 
 export default async function LeadsPage() {
-  const [leads, jurisdictions] = await Promise.all([
+  const [leads, jurisdictions, suppressions] = await Promise.all([
     getLeadsAction({}),
     getJurisdictionsAction(),
+    getSuppressionsAction(),
   ]);
 
   return (
@@ -17,7 +18,11 @@ export default async function LeadsPage() {
         <p className="text-gray-500 mt-1">Review, filter, score, and contact homeowner and partner leads.</p>
       </div>
 
-      <LeadsTable initialLeads={leads} jurisdictions={jurisdictions} />
+      <LeadsTable 
+        initialLeads={leads} 
+        jurisdictions={jurisdictions} 
+        initialSuppressions={suppressions} 
+      />
     </div>
   );
 }

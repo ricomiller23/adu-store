@@ -16,7 +16,8 @@ import {
   FileText,
   Clock,
   Plus,
-  Compass
+  Compass,
+  ShieldAlert
 } from 'lucide-react';
 import { updateLeadStageAction, addLeadActivityAction } from '@/app/actions';
 import { cn } from '@/lib/utils';
@@ -59,14 +60,25 @@ export interface LeadWithDetails {
   }[];
 }
 
+interface Suppression {
+  id: string;
+  value: string;
+  reason: string;
+  createdAt: Date;
+}
+
 interface LeadsTableProps {
   initialLeads: LeadWithDetails[];
   jurisdictions: { name: string; ab1033OptIn: boolean }[];
+  initialSuppressions: Suppression[];
 }
 
-export default function LeadsTable({ initialLeads, jurisdictions }: LeadsTableProps) {
+export default function LeadsTable({ initialLeads, jurisdictions, initialSuppressions }: LeadsTableProps) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
+
+  // Tab State: 'leads' or 'dnc'
+  const [activeTab, setActiveTab] = useState<'leads' | 'dnc'>('leads');
 
   // Search & Filter state
   const [search, setSearch] = useState('');
@@ -121,6 +133,14 @@ export default function LeadsTable({ initialLeads, jurisdictions }: LeadsTablePr
       if (ab1033 === 'not_eligible' && isEligible) return false;
     }
 
+    return true;
+  });
+
+  const filteredSuppressions = initialSuppressions.filter(supp => {
+    if (search) {
+      const q = search.toLowerCase();
+      return supp.value.toLowerCase().includes(q) || supp.reason.toLowerCase().includes(q);
+    }
     return true;
   });
 
@@ -266,207 +286,296 @@ export default function LeadsTable({ initialLeads, jurisdictions }: LeadsTablePr
   };
 
   return (
-    <div className="bg-white border border-[#e4dfd3] shadow-sm rounded-lg overflow-hidden relative">
-      {/* Table Filters Panel */}
-      <div className="p-6 border-b border-[#e4dfd3] bg-[#faf9f6] space-y-4">
-        <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
-          {/* Search */}
-          <div className="relative w-full md:w-80">
-            <Search className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-            <input
-              type="text"
-              placeholder="Search by name, email, city..."
-              className="w-full pl-9 pr-4 py-2 border border-[#e4dfd3] rounded focus:outline-none focus:ring-2 focus:ring-[#27537d] text-sm bg-white"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-            />
-          </div>
-
-          <div className="flex items-center space-x-2 text-sm text-gray-500 font-medium">
-            <Filter className="h-4 w-4 text-[#27537d]" />
-            <span>Filters</span>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
-          {/* Type Filter */}
-          <select
-            className="px-3 py-2 border border-[#e4dfd3] rounded text-sm bg-white"
-            value={leadType}
-            onChange={(e) => setLeadType(e.target.value)}
-          >
-            <option value="all">All Types</option>
-            <option value="homeowner">Homeowners</option>
-            <option value="partner">Partners</option>
-          </select>
-
-          {/* Segment Filter */}
-          <select
-            className="px-3 py-2 border border-[#e4dfd3] rounded text-sm bg-white"
-            value={segment}
-            onChange={(e) => setSegment(e.target.value)}
-          >
-            <option value="all">All Segments</option>
-            <option value="H1">H1 — Rental Investor</option>
-            <option value="H2">H2 — Multigenerational Family</option>
-            <option value="H3">H3 — Aging Parent / Caregiver</option>
-            <option value="H4">H4 — Remote Office / Studio</option>
-            <option value="H5">H5 — Empty-Nester Downsize</option>
-            <option value="H6">H6 — Equity-Rich Owner</option>
-            <option value="H7">H7 — Unpermitted Unit (Legalize)</option>
-            <option value="H8">H8 — Multifamily Developer</option>
-            <option value="H9">H9 — Recent Buyer / Large Lot</option>
-            <option value="P1">P1 — Real Estate Agent Affiliate</option>
-            <option value="P2">P2 — Contractor / Installer Network</option>
-            <option value="P3">P3 — Mortgage Broker Partner</option>
-            <option value="P4">P4 — Property Manager Affiliate</option>
-          </select>
-
-          {/* Source Filter */}
-          <select
-            className="px-3 py-2 border border-[#e4dfd3] rounded text-sm bg-white"
-            value={source}
-            onChange={(e) => setSource(e.target.value)}
-          >
-            <option value="all">All Sources</option>
-            <option value="quiz">Feasibility Quiz</option>
-            <option value="website">Website Form</option>
-            <option value="google">Google Search</option>
-            <option value="referral">Referral Match</option>
-          </select>
-
-          {/* Consent Filter */}
-          <select
-            className="px-3 py-2 border border-[#e4dfd3] rounded text-sm bg-white"
-            value={consent}
-            onChange={(e) => setConsent(e.target.value)}
-          >
-            <option value="all">All Consent States</option>
-            <option value="call_email">Call + Email</option>
-            <option value="email_only">Email Only</option>
-            <option value="no_consent">No Consent</option>
-          </select>
-
-          {/* AB 1033 Filter */}
-          <select
-            className="px-3 py-2 border border-[#e4dfd3] rounded text-sm bg-white"
-            value={ab1033}
-            onChange={(e) => setAb1033(e.target.value)}
-          >
-            <option value="all">All AB 1033 States</option>
-            <option value="eligible">AB 1033 Eligible</option>
-            <option value="not_eligible">Not Eligible</option>
-          </select>
-        </div>
+    <div className="space-y-6">
+      {/* Tab Navigation */}
+      <div className="flex border-b border-[#e4dfd3] bg-white rounded-lg px-4 pt-1 shadow-sm">
+        <button
+          onClick={() => { setActiveTab('leads'); setSearch(''); }}
+          className={cn(
+            "px-6 py-3.5 text-sm font-bold border-b-2 transition-all flex items-center",
+            activeTab === 'leads'
+              ? "border-[#16352a] text-[#16352a]"
+              : "border-transparent text-gray-500 hover:text-gray-900"
+          )}
+        >
+          <Compass className="h-4 w-4 mr-2" />
+          Leads Directory ({filteredLeads.length})
+        </button>
+        <button
+          onClick={() => { setActiveTab('dnc'); setSearch(''); }}
+          className={cn(
+            "px-6 py-3.5 text-sm font-bold border-b-2 transition-all flex items-center",
+            activeTab === 'dnc'
+              ? "border-[#16352a] text-[#16352a]"
+              : "border-transparent text-gray-500 hover:text-gray-900"
+          )}
+        >
+          <ShieldAlert className="h-4 w-4 mr-2 text-red-600" />
+          DNC & Suppression Registry ({filteredSuppressions.length})
+        </button>
       </div>
 
-      {/* Leads Table */}
-      <div className="overflow-x-auto">
-        <table className="w-full text-left border-collapse">
-          <thead>
-            <tr className="border-b border-[#e4dfd3] bg-[#faf9f6] text-xs font-bold text-gray-500 uppercase tracking-wider">
-              <th className="px-6 py-4">Name</th>
-              <th className="px-6 py-4">Jurisdiction</th>
-              <th className="px-6 py-4">Segment</th>
-              <th className="px-6 py-4">Score</th>
-              <th className="px-6 py-4">Consent</th>
-              <th className="px-6 py-4">Stage</th>
-              <th className="px-6 py-4">Last Touch</th>
-              <th className="px-6 py-4 text-right">Actions</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-gray-100 text-sm">
-            {filteredLeads.length === 0 ? (
-              <tr>
-                <td colSpan={8} className="px-6 py-12 text-center text-gray-400">
-                  No leads found matching current filter parameters.
-                </td>
-              </tr>
-            ) : (
-              filteredLeads.map((lead) => {
-                const cState = getConsentState(lead);
-                return (
-                  <tr 
-                    key={lead.id} 
-                    className="hover:bg-gray-50/50 cursor-pointer transition duration-150"
-                    onClick={() => setSelectedLead(lead)}
-                  >
-                    <td className="px-6 py-4">
-                      <div className="font-semibold text-gray-900">{lead.name}</div>
-                      <div className="text-xs text-gray-400 font-medium">{lead.email}</div>
-                    </td>
-                    <td className="px-6 py-4">
-                      <div className="flex items-center space-x-1.5">
-                        <span className="text-gray-700 font-medium">{lead.jurisdiction}</span>
-                        {lead.ab1033Eligible && (
-                          <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-[#dd8420]/15 text-[#dd8420] border border-[#dd8420]/25">
-                            AB 1033 Opt-In
-                          </span>
-                        )}
-                      </div>
-                    </td>
-                    <td className="px-6 py-4">
-                      <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-[#f6f4ee] border border-[#e4dfd3] text-gray-600">
-                        {lead.segment}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4">
-                      <div className="flex items-center space-x-2">
-                        <span className={cn(
-                          "font-bold text-xs",
-                          lead.score >= 80 ? "text-[#dd8420]" : "text-gray-500"
-                        )}>
-                          {lead.score}
-                        </span>
-                        <div className="w-12 bg-gray-100 rounded-full h-1.5 overflow-hidden">
-                          <div 
-                            className={cn(
-                              "h-full",
-                              lead.score >= 80 ? "bg-[#dd8420]" : "bg-[#27537d]"
-                            )} 
-                            style={{ width: `${lead.score}%` }} 
-                          />
-                        </div>
-                      </div>
-                    </td>
-                    <td className="px-6 py-4">
-                      <span className={cn(
-                        "inline-flex items-center px-2 py-0.5 border rounded text-xs font-semibold",
-                        cState.color
-                      )}>
-                        {cState.label}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4">
-                      <span className={cn(
-                        "inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold uppercase tracking-wider",
-                        lead.stage === 'Won' || lead.stage === 'Active'
-                          ? "bg-green-50 text-[#2f7d54]"
-                          : lead.stage === 'New' || lead.stage === 'Applied'
-                          ? "bg-blue-50 text-blue-700"
-                          : "bg-gray-100 text-gray-600"
-                      )}>
-                        {lead.stage}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 text-gray-500 font-medium">
-                      {new Date(lead.lastTouchAt).toLocaleDateString()}
-                    </td>
-                    <td className="px-6 py-4 text-right" onClick={(e) => e.stopPropagation()}>
-                      <button 
-                        onClick={() => setSelectedLead(lead)}
-                        className="p-1 text-gray-400 hover:text-[#27537d] rounded hover:bg-gray-100 transition"
-                      >
-                        <ChevronRight className="h-5 w-5" />
-                      </button>
+      {activeTab === 'leads' ? (
+        <div className="bg-white border border-[#e4dfd3] shadow-sm rounded-lg overflow-hidden relative">
+          {/* Table Filters Panel */}
+          <div className="p-6 border-b border-[#e4dfd3] bg-[#faf9f6] space-y-4">
+            <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
+              {/* Search */}
+              <div className="relative w-full md:w-80">
+                <Search className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                <input
+                  type="text"
+                  placeholder="Search by name, email, city..."
+                  className="w-full pl-9 pr-4 py-2 border border-[#e4dfd3] rounded focus:outline-none focus:ring-2 focus:ring-[#27537d] text-sm bg-white"
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                />
+              </div>
+
+              <div className="flex items-center space-x-2 text-sm text-gray-500 font-medium">
+                <Filter className="h-4 w-4 text-[#27537d]" />
+                <span>Filters</span>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+              {/* Type Filter */}
+              <select
+                className="px-3 py-2 border border-[#e4dfd3] rounded text-sm bg-white"
+                value={leadType}
+                onChange={(e) => setLeadType(e.target.value)}
+              >
+                <option value="all">All Types</option>
+                <option value="homeowner">Homeowners</option>
+                <option value="partner">Partners</option>
+              </select>
+
+              {/* Segment Filter */}
+              <select
+                className="px-3 py-2 border border-[#e4dfd3] rounded text-sm bg-white"
+                value={segment}
+                onChange={(e) => setSegment(e.target.value)}
+              >
+                <option value="all">All Segments</option>
+                <option value="H1">H1 — Rental Investor</option>
+                <option value="H2">H2 — Multigenerational Family</option>
+                <option value="H3">H3 — Aging Parent / Caregiver</option>
+                <option value="H4">H4 — Remote Office / Studio</option>
+                <option value="H5">H5 — Empty-Nester Downsize</option>
+                <option value="H6">H6 — Equity-Rich Owner</option>
+                <option value="H7">H7 — Unpermitted Unit (Legalize)</option>
+                <option value="H8">H8 — Multifamily Developer</option>
+                <option value="H9">H9 — Recent Buyer / Large Lot</option>
+                <option value="P1">P1 — Real Estate Agent Affiliate</option>
+                <option value="P2">P2 — Contractor / Installer Network</option>
+                <option value="P3">P3 — Mortgage Broker Partner</option>
+                <option value="P4">P4 — Property Manager Affiliate</option>
+              </select>
+
+              {/* Source Filter */}
+              <select
+                className="px-3 py-2 border border-[#e4dfd3] rounded text-sm bg-white"
+                value={source}
+                onChange={(e) => setSource(e.target.value)}
+              >
+                <option value="all">All Sources</option>
+                <option value="quiz">Feasibility Quiz</option>
+                <option value="website">Website Form</option>
+                <option value="google">Google Search</option>
+                <option value="referral">Referral Match</option>
+              </select>
+
+              {/* Consent Filter */}
+              <select
+                className="px-3 py-2 border border-[#e4dfd3] rounded text-sm bg-white"
+                value={consent}
+                onChange={(e) => setConsent(e.target.value)}
+              >
+                <option value="all">All Consent States</option>
+                <option value="call_email">Call + Email</option>
+                <option value="email_only">Email Only</option>
+                <option value="no_consent">No Consent</option>
+              </select>
+
+              {/* AB 1033 Filter */}
+              <select
+                className="px-3 py-2 border border-[#e4dfd3] rounded text-sm bg-white"
+                value={ab1033}
+                onChange={(e) => setAb1033(e.target.value)}
+              >
+                <option value="all">All AB 1033 States</option>
+                <option value="eligible">AB 1033 Eligible</option>
+                <option value="not_eligible">Not Eligible</option>
+              </select>
+            </div>
+          </div>
+
+          {/* Leads Table */}
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="border-b border-[#e4dfd3] bg-[#faf9f6] text-xs font-bold text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-4">Name</th>
+                  <th className="px-6 py-4">Jurisdiction</th>
+                  <th className="px-6 py-4">Segment</th>
+                  <th className="px-6 py-4">Score</th>
+                  <th className="px-6 py-4">Consent</th>
+                  <th className="px-6 py-4">Stage</th>
+                  <th className="px-6 py-4">Last Touch</th>
+                  <th className="px-6 py-4 text-right">Actions</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100 text-sm">
+                {filteredLeads.length === 0 ? (
+                  <tr>
+                    <td colSpan={8} className="px-6 py-12 text-center text-gray-400">
+                      No leads found matching current filter parameters.
                     </td>
                   </tr>
-                );
-              })
-            )}
-          </tbody>
-        </table>
-      </div>
+                ) : (
+                  filteredLeads.map((lead) => {
+                    const cState = getConsentState(lead);
+                    return (
+                      <tr 
+                        key={lead.id} 
+                        className="hover:bg-gray-50/50 cursor-pointer transition duration-150"
+                        onClick={() => setSelectedLead(lead)}
+                      >
+                        <td className="px-6 py-4">
+                          <div className="font-semibold text-gray-900">{lead.name}</div>
+                          <div className="text-xs text-gray-400 font-medium">{lead.email}</div>
+                        </td>
+                        <td className="px-6 py-4">
+                          <div className="flex items-center space-x-1.5">
+                            <span className="text-gray-700 font-medium">{lead.jurisdiction}</span>
+                            {lead.ab1033Eligible && (
+                              <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-[#dd8420]/15 text-[#dd8420] border border-[#dd8420]/25">
+                                AB 1033 Opt-In
+                              </span>
+                            )}
+                          </div>
+                        </td>
+                        <td className="px-6 py-4">
+                          <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-[#f6f4ee] border border-[#e4dfd3] text-gray-600">
+                            {lead.segment}
+                          </span>
+                        </td>
+                        <td className="px-6 py-4">
+                          <div className="flex items-center space-x-2">
+                            <span className={cn(
+                              "font-bold text-xs",
+                              lead.score >= 80 ? "text-[#dd8420]" : "text-gray-500"
+                            )}>
+                              {lead.score}
+                            </span>
+                            <div className="w-12 bg-gray-100 rounded-full h-1.5 overflow-hidden">
+                              <div 
+                                className={cn(
+                                  "h-full",
+                                  lead.score >= 80 ? "bg-[#dd8420]" : "bg-[#27537d]"
+                                )} 
+                                style={{ width: `${lead.score}%` }} 
+                              />
+                            </div>
+                          </div>
+                        </td>
+                        <td className="px-6 py-4">
+                          <span className={cn(
+                            "inline-flex items-center px-2 py-0.5 border rounded text-xs font-semibold",
+                            cState.color
+                          )}>
+                            {cState.label}
+                          </span>
+                        </td>
+                        <td className="px-6 py-4">
+                          <span className={cn(
+                            "inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold uppercase tracking-wider",
+                            lead.stage === 'Won' || lead.stage === 'Active'
+                              ? "bg-green-50 text-[#2f7d54]"
+                              : lead.stage === 'New' || lead.stage === 'Applied'
+                              ? "bg-blue-50 text-blue-700"
+                              : "bg-gray-100 text-gray-600"
+                          )}>
+                            {lead.stage}
+                          </span>
+                        </td>
+                        <td className="px-6 py-4 text-gray-500 font-medium">
+                          {new Date(lead.lastTouchAt).toLocaleDateString()}
+                        </td>
+                        <td className="px-6 py-4 text-right" onClick={(e) => e.stopPropagation()}>
+                          <button 
+                            onClick={() => setSelectedLead(lead)}
+                            className="p-1 text-gray-400 hover:text-[#27537d] rounded hover:bg-gray-100 transition"
+                          >
+                            <ChevronRight className="h-5 w-5" />
+                          </button>
+                        </td>
+                      </tr>
+                    );
+                  })
+                )}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      ) : (
+        <div className="bg-white border border-[#e4dfd3] shadow-sm rounded-lg overflow-hidden p-6 space-y-4">
+          <div className="flex flex-col md:flex-row gap-4 items-center justify-between pb-2 border-b border-gray-100">
+            <div>
+              <h3 className="text-lg font-bold text-gray-900 font-display">Do Not Contact (DNC) Registry</h3>
+              <p className="text-xs text-gray-500 mt-1">Blocked email addresses and phone numbers screened before any sales or sequence outreach is conducted.</p>
+            </div>
+            {/* Search bar inside DNC */}
+            <div className="relative w-full md:w-80">
+              <Search className="absolute left-3 top-2.5 h-4 w-4 text-gray-400" />
+              <input
+                type="text"
+                placeholder="Search suppressed contacts..."
+                className="w-full pl-9 pr-4 py-2 border border-[#e4dfd3] rounded focus:outline-none focus:ring-2 focus:ring-[#27537d] text-sm bg-white"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+              />
+            </div>
+          </div>
+
+          <div className="overflow-x-auto border border-[#e4dfd3] rounded-lg">
+            <table className="w-full text-left text-sm border-collapse">
+              <thead>
+                <tr className="border-b border-[#e4dfd3] bg-[#faf9f6] text-xs font-bold text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-4">Blocked Email/Phone</th>
+                  <th className="px-6 py-4">Reason / Source</th>
+                  <th className="px-6 py-4">Enforcement Date</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100 text-sm">
+                {filteredSuppressions.length === 0 ? (
+                  <tr>
+                    <td colSpan={3} className="px-6 py-12 text-center text-gray-400">
+                      No blocked contacts found in registry.
+                    </td>
+                  </tr>
+                ) : (
+                  filteredSuppressions.map((s) => (
+                    <tr key={s.id} className="hover:bg-gray-50/50">
+                      <td className="px-6 py-4 font-mono font-semibold text-gray-900 text-xs">
+                        {s.value}
+                      </td>
+                      <td className="px-6 py-4">
+                        <span className="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-red-50 text-red-700 border border-red-200 capitalize">
+                          {s.reason.replace('_', ' ')}
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 text-gray-500 font-medium">
+                        {new Date(s.createdAt).toLocaleDateString()} {new Date(s.createdAt).toLocaleTimeString()}
+                      </td>
+                    </tr>
+                  ))
+                )}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
 
       {/* Slide-out Drawer Overlay */}
       {selectedLead && (
@@ -551,7 +660,7 @@ export default function LeadsTable({ initialLeads, jurisdictions }: LeadsTablePr
                         <option value="New">New</option>
                         <option value="Contacted">Contacted</option>
                         <option value="Consult booked">Consult Booked</option>
-                        <option value="In design">In Design</option>
+                        <option value="In design">In design</option>
                         <option value="Won">Won</option>
                       </>
                     ) : (

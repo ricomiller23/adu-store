@@ -150,7 +150,7 @@ export default function SettingsManager({
           )}
         >
           <ShieldAlert className="h-4 w-4 mr-3" />
-          Suppression Suppression
+          DNC & Suppression List
         </button>
       </div>
 
@@ -239,9 +239,9 @@ export default function SettingsManager({
         {activeTab === 'suppression' && (
           <div className="space-y-6">
             <div>
-              <h2 className="text-xl font-bold font-display text-gray-900">Global suppression Suppression</h2>
+              <h2 className="text-xl font-bold font-display text-gray-900">Global DNC & Suppression Registry</h2>
               <p className="text-sm text-gray-500 mt-1">
-                Addresses listed here are fully suppressed from automated campaigns, regardless of sequence enrollment.
+                Addresses and phone numbers listed here are fully blocked from automated campaigns, regardless of sequence enrollment.
               </p>
             </div>
 
@@ -298,7 +298,7 @@ export default function SettingsManager({
                   ) : (
                     <Plus className="h-3.5 w-3.5 mr-1.5" />
                   )}
-                  Add to suppression
+                  Add to DNC / Suppression List
                 </button>
               </div>
             </form>
@@ -306,7 +306,7 @@ export default function SettingsManager({
             {/* List */}
             <div className="space-y-3">
               <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider">
-                Suppressed Addresses ({suppressions.length})
+                Suppressed & DNC Contacts ({suppressions.length})
               </h3>
 
               <div className="overflow-x-auto border border-[#e4dfd3] rounded-lg">
