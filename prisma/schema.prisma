@@ -1,13 +1,125 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Get a free hosted Postgres database in seconds: `npx create-db`
-
-generator client {
-  provider = "prisma-client"
-  output   = "../src/generated/prisma"
-}
-
 datasource db {
   provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Lead {
+  id              String            @id @default(cuid())
+  type            String            // homeowner | partner
+  name            String
+  email           String
+  phone           String?
+  city            String
+  county          String
+  jurisdiction    String
+  lotSizeSqft     Float?
+  segment         String            // H1-H9, P1-P4
+  source          String
+  sourceDetail    String?
+  score           Int               @default(0)
+  stage           String            // homeowner: New | Contacted | Consult booked | In design | Won. partner: Applied | Vetting | Terms sent | Active | Inactive
+  estValue        Float?
+  ab1033Eligible  Boolean           @default(false)
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  lastTouchAt     DateTime          @default(now())
+  
+  consent         Consent?
+  activities      Activity[]
+  enrollments     EnrollmentState[]
+  emailSends      EmailSend[]
+}
+
+model Consent {
+  id            String    @id @default(cuid())
+  leadId        String    @unique
+  lead          Lead      @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  emailOptIn    Boolean   @default(false)
+  phoneOptIn    Boolean   @default(false)
+  smsOptIn      Boolean   @default(false)
+  consentSource String
+  consentText   String
+  consentIp     String
+  consentAt     DateTime  @default(now())
+}
+
+model Suppression {
+  id        String   @id @default(cuid())
+  value     String   @unique // email or phone number
+  reason    String   // unsubscribed | bounced | complaint | manual_dnc
+  createdAt DateTime @default(now())
+}
+
+model Activity {
+  id        String   @id @default(cuid())
+  leadId    String
+  lead      Lead     @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  kind      String   // form | quiz | email_sent | email_open | email_reply | call | note | stage_change
+  summary   String
+  payload   Json?
+  createdAt DateTime @default(now())
+}
+
+model Sequence {
+  id          String            @id @default(cuid())
+  name        String
+  segment     String            @unique // H1-H9, P1-P4
+  steps       SequenceStep[]
+  enrollments EnrollmentState[]
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+}
+
+model SequenceStep {
+  id           String   @id @default(cuid())
+  sequenceId   String
+  sequence     Sequence @relation(fields: [sequenceId], references: [id], onDelete: Cascade)
+  dayOffset    Int
+  channel      String   // email | phone | sms
+  subject      String?
+  bodyTemplate String   // email template text
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@unique([sequenceId, dayOffset])
+}
+
+model EnrollmentState {
+  id          String   @id @default(cuid())
+  leadId      String
+  lead        Lead     @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  sequenceId  String
+  sequence    Sequence @relation(fields: [sequenceId], references: [id], onDelete: Cascade)
+  currentStep Int      @default(0) // index of step (0, 1, 2...)
+  nextDueAt   DateTime
+  status      String   // active | completed | paused
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@unique([leadId, sequenceId])
+}
+
+model EmailSend {
+  id             String        @id @default(cuid())
+  leadId         String
+  lead           Lead          @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  sequenceStepId String?
+  subject        String
+  status         String        // pending | sent | failed | opened | unsubscribed
+  resendId       String?
+  openedAt       DateTime?
+  unsubscribedAt DateTime?
+  createdAt      DateTime      @default(now())
+}
+
+model Jurisdiction {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  ab1033OptIn Boolean  @default(false)
+  notes       String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }
