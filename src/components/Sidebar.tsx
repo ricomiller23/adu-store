@@ -3,7 +3,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { signOut, useSession } from 'next-auth/react';
 import { 
   LayoutDashboard, 
   Users, 
@@ -11,14 +10,12 @@ import {
   Mail, 
   Sliders, 
   Briefcase, 
-  Settings as SettingsIcon, 
-  LogOut 
+  Settings as SettingsIcon
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export default function Sidebar() {
   const pathname = usePathname();
-  const { data: session } = useSession();
 
   const navigation = [
     { name: 'Dashboard', href: '/', icon: LayoutDashboard },
@@ -66,21 +63,12 @@ export default function Sidebar() {
         })}
       </nav>
 
-      {/* User Session & Sign Out at bottom */}
+      {/* User Session status at bottom */}
       <div className="p-4 border-t border-[#1f483a] bg-[#0f241d]">
-        {session?.user && (
-          <div className="mb-3 px-2 flex flex-col">
-            <span className="text-xs text-[#a3b899] uppercase tracking-wider font-medium">Logged in as</span>
-            <span className="text-sm font-semibold text-white truncate">{session.user.email}</span>
-          </div>
-        )}
-        <button
-          onClick={() => signOut({ callbackUrl: '/login' })}
-          className="w-full flex items-center px-4 py-2.5 rounded text-sm font-medium text-[#dd8420] hover:text-[#f2a146] hover:bg-[#1f483a] transition-all duration-150 border border-transparent hover:border-[#dd8420]/30"
-        >
-          <LogOut className="mr-3 h-4 w-4 flex-shrink-0" />
-          <span>Sign Out</span>
-        </button>
+        <div className="px-2 flex flex-col">
+          <span className="text-xs text-[#a3b899] uppercase tracking-wider font-medium">Status</span>
+          <span className="text-sm font-semibold text-white truncate">Administrator Mode</span>
+        </div>
       </div>
     </aside>
   );
