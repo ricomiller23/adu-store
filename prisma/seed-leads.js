@@ -9,7 +9,7 @@ const adapter = new PrismaPg(pool);
 const prisma = new PrismaClient({ adapter });
 
 const demoLeads = [
-  // H1: Investor
+  // H1: Investor (San Jose - AB 1033 Opt-In)
   {
     name: "John Rodriguez",
     email: "john.rod@gmail.com",
@@ -32,7 +32,7 @@ const demoLeads = [
       { kind: "visit", summary: "Visited gallery" }
     ]
   },
-  // H2: Multigenerational
+  // H2: Multigenerational (Santa Monica - AB 1033 Opt-In)
   {
     name: "Sarah and Mark Chen",
     email: "schen99@yahoo.com",
@@ -55,7 +55,7 @@ const demoLeads = [
       { kind: "consult", summary: "Booked initial design consultation" }
     ]
   },
-  // H3: Aging Parent (email only)
+  // H3: Aging Parent (Los Angeles - No AB 1033, Email Only)
   {
     name: "Eleanor Vance",
     email: "eleanor.v@outlook.com",
@@ -78,7 +78,7 @@ const demoLeads = [
       { kind: "email_open", summary: "Opened Welcome Email" }
     ]
   },
-  // H4: Remote Office
+  // H4: Remote Office (San Diego - No AB 1033)
   {
     name: "David Miller",
     email: "david@millermedia.io",
@@ -104,7 +104,52 @@ const demoLeads = [
       { kind: "stage_change", summary: "Moved lead from Contacted to In design" }
     ]
   },
-  // H7: Unpermitted Unit (legalization)
+  // H5: Empty-nester (Orange County - No AB 1033)
+  {
+    name: "Barbara Thompson",
+    email: "bthompson58@gmail.com",
+    phone: "949-555-7033",
+    city: "Irvine",
+    county: "Orange",
+    jurisdiction: "Orange County",
+    lotSizeSqft: 5200,
+    segment: "H5",
+    source: "quiz",
+    sourceDetail: "Feasibility Quiz",
+    stage: "New",
+    type: "homeowner",
+    estValue: 140000,
+    ab1033Eligible: false,
+    consent: { emailOptIn: true, phoneOptIn: true, smsOptIn: false, consentSource: "quiz", consentText: "Send me ADU guides and call me.", consentIp: "98.114.23.4" },
+    activities: [
+      { kind: "quiz", summary: "Completed ADU Feasibility Quiz (Reverse Downsizing)" },
+      { kind: "visit", summary: "Read empty-nester guide blog article" }
+    ]
+  },
+  // H6: Equity-Rich (Los Angeles - No AB 1033)
+  {
+    name: "Robert & Lisa Davis",
+    email: "davis.family@gmail.com",
+    phone: "213-555-8822",
+    city: "Los Angeles",
+    county: "Los Angeles",
+    jurisdiction: "Los Angeles",
+    lotSizeSqft: 8100,
+    segment: "H6",
+    source: "google",
+    sourceDetail: "Paid Search",
+    stage: "Contacted",
+    type: "homeowner",
+    estValue: 175000,
+    ab1033Eligible: false,
+    consent: { emailOptIn: true, phoneOptIn: true, smsOptIn: true, consentSource: "financing_form", consentText: "I consent to email, calls, and texts regarding financing options.", consentIp: "172.56.40.1" },
+    activities: [
+      { kind: "form", summary: "Submitted financing consultation request" },
+      { kind: "financing_pdf", summary: "Downloaded ADU Financing Guide" },
+      { kind: "visit", summary: "Visited financing partner portal" }
+    ]
+  },
+  // H7: Unpermitted Unit (Orange County - No AB 1033)
   {
     name: "Carlos Mendez",
     email: "carlos_m55@hotmail.com",
@@ -127,7 +172,7 @@ const demoLeads = [
       { kind: "visit", summary: "Visited blog" }
     ]
   },
-  // H8: Small developer
+  // H8: Multifamily Developer (Unincorporated San Diego County - AB 1033 Opt-In)
   {
     name: "Pacific Heights Properties",
     email: "deals@pacificheightsca.com",
@@ -148,7 +193,28 @@ const demoLeads = [
       { kind: "form", summary: "Referred by Real Estate Agent partner" }
     ]
   },
-  // Partner P1: Real estate agent
+  // H9: Recent Buyer (Sacramento - No AB 1033)
+  {
+    name: "James Wilson",
+    email: "james.wilson.realestate@gmail.com",
+    phone: "916-555-4911",
+    city: "Sacramento",
+    county: "Sacramento",
+    jurisdiction: "Sacramento",
+    lotSizeSqft: 9800,
+    segment: "H9",
+    source: "direct_mail",
+    sourceDetail: "New Homeowner Parcel List",
+    stage: "New",
+    type: "homeowner",
+    estValue: 210000,
+    ab1033Eligible: false,
+    consent: { emailOptIn: true, phoneOptIn: false, smsOptIn: false, consentSource: "manual", consentText: "CAN-SPAM Cold Outreach (Recent Purchase List)", consentIp: "127.0.0.1" },
+    activities: [
+      { kind: "visit", summary: "Visited website from direct mail postcard QR" }
+    ]
+  },
+  // P1: Real Estate Agent (Santa Monica - AB 1033 Opt-In)
   {
     name: "Jessica Taylor (Compass)",
     email: "jessica.taylor@compass.com",
@@ -167,7 +233,7 @@ const demoLeads = [
       { kind: "form", summary: "Submitted Referral Partner Application" }
     ]
   },
-  // Partner P2: Contractor
+  // P2: General Contractor (Orange County - No AB 1033)
   {
     name: "BuildWise Construction",
     email: "info@buildwiseca.com",
@@ -189,7 +255,48 @@ const demoLeads = [
       { kind: "stage_change", summary: "Moved from Terms sent to Active" }
     ]
   },
-  // Homeowner with NO Consent (suppressed/unsubscribed)
+  // P3: Mortgage Broker (San Jose - AB 1033 Opt-In)
+  {
+    name: "Golden State Lenders (Marcus)",
+    email: "marcus.lending@goldenstate.com",
+    phone: "408-555-9031",
+    city: "San Jose",
+    county: "Santa Clara",
+    jurisdiction: "San Jose",
+    segment: "P3",
+    source: "outreach",
+    sourceDetail: "Broker Partner Email Outreach",
+    stage: "Applied",
+    type: "partner",
+    ab1033Eligible: true,
+    consent: { emailOptIn: true, phoneOptIn: true, smsOptIn: false, consentSource: "manual", consentText: "Cold B2B Broker Outreach", consentIp: "127.0.0.1" },
+    activities: [
+      { kind: "email_open", summary: "Opened mortgage partner program intro email" },
+      { kind: "form", summary: "Registered interest in financing network" }
+    ]
+  },
+  // P4: Property Manager (San Francisco - No AB 1033)
+  {
+    name: "Bay Area Property Management",
+    email: "partnerships@bayareapm.com",
+    phone: "415-555-1212",
+    city: "San Francisco",
+    county: "San Francisco",
+    jurisdiction: "San Francisco",
+    segment: "P4",
+    source: "website",
+    sourceDetail: "Sales Affiliate Form",
+    stage: "Terms sent",
+    type: "partner",
+    ab1033Eligible: false,
+    consent: { emailOptIn: true, phoneOptIn: true, smsOptIn: false, consentSource: "affiliate_form", consentText: "Yes, I want to become a sales affiliate and earn commissions.", consentIp: "184.22.44.91" },
+    activities: [
+      { kind: "form", summary: "Submitted Sales & Retail Affiliate Program application" },
+      { kind: "stage_change", summary: "Moved from Applied to Vetting" },
+      { kind: "stage_change", summary: "Moved from Vetting to Terms sent" }
+    ]
+  },
+  // H1: Homeowner with NO Consent (suppressed/unsubscribed)
   {
     name: "Robert Downey",
     email: "robert.d@gmail.com",
@@ -211,6 +318,50 @@ const demoLeads = [
       { kind: "email_sent", summary: "Sent Sequence Step 1 Email" },
       { kind: "email_reply", summary: "Replied: Stop sending emails" },
       { kind: "stage_change", summary: "Lead unsubscribed. Adding to suppression list." }
+    ]
+  },
+  // H1: Another Investor (San Jose - AB 1033 Opt-In)
+  {
+    name: "Lisa Vandermill",
+    email: "lisa.v@wealthbuilders.net",
+    phone: "408-555-2288",
+    city: "San Jose",
+    county: "Santa Clara",
+    jurisdiction: "San Jose",
+    lotSizeSqft: 8500,
+    segment: "H1",
+    source: "quiz",
+    sourceDetail: "Feasibility Quiz",
+    stage: "Consult booked",
+    type: "homeowner",
+    estValue: 165000,
+    ab1033Eligible: true,
+    consent: { emailOptIn: true, phoneOptIn: true, smsOptIn: true, consentSource: "quiz", consentText: "I consent to email, calls and text messages.", consentIp: "192.168.1.92" },
+    activities: [
+      { kind: "quiz", summary: "Completed ADU Feasibility Quiz" },
+      { kind: "visit", summary: "Visited specifications page" },
+      { kind: "consult", summary: "Completed consultation call" }
+    ]
+  },
+  // H2: Family Lead (Santa Monica - AB 1033 Opt-In)
+  {
+    name: "Patricia Miller",
+    email: "patricia.m@outlook.com",
+    phone: "310-555-1033",
+    city: "Santa Monica",
+    county: "Los Angeles",
+    jurisdiction: "Santa Monica",
+    lotSizeSqft: 5100,
+    segment: "H2",
+    source: "website",
+    sourceDetail: "Contact Form",
+    stage: "New",
+    type: "homeowner",
+    estValue: 195000,
+    ab1033Eligible: true,
+    consent: { emailOptIn: true, phoneOptIn: true, smsOptIn: true, consentSource: "contact_form", consentText: "Contact me about family layouts.", consentIp: "75.40.10.12" },
+    activities: [
+      { kind: "form", summary: "Submitted contact form requesting info on 2BR units" }
     ]
   }
 ];
@@ -242,7 +393,7 @@ function getCalculatedScore(lead) {
 }
 
 async function seed() {
-  console.log("Seeding demo leads...");
+  console.log("Seeding expanded demo leads...");
 
   // Delete existing leads
   await prisma.lead.deleteMany();
@@ -311,7 +462,7 @@ async function seed() {
     }
   }
 
-  console.log("Successfully seeded 9 high-fidelity demo leads!");
+  console.log(`Successfully seeded ${demoLeads.length} high-fidelity demo leads!`);
 }
 
 seed()

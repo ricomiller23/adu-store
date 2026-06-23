@@ -162,6 +162,18 @@ export default function LeadsTable({ initialLeads, jurisdictions }: LeadsTablePr
           "Tax reassessment: CA reassesses only the new ADU structure, keeping home Prop 13 baseline.",
           "Lower utility costs: energy-efficient, solar-ready structures."
         ];
+      case 'H5':
+        return [
+          "Reverse downsize logic: live in the ADU, rent the main house to fund retirement.",
+          "Low-maintenance backyard living with maximum property control.",
+          "Reduce yard maintenance and house utility costs."
+        ];
+      case 'H6':
+        return [
+          "Unlock high home equity using low-interest HELOC or construction loans.",
+          "Projected ADU rental income can count toward loan qualifications.",
+          "Boost resale valuation while shielding your primary tax base under Prop 13."
+        ];
       case 'H7':
         return [
           "AB 2533 Legalization checklist: pre-2020 unpermitted ADUs can be legalized via a safety audit.",
@@ -173,6 +185,36 @@ export default function LeadsTable({ initialLeads, jurisdictions }: LeadsTablePr
           "SB 1211: Up to 8 detached ADUs allowed on multifamily lots.",
           "AB 1033 condo conversion opportunities for direct build-to-sell plays.",
           "Developer-focused volume discounts and modular build speed."
+        ];
+      case 'H9':
+        return [
+          "Lot optimization: adding an ADU is cheaper than purchasing a larger home.",
+          "Factory modular speed means delivery in weeks and minimal site noise.",
+          "Boost total resale value by up to 35% to 50% immediately."
+        ];
+      case 'P1':
+        return [
+          "Partner referral program: earn competitive referral commissions.",
+          "Provide free site feasibility reports to increase client listing appeal.",
+          "Collaborative agent webinars on California ADU regulations."
+        ];
+      case 'P2':
+        return [
+          "GC installer network: steady flow of qualified project leads.",
+          "Modular convenience: factory-finished ADUs simplify on-site foundation & connection builds.",
+          "Milestone-based partner payouts."
+        ];
+      case 'P3':
+        return [
+          "Mortgage broker cross-referrals: finance leads referred to your team.",
+          "Leverage ADU-specific rental income calculations to qualify buyers.",
+          "Vetted lender network participation."
+        ];
+      case 'P4':
+        return [
+          "PM portfolio expansion: increase recurring management fees by adding backyard ADUs to single-family rentals.",
+          "Reseller commission tiers on modular ADU contracts.",
+          "Dedicated marketing materials to share with property owners."
         ];
       default:
         return [
@@ -265,13 +307,19 @@ export default function LeadsTable({ initialLeads, jurisdictions }: LeadsTablePr
             onChange={(e) => setSegment(e.target.value)}
           >
             <option value="all">All Segments</option>
-            <option value="H1">H1 — Investor</option>
-            <option value="H2">H2 — Multigenerational</option>
-            <option value="H3">H3 — Aging Parent</option>
-            <option value="H4">H4 — Remote Office</option>
-            <option value="H7">H7 — Unpermitted Unit</option>
-            <option value="H8">H8 — Multifamily Dev</option>
-            <option value="P2">P2 — Builder/Contractor</option>
+            <option value="H1">H1 — Rental Investor</option>
+            <option value="H2">H2 — Multigenerational Family</option>
+            <option value="H3">H3 — Aging Parent / Caregiver</option>
+            <option value="H4">H4 — Remote Office / Studio</option>
+            <option value="H5">H5 — Empty-Nester Downsize</option>
+            <option value="H6">H6 — Equity-Rich Owner</option>
+            <option value="H7">H7 — Unpermitted Unit (Legalize)</option>
+            <option value="H8">H8 — Multifamily Developer</option>
+            <option value="H9">H9 — Recent Buyer / Large Lot</option>
+            <option value="P1">P1 — Real Estate Agent Affiliate</option>
+            <option value="P2">P2 — Contractor / Installer Network</option>
+            <option value="P3">P3 — Mortgage Broker Partner</option>
+            <option value="P4">P4 — Property Manager Affiliate</option>
           </select>
 
           {/* Source Filter */}
