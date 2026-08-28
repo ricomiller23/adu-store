@@ -9,7 +9,8 @@ generator client {
 model Lead {
   id              String            @id @default(cuid())
   type            String            // homeowner | partner
-  name            String
+  name            String            // property/company/trust name
+  contactName     String?           // human owner name (e.g. "James Mitchell")
   email           String
   phone           String?
   city            String

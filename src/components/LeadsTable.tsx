@@ -17,7 +17,10 @@ import {
   Clock,
   Plus,
   Compass,
-  ShieldAlert
+  ShieldAlert,
+  ArrowUpDown,
+  User,
+  Building2
 } from 'lucide-react';
 import { updateLeadStageAction, addLeadActivityAction } from '@/app/actions';
 import { cn } from '@/lib/utils';
@@ -27,6 +30,7 @@ export interface LeadWithDetails {
   id: string;
   type: string;
   name: string;
+  contactName: string | null;
   email: string;
   phone: string | null;
   city: string;
@@ -88,6 +92,34 @@ export default function LeadsTable({ initialLeads, jurisdictions, initialSuppres
   const [consent, setConsent] = useState('all');
   const [ab1033, setAb1033] = useState('all');
 
+  // Sort order: 'individuals' = individuals first, 'companies' = companies first, 'az' = alphabetical by contact name
+  const [sortOrder, setSortOrder] = useState<'individuals' | 'companies' | 'az'>('individuals');
+
+  // Cycle through sort modes
+  const cycleSortOrder = () => {
+    setSortOrder(prev =>
+      prev === 'individuals' ? 'companies' : prev === 'companies' ? 'az' : 'individuals'
+    );
+  };
+
+  const sortLabel = sortOrder === 'individuals'
+    ? 'Individuals First'
+    : sortOrder === 'companies'
+    ? 'Companies First'
+    : 'A–Z Name';
+
+  const SortIcon = sortOrder === 'individuals' ? User : sortOrder === 'companies' ? Building2 : ArrowUpDown;
+
+  // Helper: is this lead an individual (has a real contactName that isn't a company/LLC/Trust keyword)?
+  const isIndividual = (lead: LeadWithDetails) => {
+    if (!lead.contactName) return false;
+    const n = lead.name.toLowerCase();
+    return !n.includes('llc') && !n.includes('trust') && !n.includes('inc') &&
+           !n.includes('corp') && !n.includes('group') && !n.includes('dev') &&
+           !n.includes('properties') && !n.includes('investment') && !n.includes('asset') &&
+           !n.includes('equity') && !n.includes('studio') && !n.includes('estate');
+  };
+
   // Selected lead for drawer
   const [selectedLead, setSelectedLead] = useState<LeadWithDetails | null>(null);
 
@@ -101,10 +133,11 @@ export default function LeadsTable({ initialLeads, jurisdictions, initialSuppres
     if (search) {
       const q = search.toLowerCase();
       const matchName = lead.name.toLowerCase().includes(q);
+      const matchContact = (lead.contactName || '').toLowerCase().includes(q);
       const matchEmail = lead.email.toLowerCase().includes(q);
       const matchCity = lead.city.toLowerCase().includes(q);
       const matchJuris = lead.jurisdiction.toLowerCase().includes(q);
-      if (!matchName && !matchEmail && !matchCity && !matchJuris) return false;
+      if (!matchName && !matchContact && !matchEmail && !matchCity && !matchJuris) return false;
     }
 
     // 2. Lead Type filter
@@ -142,6 +175,26 @@ export default function LeadsTable({ initialLeads, jurisdictions, initialSuppres
       return supp.value.toLowerCase().includes(q) || supp.reason.toLowerCase().includes(q);
     }
     return true;
+  });
+
+  // Apply sort to filtered leads
+  const sortedLeads = [...filteredLeads].sort((a, b) => {
+    if (sortOrder === 'az') {
+      const nameA = (a.contactName || a.name).toLowerCase();
+      const nameB = (b.contactName || b.name).toLowerCase();
+      return nameA.localeCompare(nameB);
+    }
+    if (sortOrder === 'individuals') {
+      const aInd = isIndividual(a) ? 0 : 1;
+      const bInd = isIndividual(b) ? 0 : 1;
+      if (aInd !== bInd) return aInd - bInd;
+      return (a.contactName || a.name).localeCompare(b.contactName || b.name);
+    }
+    // companies first
+    const aComp = isIndividual(a) ? 1 : 0;
+    const bComp = isIndividual(b) ? 1 : 0;
+    if (aComp !== bComp) return aComp - bComp;
+    return (a.contactName || a.name).localeCompare(b.contactName || b.name);
   });
 
   // Get consent label/state
@@ -332,9 +385,20 @@ export default function LeadsTable({ initialLeads, jurisdictions, initialSuppres
                 />
               </div>
 
-              <div className="flex items-center space-x-2 text-sm text-gray-500 font-medium">
-                <Filter className="h-4 w-4 text-[#27537d]" />
-                <span>Filters</span>
+              <div className="flex items-center space-x-3">
+                {/* Sort toggle */}
+                <button
+                  onClick={cycleSortOrder}
+                  className="flex items-center space-x-1.5 px-3 py-2 rounded border border-[#e4dfd3] bg-white text-sm font-semibold text-gray-700 hover:border-[#27537d] hover:text-[#27537d] transition-all shadow-sm"
+                  title="Cycle sort order"
+                >
+                  <SortIcon className="h-4 w-4" />
+                  <span>{sortLabel}</span>
+                </button>
+                <div className="flex items-center space-x-2 text-sm text-gray-500 font-medium">
+                  <Filter className="h-4 w-4 text-[#27537d]" />
+                  <span>Filters</span>
+                </div>
               </div>
             </div>
 
@@ -415,7 +479,12 @@ export default function LeadsTable({ initialLeads, jurisdictions, initialSuppres
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="border-b border-[#e4dfd3] bg-[#faf9f6] text-xs font-bold text-gray-500 uppercase tracking-wider">
-                  <th className="px-6 py-4">Name</th>
+                  <th className="px-6 py-4">
+                    <button onClick={cycleSortOrder} className="flex items-center space-x-1 hover:text-[#27537d] transition">
+                      <span>Contact / Property</span>
+                      <SortIcon className="h-3.5 w-3.5 ml-1" />
+                    </button>
+                  </th>
                   <th className="px-6 py-4">Jurisdiction</th>
                   <th className="px-6 py-4">Segment</th>
                   <th className="px-6 py-4">Score</th>
@@ -426,14 +495,14 @@ export default function LeadsTable({ initialLeads, jurisdictions, initialSuppres
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100 text-sm">
-                {filteredLeads.length === 0 ? (
+                {sortedLeads.length === 0 ? (
                   <tr>
                     <td colSpan={8} className="px-6 py-12 text-center text-gray-400">
                       No leads found matching current filter parameters.
                     </td>
                   </tr>
                 ) : (
-                  filteredLeads.map((lead) => {
+                  sortedLeads.map((lead) => {
                     const cState = getConsentState(lead);
                     return (
                       <tr 
@@ -442,8 +511,21 @@ export default function LeadsTable({ initialLeads, jurisdictions, initialSuppres
                         onClick={() => setSelectedLead(lead)}
                       >
                         <td className="px-6 py-4">
-                          <div className="font-semibold text-gray-900">{lead.name}</div>
-                          <div className="text-xs text-gray-400 font-medium">{lead.email}</div>
+                          {/* Human contact name (primary) */}
+                          {lead.contactName ? (
+                            <div className="flex items-center space-x-1.5">
+                              <User className="h-3.5 w-3.5 text-[#27537d] flex-shrink-0" />
+                              <span className="font-bold text-gray-900">{lead.contactName}</span>
+                            </div>
+                          ) : null}
+                          {/* Property / company name (secondary) */}
+                          <div className={cn(
+                            "text-xs font-medium",
+                            lead.contactName ? "text-gray-400 mt-0.5" : "font-semibold text-gray-900"
+                          )}>
+                            {lead.name}
+                          </div>
+                          <div className="text-xs text-gray-400">{lead.email}</div>
                         </td>
                         <td className="px-6 py-4">
                           <div className="flex items-center space-x-1.5">
@@ -592,8 +674,21 @@ export default function LeadsTable({ initialLeads, jurisdictions, initialSuppres
               {/* Drawer Header in Deep Pine */}
               <div className="bg-[#16352a] text-white px-6 py-5 flex items-center justify-between">
                 <div>
-                  <h3 className="text-lg font-bold font-display text-white">{selectedLead.name}</h3>
-                  <div className="flex items-center space-x-2 mt-1">
+                  {/* Human contact name — primary identity */}
+                  {selectedLead.contactName && (
+                    <div className="flex items-center space-x-1.5 mb-1">
+                      <User className="h-4 w-4 text-[#a3b899]" />
+                      <h3 className="text-lg font-bold font-display text-white">{selectedLead.contactName}</h3>
+                    </div>
+                  )}
+                  {/* Property / company name */}
+                  <p className={cn(
+                    "font-medium text-[#a3b899]",
+                    selectedLead.contactName ? "text-sm" : "text-lg font-bold font-display text-white"
+                  )}>
+                    {selectedLead.name}
+                  </p>
+                  <div className="flex items-center space-x-2 mt-2">
                     <span className="px-2 py-0.5 bg-[#27537d] border border-[#27537d]/20 rounded text-[11px] font-bold text-white uppercase tracking-wider">
                       {selectedLead.segment}
                     </span>

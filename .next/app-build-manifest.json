@@ -1,0 +1,95 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-67b6399270139c11.js",
+      "static/chunks/fd9d1056-b5d1046a7cf4164b.js",
+      "static/chunks/117-186be1c257d27a3c.js",
+      "static/chunks/main-app-4d557b64f1369470.js",
+      "static/chunks/app/_not-found/page-9e6d32dd3e025112.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-67b6399270139c11.js",
+      "static/chunks/fd9d1056-b5d1046a7cf4164b.js",
+      "static/chunks/117-186be1c257d27a3c.js",
+      "static/chunks/main-app-4d557b64f1369470.js",
+      "static/css/4777533e63199d5e.css",
+      "static/css/6749e0ee8bb0e3c7.css",
+      "static/chunks/app/layout-680ed09ad00a1865.js"
+    ],
+    "/login/page": [
+      "static/chunks/webpack-67b6399270139c11.js",
+      "static/chunks/fd9d1056-b5d1046a7cf4164b.js",
+      "static/chunks/117-186be1c257d27a3c.js",
+      "static/chunks/main-app-4d557b64f1369470.js",
+      "static/chunks/app/login/page-f92428446b2c245f.js"
+    ],
+    "/(dashboard)/sequences/page": [
+      "static/chunks/webpack-67b6399270139c11.js",
+      "static/chunks/fd9d1056-b5d1046a7cf4164b.js",
+      "static/chunks/117-186be1c257d27a3c.js",
+      "static/chunks/main-app-4d557b64f1369470.js",
+      "static/chunks/737-bacb0aab5572c3ae.js",
+      "static/chunks/app/(dashboard)/sequences/page-f60242ced381e71d.js"
+    ],
+    "/(dashboard)/layout": [
+      "static/chunks/webpack-67b6399270139c11.js",
+      "static/chunks/fd9d1056-b5d1046a7cf4164b.js",
+      "static/chunks/117-186be1c257d27a3c.js",
+      "static/chunks/main-app-4d557b64f1369470.js",
+      "static/chunks/737-bacb0aab5572c3ae.js",
+      "static/chunks/972-53a93f9a2f3a46e8.js",
+      "static/chunks/app/(dashboard)/layout-5a359ea86f048896.js"
+    ],
+    "/(dashboard)/partners/page": [
+      "static/chunks/webpack-67b6399270139c11.js",
+      "static/chunks/fd9d1056-b5d1046a7cf4164b.js",
+      "static/chunks/117-186be1c257d27a3c.js",
+      "static/chunks/main-app-4d557b64f1369470.js",
+      "static/chunks/737-bacb0aab5572c3ae.js",
+      "static/chunks/972-53a93f9a2f3a46e8.js",
+      "static/chunks/728-1ca85c4514d923ba.js",
+      "static/chunks/app/(dashboard)/partners/page-df071378732f8014.js"
+    ],
+    "/(dashboard)/pipeline/page": [
+      "static/chunks/webpack-67b6399270139c11.js",
+      "static/chunks/fd9d1056-b5d1046a7cf4164b.js",
+      "static/chunks/117-186be1c257d27a3c.js",
+      "static/chunks/main-app-4d557b64f1369470.js",
+      "static/chunks/737-bacb0aab5572c3ae.js",
+      "static/chunks/app/(dashboard)/pipeline/page-cfa6ae3a91d1a93b.js"
+    ],
+    "/(dashboard)/page": [
+      "static/chunks/webpack-67b6399270139c11.js",
+      "static/chunks/fd9d1056-b5d1046a7cf4164b.js",
+      "static/chunks/117-186be1c257d27a3c.js",
+      "static/chunks/main-app-4d557b64f1369470.js",
+      "static/chunks/972-53a93f9a2f3a46e8.js",
+      "static/chunks/app/(dashboard)/page-c487803ed849ff2f.js"
+    ],
+    "/(dashboard)/settings/page": [
+      "static/chunks/webpack-67b6399270139c11.js",
+      "static/chunks/fd9d1056-b5d1046a7cf4164b.js",
+      "static/chunks/117-186be1c257d27a3c.js",
+      "static/chunks/main-app-4d557b64f1369470.js",
+      "static/chunks/737-bacb0aab5572c3ae.js",
+      "static/chunks/app/(dashboard)/settings/page-2b9aefa7595702c6.js"
+    ],
+    "/(dashboard)/leads/page": [
+      "static/chunks/webpack-67b6399270139c11.js",
+      "static/chunks/fd9d1056-b5d1046a7cf4164b.js",
+      "static/chunks/117-186be1c257d27a3c.js",
+      "static/chunks/main-app-4d557b64f1369470.js",
+      "static/chunks/737-bacb0aab5572c3ae.js",
+      "static/chunks/728-1ca85c4514d923ba.js",
+      "static/chunks/app/(dashboard)/leads/page-a79bf0a5479fc15b.js"
+    ],
+    "/(dashboard)/daily-email/page": [
+      "static/chunks/webpack-67b6399270139c11.js",
+      "static/chunks/fd9d1056-b5d1046a7cf4164b.js",
+      "static/chunks/117-186be1c257d27a3c.js",
+      "static/chunks/main-app-4d557b64f1369470.js",
+      "static/chunks/737-bacb0aab5572c3ae.js",
+      "static/chunks/app/(dashboard)/daily-email/page-3aa2749726923f9c.js"
+    ]
+  }
+}

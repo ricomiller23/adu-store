@@ -10,11 +10,16 @@ import {
   Mail, 
   Sliders, 
   Briefcase, 
-  Settings as SettingsIcon
+  Settings as SettingsIcon,
+  X
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-export default function Sidebar() {
+interface SidebarProps {
+  onClose?: () => void;
+}
+
+export default function Sidebar({ onClose }: SidebarProps) {
   const pathname = usePathname();
 
   const navigation = [
@@ -30,9 +35,19 @@ export default function Sidebar() {
   return (
     <aside className="w-64 bg-[#16352a] text-white flex flex-col h-full border-r border-[#0f241d] shadow-lg">
       {/* Brand Logo Header */}
-      <div className="px-6 py-6 border-b border-[#1f483a] flex flex-col">
-        <span className="text-xl font-bold tracking-wider font-display text-white">THE ADU STORE</span>
-        <span className="text-xs text-[#a3b899] font-medium mt-1 uppercase tracking-widest">Lead Engine & CRM</span>
+      <div className="px-6 py-6 border-b border-[#1f483a] flex items-center justify-between">
+        <div className="flex flex-col">
+          <span className="text-xl font-bold tracking-wider font-display text-white">THE ADU STORE</span>
+          <span className="text-xs text-[#a3b899] font-medium mt-1 uppercase tracking-widest">Lead Engine & CRM</span>
+        </div>
+        {onClose && (
+          <button 
+            onClick={onClose}
+            className="md:hidden p-1 rounded hover:bg-[#1a3f32] text-[#a3b899] hover:text-white transition-colors"
+          >
+            <X className="h-5 w-5" />
+          </button>
+        )}
       </div>
 
       {/* Navigation Links */}
@@ -44,6 +59,7 @@ export default function Sidebar() {
             <Link
               key={item.name}
               href={item.href}
+              onClick={onClose}
               className={cn(
                 "flex items-center px-4 py-3 rounded text-sm font-medium transition-all duration-150 group",
                 isActive 
