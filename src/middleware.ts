@@ -6,13 +6,19 @@ export async function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
   // 1. Explicit Exclusions:
-  // - Public lead-capture endpoint: /api/public/*
+  // - Public lead-capture endpoint: /api/public/*, /api/leads/capture
+  // - Unsubscribe endpoints: /api/unsubscribe, /unsubscribe
   // - Vercel cron endpoints: /api/cron/*
   // - NextAuth authentication routes: /api/auth/*
+  // - Resend webhooks: /api/webhooks/*
   // - Next.js internal static assets & favicon
   // - Login page itself: /login
   if (
     pathname.startsWith("/api/public") ||
+    pathname.startsWith("/api/leads/capture") ||
+    pathname.startsWith("/api/unsubscribe") ||
+    pathname.startsWith("/unsubscribe") ||
+    pathname.startsWith("/api/webhooks") ||
     pathname.startsWith("/api/cron") ||
     pathname.startsWith("/api/auth") ||
     pathname.startsWith("/_next") ||

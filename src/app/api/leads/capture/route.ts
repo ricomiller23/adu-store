@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/db';
 import { calculateLeadScore } from '@/lib/scoring';
 import { Resend } from 'resend';
+import { renderEmailTemplate, renderEmailSubject } from '@/lib/email-templates';
 
 // Initialize Resend
 const resend = new Resend(process.env.RESEND_API_KEY || 're_1234567890');
@@ -159,16 +160,15 @@ export async function POST(req: NextRequest) {
       const welcomeStep = sequence.steps.find(s => s.dayOffset === 0);
       if (welcomeStep && welcomeStep.subject) {
         try {
-          const body = welcomeStep.bodyTemplate
-            .replace('{{name}}', finalLead.name)
-            .replace('{{city}}', finalLead.city);
+          const renderedSubject = renderEmailSubject(welcomeStep.subject, finalLead);
+          const body = renderEmailTemplate(welcomeStep.bodyTemplate, finalLead);
 
           // Log the send
           await prisma.emailSend.create({
             data: {
               leadId: finalLead.id,
               sequenceStepId: welcomeStep.id,
-              subject: welcomeStep.subject,
+              subject: renderedSubject,
               status: 'sent',
               resendId: 'resend_mock_' + Math.random().toString(36).substr(2, 9),
             }
@@ -179,7 +179,7 @@ export async function POST(req: NextRequest) {
             data: {
               leadId: finalLead.id,
               kind: 'email_sent',
-              summary: `Welcome Email Sent: "${welcomeStep.subject}"`
+              summary: `Welcome Email Sent: "${renderedSubject}"`
             }
           });
 
@@ -188,9 +188,9 @@ export async function POST(req: NextRequest) {
             await resend.emails.send({
               from: process.env.RESEND_FROM || 'hello@theadustore.com',
               to: finalLead.email,
-              subject: welcomeStep.subject,
+              subject: renderedSubject,
               text: body,
-              html: `<p style="white-space: pre-line">${body}</p>`,
+              html: `<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.6; color: #1a1a1a; white-space: pre-wrap;">${body}</div>`,
             });
           }
 

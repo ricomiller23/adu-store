@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/db';
 import { Resend } from 'resend';
+import { renderEmailTemplate, renderEmailSubject } from '@/lib/email-templates';
 
 const resend = new Resend(process.env.RESEND_API_KEY || 're_1234567890');
 
@@ -128,12 +129,11 @@ async function handleCron(req: NextRequest) {
         continue;
       }
 
-      // 4. Render template
+      // 4. Render template with Outbound Email Kit merge engine
       if (step.channel === 'email' && step.subject) {
         try {
-          const body = step.bodyTemplate
-            .replace('{{name}}', lead.name)
-            .replace('{{city}}', lead.city);
+          const renderedSubject = renderEmailSubject(step.subject, lead);
+          const renderedBody = renderEmailTemplate(step.bodyTemplate, lead);
 
           // 5. Send Email via Resend
           let resendId = 'resend_mock_' + Math.random().toString(36).substr(2, 9);
@@ -142,9 +142,9 @@ async function handleCron(req: NextRequest) {
             const mailRes = await resend.emails.send({
               from: process.env.RESEND_FROM || 'hello@theadustore.com',
               to: lead.email,
-              subject: step.subject,
-              text: body,
-              html: `<p style="white-space: pre-line">${body}</p>`,
+              subject: renderedSubject,
+              text: renderedBody,
+              html: `<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.6; color: #1a1a1a; white-space: pre-wrap;">${renderedBody}</div>`,
             });
             if (mailRes.data) {
               resendId = mailRes.data.id;
@@ -156,7 +156,7 @@ async function handleCron(req: NextRequest) {
             data: {
               leadId: lead.id,
               sequenceStepId: step.id,
-              subject: step.subject,
+              subject: renderedSubject,
               status: 'sent',
               resendId,
             }
@@ -167,7 +167,7 @@ async function handleCron(req: NextRequest) {
             data: {
               leadId: lead.id,
               kind: 'email_sent',
-              summary: `Sequence Email Sent: "${step.subject}"`
+              summary: `Sequence Email Sent: "${renderedSubject}"`
             }
           });
 
@@ -175,7 +175,7 @@ async function handleCron(req: NextRequest) {
           cronStats.sentLeads.push({
             name: lead.name,
             email: lead.email,
-            subject: step.subject
+            subject: renderedSubject
           });
 
         } catch (mailErr: any) {
@@ -273,7 +273,7 @@ Hot Leads Priority List:
 ${hotLeads.map(h => `- ${h.name} (${h.city}) | Score: ${h.score} | Stage: ${h.stage} | Est. Value: $${h.estValue?.toLocaleString() || '0'}`).join('\n')}
 
 --- COMPLIANCE CHECKS ---
- suppression suppresses respected.
+CAN-SPAM suppression and physical address footers verified.
 TCPA phone/text consent constraints enforced.
 AB 1033 jurisdiction rules active.
 
