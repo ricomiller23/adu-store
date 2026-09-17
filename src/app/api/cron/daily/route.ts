@@ -140,7 +140,7 @@ async function handleCron(req: NextRequest) {
           
           if (process.env.RESEND_API_KEY && process.env.RESEND_API_KEY !== 're_1234567890') {
             const mailRes = await resend.emails.send({
-              from: process.env.RESEND_FROM || 'hello@theadustore.com',
+              from: (process.env.RESEND_FROM || 'hello@theadustore.com').includes('<') ? (process.env.RESEND_FROM || 'hello@theadustore.com') : `${process.env.REP_NAME || 'David Miller'}, ${process.env.BRAND_NAME || 'The ADU Store'} <${process.env.RESEND_FROM || 'hello@theadustore.com'}>`,
               to: lead.email,
               subject: renderedSubject,
               text: renderedBody,
