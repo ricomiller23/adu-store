@@ -20,7 +20,9 @@ import {
   ShieldAlert,
   ArrowUpDown,
   User,
-  Building2
+  Building2,
+  Play,
+  RefreshCw
 } from 'lucide-react';
 import { updateLeadStageAction, addLeadActivityAction } from '@/app/actions';
 import { cn } from '@/lib/utils';
@@ -75,9 +77,43 @@ interface LeadsTableProps {
   initialLeads: LeadWithDetails[];
   jurisdictions: { name: string; ab1033OptIn: boolean }[];
   initialSuppressions: Suppression[];
+  cronSecret?: string;
 }
 
-export default function LeadsTable({ initialLeads, jurisdictions, initialSuppressions }: LeadsTableProps) {
+export default function LeadsTable({ initialLeads, jurisdictions, initialSuppressions, cronSecret = "cron-secret-123" }: LeadsTableProps) {
+  const [triggeringCron, setTriggeringCron] = useState(false);
+  const [cronResult, setCronResult] = useState<any | null>(null);
+  const [cronError, setCronError] = useState<string | null>(null);
+
+  const handleTriggerCron = async () => {
+    setTriggeringCron(true);
+    setCronResult(null);
+    setCronError(null);
+
+    try {
+      const res = await fetch("/api/cron/daily", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${cronSecret}`
+        }
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        setCronResult(data);
+        router.refresh();
+      } else {
+        setCronError(data.error || "Failed to execute daily nurture cron.");
+      }
+    } catch (err: any) {
+      console.error(err);
+      setCronError(err.message || "An unexpected networking error occurred.");
+    } finally {
+      setTriggeringCron(false);
+    }
+  };
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
 
@@ -340,33 +376,73 @@ export default function LeadsTable({ initialLeads, jurisdictions, initialSuppres
 
   return (
     <div className="space-y-6">
-      {/* Tab Navigation */}
-      <div className="flex border-b border-[#e4dfd3] bg-white rounded-lg px-4 pt-1 shadow-sm">
-        <button
-          onClick={() => { setActiveTab('leads'); setSearch(''); }}
-          className={cn(
-            "px-6 py-3.5 text-sm font-bold border-b-2 transition-all flex items-center",
-            activeTab === 'leads'
-              ? "border-[#16352a] text-[#16352a]"
-              : "border-transparent text-gray-500 hover:text-gray-900"
-          )}
-        >
-          <Compass className="h-4 w-4 mr-2" />
-          Leads Directory ({filteredLeads.length})
-        </button>
-        <button
-          onClick={() => { setActiveTab('dnc'); setSearch(''); }}
-          className={cn(
-            "px-6 py-3.5 text-sm font-bold border-b-2 transition-all flex items-center",
-            activeTab === 'dnc'
-              ? "border-[#16352a] text-[#16352a]"
-              : "border-transparent text-gray-500 hover:text-gray-900"
-          )}
-        >
-          <ShieldAlert className="h-4 w-4 mr-2 text-red-600" />
-          DNC & Suppression Registry ({filteredSuppressions.length})
-        </button>
+      {/* Tab Navigation with Run Automation Button */}
+      <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between border-b border-[#e4dfd3] bg-white rounded-lg px-4 pt-1 shadow-sm gap-2">
+        <div className="flex overflow-x-auto">
+          <button
+            onClick={() => { setActiveTab('leads'); setSearch(''); }}
+            className={cn(
+              "px-6 py-3.5 text-sm font-bold border-b-2 transition-all flex items-center whitespace-nowrap",
+              activeTab === 'leads'
+                ? "border-[#16352a] text-[#16352a]"
+                : "border-transparent text-gray-500 hover:text-gray-900"
+            )}
+          >
+            <Compass className="h-4 w-4 mr-2" />
+            Leads Directory ({filteredLeads.length})
+          </button>
+          <button
+            onClick={() => { setActiveTab('dnc'); setSearch(''); }}
+            className={cn(
+              "px-6 py-3.5 text-sm font-bold border-b-2 transition-all flex items-center whitespace-nowrap",
+              activeTab === 'dnc'
+                ? "border-[#16352a] text-[#16352a]"
+                : "border-transparent text-gray-500 hover:text-gray-900"
+            )}
+          >
+            <ShieldAlert className="h-4 w-4 mr-2 text-red-600" />
+            DNC & Suppression Registry ({filteredSuppressions.length})
+          </button>
+        </div>
+
+        <div className="py-2 pb-3 sm:pb-2 flex items-center gap-3">
+          <button
+            onClick={handleTriggerCron}
+            disabled={triggeringCron}
+            className="flex items-center px-4 py-2 bg-[#dd8420] hover:bg-[#c27116] text-white text-xs font-bold rounded shadow-sm transition disabled:opacity-50 whitespace-nowrap"
+            title="Trigger nurture cron to send due sequence emails and update lead engagement"
+          >
+            {triggeringCron ? (
+              <RefreshCw className="animate-spin h-3.5 w-3.5 mr-1.5" />
+            ) : (
+              <Play className="h-3.5 w-3.5 mr-1.5 fill-white" />
+            )}
+            {triggeringCron ? "Running Nurture Automation..." : "Run Automation Cron Now"}
+          </button>
+        </div>
       </div>
+
+      {/* Cron Result Alerts */}
+      {cronResult && (
+        <div className="p-4 bg-green-50 border border-green-200 text-green-800 text-xs rounded-lg flex items-center justify-between shadow-sm animate-in fade-in">
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0" />
+            <span>
+              <strong>Automation Executed Successfully:</strong> Processed {cronResult.processed} lead enrollments. {cronResult.stats?.emailsSent || 0} sequence emails sent.
+            </span>
+          </div>
+          <button onClick={() => setCronResult(null)} className="text-gray-400 hover:text-gray-600 text-xs font-bold ml-2">✕</button>
+        </div>
+      )}
+      {cronError && (
+        <div className="p-4 bg-red-50 border border-red-200 text-red-800 text-xs rounded-lg flex items-center justify-between shadow-sm animate-in fade-in">
+          <div className="flex items-center gap-2">
+            <AlertCircle className="h-4 w-4 text-red-600 flex-shrink-0" />
+            <span><strong>Automation Error:</strong> {cronError}</span>
+          </div>
+          <button onClick={() => setCronError(null)} className="text-gray-400 hover:text-gray-600 text-xs font-bold ml-2">✕</button>
+        </div>
+      )}
 
       {activeTab === 'leads' ? (
         <div className="bg-white border border-[#e4dfd3] shadow-sm rounded-lg overflow-hidden relative">

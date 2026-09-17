@@ -22,6 +22,7 @@ export default async function LeadsPage() {
         initialLeads={leads} 
         jurisdictions={jurisdictions} 
         initialSuppressions={suppressions} 
+        cronSecret={process.env.CRON_SECRET || "cron-secret-123"}
       />
     </div>
   );
