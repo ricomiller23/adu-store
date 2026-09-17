@@ -124,7 +124,27 @@ function LoginForm() {
         </div>
       </form>
 
-      <div className="mt-6 pt-4 border-t border-gray-100 text-center">
+      <div className="mt-6 pt-4 border-t border-gray-100 text-center space-y-3">
+        <div className="bg-[#16352a]/5 border border-[#16352a]/15 rounded-lg p-3 text-xs text-[#16352a] text-left">
+          <div className="flex items-center justify-between mb-1.5">
+            <span className="font-bold uppercase tracking-wider text-[10px] text-[#dd8420]">Administrator Credentials</span>
+            <button
+              type="button"
+              onClick={() => {
+                setEmail("admin@theadustore.com");
+                setPassword("admin123");
+              }}
+              className="text-[11px] font-bold text-[#16352a] hover:underline bg-white px-2 py-0.5 rounded border border-[#16352a]/20 shadow-xs cursor-pointer"
+            >
+              Click to Autofill
+            </button>
+          </div>
+          <div className="space-y-0.5 font-mono text-[11px]">
+            <div>Email: <strong className="select-all text-gray-900">admin@theadustore.com</strong></div>
+            <div>Password: <strong className="select-all text-gray-900">admin123</strong></div>
+          </div>
+        </div>
+
         <p className="text-[11px] text-gray-400">
           Authorized IP logged for security. All operations monitored.
         </p>
