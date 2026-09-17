@@ -14,6 +14,8 @@ import {
   X
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { signOut, useSession } from 'next-auth/react';
+import { LogOut } from 'lucide-react';
 
 interface SidebarProps {
   onClose?: () => void;
@@ -79,12 +81,20 @@ export default function Sidebar({ onClose }: SidebarProps) {
         })}
       </nav>
 
-      {/* User Session status at bottom */}
-      <div className="p-4 border-t border-[#1f483a] bg-[#0f241d]">
-        <div className="px-2 flex flex-col">
-          <span className="text-xs text-[#a3b899] uppercase tracking-wider font-medium">Status</span>
-          <span className="text-sm font-semibold text-white truncate">Administrator Mode</span>
+      {/* User Session status & Sign Out at bottom */}
+      <div className="p-4 border-t border-[#1f483a] bg-[#0f241d] flex items-center justify-between">
+        <div className="px-2 flex flex-col truncate">
+          <span className="text-[10px] text-[#a3b899] uppercase tracking-wider font-medium">Logged In</span>
+          <span className="text-xs font-semibold text-white truncate">Administrator</span>
         </div>
+        <button
+          onClick={() => signOut({ callbackUrl: '/login' })}
+          className="flex items-center gap-1 px-2.5 py-1.5 rounded text-xs font-medium text-[#a3b899] hover:text-white hover:bg-[#1a3f32] border border-[#1f483a] transition-colors"
+          title="Sign Out"
+        >
+          <LogOut className="h-3.5 w-3.5" />
+          <span>Sign Out</span>
+        </button>
       </div>
     </aside>
   );
