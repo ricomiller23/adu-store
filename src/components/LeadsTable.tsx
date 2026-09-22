@@ -75,12 +75,12 @@ interface Suppression {
 
 interface LeadsTableProps {
   initialLeads: LeadWithDetails[];
-  jurisdictions: { name: string; ab1033OptIn: boolean }[];
-  initialSuppressions: Suppression[];
+  jurisdictions?: { name: string; ab1033OptIn: boolean }[];
+  initialSuppressions?: Suppression[];
   cronSecret?: string;
 }
 
-export default function LeadsTable({ initialLeads, jurisdictions, initialSuppressions, cronSecret = "cron-secret-123" }: LeadsTableProps) {
+export default function LeadsTable({ initialLeads, jurisdictions = [], initialSuppressions = [], cronSecret = "cron-secret-123" }: LeadsTableProps) {
   const [triggeringCron, setTriggeringCron] = useState(false);
   const [cronResult, setCronResult] = useState<any | null>(null);
   const [cronError, setCronError] = useState<string | null>(null);

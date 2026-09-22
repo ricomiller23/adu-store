@@ -22,10 +22,18 @@ export default async function DashboardPage() {
 
   return (
     <div className="space-y-8 max-w-7xl mx-auto">
-      {/* Header */}
-      <div>
-        <h1 className="text-3xl font-bold font-display text-gray-900">Dashboard</h1>
-        <p className="text-gray-500 mt-1">Today's operational metrics, pipeline valuation, and active suppressions.</p>
+      {/* Header with Live Lead Discovery Status */}
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div>
+          <h1 className="text-3xl font-bold font-display text-gray-900">Dashboard</h1>
+          <p className="text-gray-500 mt-1">Today's operational metrics, pipeline valuation, and active suppressions.</p>
+        </div>
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-semibold text-emerald-800 self-start md:self-auto shadow-xs">
+          <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+          <span>Dynamic Discovery Active</span>
+          <span className="text-emerald-300">|</span>
+          <span className="text-emerald-700">Checked just now · Continuous Parcel Feed</span>
+        </div>
       </div>
 
       {/* KPI Cards Grid */}
