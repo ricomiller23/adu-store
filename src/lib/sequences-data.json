@@ -1,0 +1,445 @@
+[
+  {
+    "id": "seq-1",
+    "name": "Rental Investor Sequence",
+    "segment": "H1",
+    "steps": [
+      {
+        "id": "step-1",
+        "sequenceId": "seq-1",
+        "dayOffset": 0,
+        "channel": "email",
+        "subject": "Your ADU result for {{city}}",
+        "bodyTemplate": "Hi {{firstName}},\n\nThanks for checking your lot on {{brand}}. Here's the short version:\n\nBased on what you told us, your property in {{city}} looks like it can support {{lotSizeText}}. Under current law (AB 976) you can rent it out for income without living on-site — so the real question is payback, and the numbers in {{city}} are usually better than people expect.\n\nI put together a quick feasibility read for your specific lot — what fits, the current {{city}} rules that apply, and a ballpark on cost and timeline. Want me to walk you through it on a 15-minute call? No pressure and no obligation — just a straight answer so you can decide if it's worth pursuing.\n\nGrab a time here: {{bookingLink}}\nOr just reply and tell me what you're hoping the ADU does for you.\n\n{{repName}}\n{{brand}}\n\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-2",
+        "sequenceId": "seq-1",
+        "dayOffset": 2,
+        "channel": "email",
+        "subject": "One thing most {{city}} owners miss",
+        "bodyTemplate": "Hi {{firstName}},\n\nFollowing up with the one thing that trips people up on ADUs in {{city}}: the rules changed a lot recently, and what your lot could do two years ago isn't what it can do today.\n\nThat's usually the difference between an ADU that pencils out and one that doesn't — and it's exactly what I'd cover on a quick call. We handle design, permits, the factory build, delivery, and install, so you get one price and one process instead of chasing five contractors.\n\nWant me to run your numbers? {{bookingLink}}\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-3",
+        "sequenceId": "seq-1",
+        "dayOffset": 5,
+        "channel": "email",
+        "subject": "Still thinking about the ADU?",
+        "bodyTemplate": "Hi {{firstName}},\n\nTotally normal to sit on this — it's a real decision. The two things people ask me most:\n\n\"What does it actually cost?\" — It depends on size and site, which is why the 15-minute call is useful; I can give you a real range for your lot, not a brochure number.\n\n\"How long does it take?\" — Modular is faster and more predictable than site-built because most of it happens in the factory.\n\nIf it's helpful, here's a time: {{bookingLink}}. If now's not right, just tell me roughly when and I'll check back then.\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-4",
+        "sequenceId": "seq-1",
+        "dayOffset": 12,
+        "channel": "email",
+        "subject": "Should I close your file?",
+        "bodyTemplate": "Hi {{firstName}},\n\nI don't want to clutter your inbox, so this is my last note for now — unless you tell me otherwise.\n\nIf an ADU in {{city}} is still on your mind, even months out, reply \"keep me posted\" and I'll only send the occasional update when the rules or costs change in a way that matters to you. If not, no hard feelings and I'll close your file.\n\nEither way, thanks for considering {{brand}}.\n\n{{repName}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      }
+    ]
+  },
+  {
+    "id": "seq-2",
+    "name": "Multigenerational Family Sequence",
+    "segment": "H2",
+    "steps": [
+      {
+        "id": "step-5",
+        "sequenceId": "seq-2",
+        "dayOffset": 0,
+        "channel": "email",
+        "subject": "Your ADU result for {{city}}",
+        "bodyTemplate": "Hi {{firstName}},\n\nThanks for checking your lot on {{brand}}. Here's the short version:\n\nBased on what you told us, your property in {{city}} looks like it can support {{lotSizeText}}. It's the option most families land on when they want parents or adult kids close — private space, without the cost of moving or a care facility.\n\nI put together a quick feasibility read for your specific lot — what fits, the current {{city}} rules that apply, and a ballpark on cost and timeline. Want me to walk you through it on a 15-minute call? No pressure and no obligation — just a straight answer so you can decide if it's worth pursuing.\n\nGrab a time here: {{bookingLink}}\nOr just reply and tell me what you're hoping the ADU does for you.\n\n{{repName}}\n{{brand}}\n\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-6",
+        "sequenceId": "seq-2",
+        "dayOffset": 2,
+        "channel": "email",
+        "subject": "One thing most {{city}} owners miss",
+        "bodyTemplate": "Hi {{firstName}},\n\nFollowing up with the one thing that trips people up on ADUs in {{city}}: the rules changed a lot recently, and what your lot could do two years ago isn't what it can do today.\n\nThat's usually the difference between an ADU that pencils out and one that doesn't — and it's exactly what I'd cover on a quick call. We handle design, permits, the factory build, delivery, and install, so you get one price and one process instead of chasing five contractors.\n\nWant me to run your numbers? {{bookingLink}}\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-7",
+        "sequenceId": "seq-2",
+        "dayOffset": 5,
+        "channel": "email",
+        "subject": "Still thinking about the ADU?",
+        "bodyTemplate": "Hi {{firstName}},\n\nTotally normal to sit on this — it's a real decision. The two things people ask me most:\n\n\"What does it actually cost?\" — It depends on size and site, which is why the 15-minute call is useful; I can give you a real range for your lot, not a brochure number.\n\n\"How long does it take?\" — Modular is faster and more predictable than site-built because most of it happens in the factory.\n\nIf it's helpful, here's a time: {{bookingLink}}. If now's not right, just tell me roughly when and I'll check back then.\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-8",
+        "sequenceId": "seq-2",
+        "dayOffset": 12,
+        "channel": "email",
+        "subject": "Should I close your file?",
+        "bodyTemplate": "Hi {{firstName}},\n\nI don't want to clutter your inbox, so this is my last note for now — unless you tell me otherwise.\n\nIf an ADU in {{city}} is still on your mind, even months out, reply \"keep me posted\" and I'll only send the occasional update when the rules or costs change in a way that matters to you. If not, no hard feelings and I'll close your file.\n\nEither way, thanks for considering {{brand}}.\n\n{{repName}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      }
+    ]
+  },
+  {
+    "id": "seq-3",
+    "name": "Aging Parent / Caregiver Sequence",
+    "segment": "H3",
+    "steps": [
+      {
+        "id": "step-9",
+        "sequenceId": "seq-3",
+        "dayOffset": 0,
+        "channel": "email",
+        "subject": "Your ADU result for {{city}}",
+        "bodyTemplate": "Hi {{firstName}},\n\nThanks for checking your lot on {{brand}}. Here's the short version:\n\nBased on what you told us, your property in {{city}} looks like it can support {{lotSizeText}}. A lot of families use one to keep a parent nearby and safe — often for far less than assisted living. No rush; happy to just share the options.\n\nI put together a quick feasibility read for your specific lot — what fits, the current {{city}} rules that apply, and a ballpark on cost and timeline. Want me to walk you through it on a 15-minute call? No pressure and no obligation — just a straight answer so you can decide if it's worth pursuing.\n\nGrab a time here: {{bookingLink}}\nOr just reply and tell me what you're hoping the ADU does for you.\n\n{{repName}}\n{{brand}}\n\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-10",
+        "sequenceId": "seq-3",
+        "dayOffset": 2,
+        "channel": "email",
+        "subject": "One thing most {{city}} owners miss",
+        "bodyTemplate": "Hi {{firstName}},\n\nFollowing up with the one thing that trips people up on ADUs in {{city}}: the rules changed a lot recently, and what your lot could do two years ago isn't what it can do today.\n\nThat's usually the difference between an ADU that pencils out and one that doesn't — and it's exactly what I'd cover on a quick call. We handle design, permits, the factory build, delivery, and install, so you get one price and one process instead of chasing five contractors.\n\nWant me to run your numbers? {{bookingLink}}\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-11",
+        "sequenceId": "seq-3",
+        "dayOffset": 5,
+        "channel": "email",
+        "subject": "Still thinking about the ADU?",
+        "bodyTemplate": "Hi {{firstName}},\n\nTotally normal to sit on this — it's a real decision. The two things people ask me most:\n\n\"What does it actually cost?\" — It depends on size and site, which is why the 15-minute call is useful; I can give you a real range for your lot, not a brochure number.\n\n\"How long does it take?\" — Modular is faster and more predictable than site-built because most of it happens in the factory.\n\nIf it's helpful, here's a time: {{bookingLink}}. If now's not right, just tell me roughly when and I'll check back then.\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-12",
+        "sequenceId": "seq-3",
+        "dayOffset": 12,
+        "channel": "email",
+        "subject": "Should I close your file?",
+        "bodyTemplate": "Hi {{firstName}},\n\nI don't want to clutter your inbox, so this is my last note for now — unless you tell me otherwise.\n\nIf an ADU in {{city}} is still on your mind, even months out, reply \"keep me posted\" and I'll only send the occasional update when the rules or costs change in a way that matters to you. If not, no hard feelings and I'll close your file.\n\nEither way, thanks for considering {{brand}}.\n\n{{repName}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      }
+    ]
+  },
+  {
+    "id": "seq-4",
+    "name": "Office / Studio Sequence",
+    "segment": "H4",
+    "steps": [
+      {
+        "id": "step-13",
+        "sequenceId": "seq-4",
+        "dayOffset": 0,
+        "channel": "email",
+        "subject": "Your ADU result for {{city}}",
+        "bodyTemplate": "Hi {{firstName}},\n\nThanks for checking your lot on {{brand}}. Here's the short version:\n\nBased on what you told us, your property in {{city}} looks like it can support {{lotSizeText}}. A detached office or studio is the fastest, lowest-friction build — many are permitted and installed in months, not years.\n\nI put together a quick feasibility read for your specific lot — what fits, the current {{city}} rules that apply, and a ballpark on cost and timeline. Want me to walk you through it on a 15-minute call? No pressure and no obligation — just a straight answer so you can decide if it's worth pursuing.\n\nGrab a time here: {{bookingLink}}\nOr just reply and tell me what you're hoping the ADU does for you.\n\n{{repName}}\n{{brand}}\n\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-14",
+        "sequenceId": "seq-4",
+        "dayOffset": 2,
+        "channel": "email",
+        "subject": "One thing most {{city}} owners miss",
+        "bodyTemplate": "Hi {{firstName}},\n\nFollowing up with the one thing that trips people up on ADUs in {{city}}: the rules changed a lot recently, and what your lot could do two years ago isn't what it can do today.\n\nThat's usually the difference between an ADU that pencils out and one that doesn't — and it's exactly what I'd cover on a quick call. We handle design, permits, the factory build, delivery, and install, so you get one price and one process instead of chasing five contractors.\n\nWant me to run your numbers? {{bookingLink}}\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-15",
+        "sequenceId": "seq-4",
+        "dayOffset": 5,
+        "channel": "email",
+        "subject": "Still thinking about the ADU?",
+        "bodyTemplate": "Hi {{firstName}},\n\nTotally normal to sit on this — it's a real decision. The two things people ask me most:\n\n\"What does it actually cost?\" — It depends on size and site, which is why the 15-minute call is useful; I can give you a real range for your lot, not a brochure number.\n\n\"How long does it take?\" — Modular is faster and more predictable than site-built because most of it happens in the factory.\n\nIf it's helpful, here's a time: {{bookingLink}}. If now's not right, just tell me roughly when and I'll check back then.\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-16",
+        "sequenceId": "seq-4",
+        "dayOffset": 12,
+        "channel": "email",
+        "subject": "Should I close your file?",
+        "bodyTemplate": "Hi {{firstName}},\n\nI don't want to clutter your inbox, so this is my last note for now — unless you tell me otherwise.\n\nIf an ADU in {{city}} is still on your mind, even months out, reply \"keep me posted\" and I'll only send the occasional update when the rules or costs change in a way that matters to you. If not, no hard feelings and I'll close your file.\n\nEither way, thanks for considering {{brand}}.\n\n{{repName}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      }
+    ]
+  },
+  {
+    "id": "seq-5",
+    "name": "Empty-Nester Downsize Sequence",
+    "segment": "H5",
+    "steps": [
+      {
+        "id": "step-17",
+        "sequenceId": "seq-5",
+        "dayOffset": 0,
+        "channel": "email",
+        "subject": "Your ADU result for {{city}}",
+        "bodyTemplate": "Hi {{firstName}},\n\nThanks for checking your lot on {{brand}}. Here's the short version:\n\nBased on what you told us, your property in {{city}} looks like it can support {{lotSizeText}}. Some owners live in the ADU and rent or sell the main house — a way to unlock the home's value without leaving the neighborhood.\n\nI put together a quick feasibility read for your specific lot — what fits, the current {{city}} rules that apply, and a ballpark on cost and timeline. Want me to walk you through it on a 15-minute call? No pressure and no obligation — just a straight answer so you can decide if it's worth pursuing.\n\nGrab a time here: {{bookingLink}}\nOr just reply and tell me what you're hoping the ADU does for you.\n\n{{repName}}\n{{brand}}\n\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-18",
+        "sequenceId": "seq-5",
+        "dayOffset": 2,
+        "channel": "email",
+        "subject": "One thing most {{city}} owners miss",
+        "bodyTemplate": "Hi {{firstName}},\n\nFollowing up with the one thing that trips people up on ADUs in {{city}}: the rules changed a lot recently, and what your lot could do two years ago isn't what it can do today.\n\nThat's usually the difference between an ADU that pencils out and one that doesn't — and it's exactly what I'd cover on a quick call. We handle design, permits, the factory build, delivery, and install, so you get one price and one process instead of chasing five contractors.\n\nWant me to run your numbers? {{bookingLink}}\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-19",
+        "sequenceId": "seq-5",
+        "dayOffset": 5,
+        "channel": "email",
+        "subject": "Still thinking about the ADU?",
+        "bodyTemplate": "Hi {{firstName}},\n\nTotally normal to sit on this — it's a real decision. The two things people ask me most:\n\n\"What does it actually cost?\" — It depends on size and site, which is why the 15-minute call is useful; I can give you a real range for your lot, not a brochure number.\n\n\"How long does it take?\" — Modular is faster and more predictable than site-built because most of it happens in the factory.\n\nIf it's helpful, here's a time: {{bookingLink}}. If now's not right, just tell me roughly when and I'll check back then.\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-20",
+        "sequenceId": "seq-5",
+        "dayOffset": 12,
+        "channel": "email",
+        "subject": "Should I close your file?",
+        "bodyTemplate": "Hi {{firstName}},\n\nI don't want to clutter your inbox, so this is my last note for now — unless you tell me otherwise.\n\nIf an ADU in {{city}} is still on your mind, even months out, reply \"keep me posted\" and I'll only send the occasional update when the rules or costs change in a way that matters to you. If not, no hard feelings and I'll close your file.\n\nEither way, thanks for considering {{brand}}.\n\n{{repName}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      }
+    ]
+  },
+  {
+    "id": "seq-6",
+    "name": "Equity-Rich Owner Sequence",
+    "segment": "H6",
+    "steps": [
+      {
+        "id": "step-21",
+        "sequenceId": "seq-6",
+        "dayOffset": 0,
+        "channel": "email",
+        "subject": "Your ADU result for {{city}}",
+        "bodyTemplate": "Hi {{firstName}},\n\nThanks for checking your lot on {{brand}}. Here's the short version:\n\nBased on what you told us, your property in {{city}} looks like it can support {{lotSizeText}}. There are financing paths that let you build against your equity, so the project can pay for itself over time rather than out of pocket.\n\nI put together a quick feasibility read for your specific lot — what fits, the current {{city}} rules that apply, and a ballpark on cost and timeline. Want me to walk you through it on a 15-minute call? No pressure and no obligation — just a straight answer so you can decide if it's worth pursuing.\n\nGrab a time here: {{bookingLink}}\nOr just reply and tell me what you're hoping the ADU does for you.\n\n{{repName}}\n{{brand}}\n\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-22",
+        "sequenceId": "seq-6",
+        "dayOffset": 2,
+        "channel": "email",
+        "subject": "One thing most {{city}} owners miss",
+        "bodyTemplate": "Hi {{firstName}},\n\nFollowing up with the one thing that trips people up on ADUs in {{city}}: the rules changed a lot recently, and what your lot could do two years ago isn't what it can do today.\n\nThat's usually the difference between an ADU that pencils out and one that doesn't — and it's exactly what I'd cover on a quick call. We handle design, permits, the factory build, delivery, and install, so you get one price and one process instead of chasing five contractors.\n\nWant me to run your numbers? {{bookingLink}}\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-23",
+        "sequenceId": "seq-6",
+        "dayOffset": 5,
+        "channel": "email",
+        "subject": "Still thinking about the ADU?",
+        "bodyTemplate": "Hi {{firstName}},\n\nTotally normal to sit on this — it's a real decision. The two things people ask me most:\n\n\"What does it actually cost?\" — It depends on size and site, which is why the 15-minute call is useful; I can give you a real range for your lot, not a brochure number.\n\n\"How long does it take?\" — Modular is faster and more predictable than site-built because most of it happens in the factory.\n\nIf it's helpful, here's a time: {{bookingLink}}. If now's not right, just tell me roughly when and I'll check back then.\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-24",
+        "sequenceId": "seq-6",
+        "dayOffset": 12,
+        "channel": "email",
+        "subject": "Should I close your file?",
+        "bodyTemplate": "Hi {{firstName}},\n\nI don't want to clutter your inbox, so this is my last note for now — unless you tell me otherwise.\n\nIf an ADU in {{city}} is still on your mind, even months out, reply \"keep me posted\" and I'll only send the occasional update when the rules or costs change in a way that matters to you. If not, no hard feelings and I'll close your file.\n\nEither way, thanks for considering {{brand}}.\n\n{{repName}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      }
+    ]
+  },
+  {
+    "id": "seq-7",
+    "name": "Unpermitted Unit Legalization Sequence",
+    "segment": "H7",
+    "steps": [
+      {
+        "id": "step-25",
+        "sequenceId": "seq-7",
+        "dayOffset": 0,
+        "channel": "email",
+        "subject": "Your ADU result for {{city}}",
+        "bodyTemplate": "Hi {{firstName}},\n\nThanks for checking your lot on {{brand}}. Here's the short version:\n\nBased on what you told us, your property in {{city}} looks like it can support {{lotSizeText}}. If that older unit was built without permits, AB 2533 may let you legalize it on a safety checklist — turning a liability into a refinanceable, rentable asset.\n\nI put together a quick feasibility read for your specific lot — what fits, the current {{city}} rules that apply, and a ballpark on cost and timeline. Want me to walk you through it on a 15-minute call? No pressure and no obligation — just a straight answer so you can decide if it's worth pursuing.\n\nGrab a time here: {{bookingLink}}\nOr just reply and tell me what you're hoping the ADU does for you.\n\n{{repName}}\n{{brand}}\n\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-26",
+        "sequenceId": "seq-7",
+        "dayOffset": 2,
+        "channel": "email",
+        "subject": "One thing most {{city}} owners miss",
+        "bodyTemplate": "Hi {{firstName}},\n\nFollowing up with the one thing that trips people up on ADUs in {{city}}: the rules changed a lot recently, and what your lot could do two years ago isn't what it can do today.\n\nThat's usually the difference between an ADU that pencils out and one that doesn't — and it's exactly what I'd cover on a quick call. We handle design, permits, the factory build, delivery, and install, so you get one price and one process instead of chasing five contractors.\n\nWant me to run your numbers? {{bookingLink}}\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-27",
+        "sequenceId": "seq-7",
+        "dayOffset": 5,
+        "channel": "email",
+        "subject": "Still thinking about the ADU?",
+        "bodyTemplate": "Hi {{firstName}},\n\nTotally normal to sit on this — it's a real decision. The two things people ask me most:\n\n\"What does it actually cost?\" — It depends on size and site, which is why the 15-minute call is useful; I can give you a real range for your lot, not a brochure number.\n\n\"How long does it take?\" — Modular is faster and more predictable than site-built because most of it happens in the factory.\n\nIf it's helpful, here's a time: {{bookingLink}}. If now's not right, just tell me roughly when and I'll check back then.\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-28",
+        "sequenceId": "seq-7",
+        "dayOffset": 12,
+        "channel": "email",
+        "subject": "Should I close your file?",
+        "bodyTemplate": "Hi {{firstName}},\n\nI don't want to clutter your inbox, so this is my last note for now — unless you tell me otherwise.\n\nIf an ADU in {{city}} is still on your mind, even months out, reply \"keep me posted\" and I'll only send the occasional update when the rules or costs change in a way that matters to you. If not, no hard feelings and I'll close your file.\n\nEither way, thanks for considering {{brand}}.\n\n{{repName}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      }
+    ]
+  },
+  {
+    "id": "seq-8",
+    "name": "Multifamily / Developer Sequence",
+    "segment": "H8",
+    "steps": [
+      {
+        "id": "step-29",
+        "sequenceId": "seq-8",
+        "dayOffset": 0,
+        "channel": "email",
+        "subject": "Your ADU result for {{city}}",
+        "bodyTemplate": "Hi {{firstName}},\n\nThanks for checking your lot on {{brand}}. Here's the short version:\n\nBased on what you told us, your property in {{city}} looks like it can support {{lotSizeText}}. On a multifamily lot you may be able to add several detached units (SB 1211) — the build-to-rent math is worth running properly.\n\nI put together a quick feasibility read for your specific lot — what fits, the current {{city}} rules that apply, and a ballpark on cost and timeline. Want me to walk you through it on a 15-minute call? No pressure and no obligation — just a straight answer so you can decide if it's worth pursuing.\n\nGrab a time here: {{bookingLink}}\nOr just reply and tell me what you're hoping the ADU does for you.\n\n{{repName}}\n{{brand}}\n\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-30",
+        "sequenceId": "seq-8",
+        "dayOffset": 2,
+        "channel": "email",
+        "subject": "One thing most {{city}} owners miss",
+        "bodyTemplate": "Hi {{firstName}},\n\nFollowing up with the one thing that trips people up on ADUs in {{city}}: the rules changed a lot recently, and what your lot could do two years ago isn't what it can do today.\n\nThat's usually the difference between an ADU that pencils out and one that doesn't — and it's exactly what I'd cover on a quick call. We handle design, permits, the factory build, delivery, and install, so you get one price and one process instead of chasing five contractors.\n\nWant me to run your numbers? {{bookingLink}}\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-31",
+        "sequenceId": "seq-8",
+        "dayOffset": 5,
+        "channel": "email",
+        "subject": "Still thinking about the ADU?",
+        "bodyTemplate": "Hi {{firstName}},\n\nTotally normal to sit on this — it's a real decision. The two things people ask me most:\n\n\"What does it actually cost?\" — It depends on size and site, which is why the 15-minute call is useful; I can give you a real range for your lot, not a brochure number.\n\n\"How long does it take?\" — Modular is faster and more predictable than site-built because most of it happens in the factory.\n\nIf it's helpful, here's a time: {{bookingLink}}. If now's not right, just tell me roughly when and I'll check back then.\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-32",
+        "sequenceId": "seq-8",
+        "dayOffset": 12,
+        "channel": "email",
+        "subject": "Should I close your file?",
+        "bodyTemplate": "Hi {{firstName}},\n\nI don't want to clutter your inbox, so this is my last note for now — unless you tell me otherwise.\n\nIf an ADU in {{city}} is still on your mind, even months out, reply \"keep me posted\" and I'll only send the occasional update when the rules or costs change in a way that matters to you. If not, no hard feelings and I'll close your file.\n\nEither way, thanks for considering {{brand}}.\n\n{{repName}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      }
+    ]
+  },
+  {
+    "id": "seq-9",
+    "name": "Recent Buyer / Large Lot Sequence",
+    "segment": "H9",
+    "steps": [
+      {
+        "id": "step-33",
+        "sequenceId": "seq-9",
+        "dayOffset": 0,
+        "channel": "email",
+        "subject": "Your ADU result for {{city}}",
+        "bodyTemplate": "Hi {{firstName}},\n\nThanks for checking your lot on {{brand}}. Here's the short version:\n\nBased on what you told us, your property in {{city}} looks like it can support {{lotSizeText}}. No rush at all — but with a lot your size it's worth knowing your options now so you can plan around them.\n\nI put together a quick feasibility read for your specific lot — what fits, the current {{city}} rules that apply, and a ballpark on cost and timeline. Want me to walk you through it on a 15-minute call? No pressure and no obligation — just a straight answer so you can decide if it's worth pursuing.\n\nGrab a time here: {{bookingLink}}\nOr just reply and tell me what you're hoping the ADU does for you.\n\n{{repName}}\n{{brand}}\n\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-34",
+        "sequenceId": "seq-9",
+        "dayOffset": 2,
+        "channel": "email",
+        "subject": "One thing most {{city}} owners miss",
+        "bodyTemplate": "Hi {{firstName}},\n\nFollowing up with the one thing that trips people up on ADUs in {{city}}: the rules changed a lot recently, and what your lot could do two years ago isn't what it can do today.\n\nThat's usually the difference between an ADU that pencils out and one that doesn't — and it's exactly what I'd cover on a quick call. We handle design, permits, the factory build, delivery, and install, so you get one price and one process instead of chasing five contractors.\n\nWant me to run your numbers? {{bookingLink}}\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-35",
+        "sequenceId": "seq-9",
+        "dayOffset": 5,
+        "channel": "email",
+        "subject": "Still thinking about the ADU?",
+        "bodyTemplate": "Hi {{firstName}},\n\nTotally normal to sit on this — it's a real decision. The two things people ask me most:\n\n\"What does it actually cost?\" — It depends on size and site, which is why the 15-minute call is useful; I can give you a real range for your lot, not a brochure number.\n\n\"How long does it take?\" — Modular is faster and more predictable than site-built because most of it happens in the factory.\n\nIf it's helpful, here's a time: {{bookingLink}}. If now's not right, just tell me roughly when and I'll check back then.\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-36",
+        "sequenceId": "seq-9",
+        "dayOffset": 12,
+        "channel": "email",
+        "subject": "Should I close your file?",
+        "bodyTemplate": "Hi {{firstName}},\n\nI don't want to clutter your inbox, so this is my last note for now — unless you tell me otherwise.\n\nIf an ADU in {{city}} is still on your mind, even months out, reply \"keep me posted\" and I'll only send the occasional update when the rules or costs change in a way that matters to you. If not, no hard feelings and I'll close your file.\n\nEither way, thanks for considering {{brand}}.\n\n{{repName}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      }
+    ]
+  },
+  {
+    "id": "seq-10",
+    "name": "Real Estate Agent Affiliate Track",
+    "segment": "P1",
+    "steps": [
+      {
+        "id": "step-37",
+        "sequenceId": "seq-10",
+        "dayOffset": 0,
+        "channel": "email",
+        "subject": "Referral partnership for {{city}} ADUs",
+        "bodyTemplate": "Hi {{firstName}},\n\nI work with {{brand}} — we design and build ADUs across California, factory-built with fixed pricing. I'm reaching out because an ADU is often the thing that wins a listing or closes a hesitant buyer on a big lot.\n\nWe pay referral partners on closed projects and handle everything end to end, so your client gets a clean process and you get a differentiator (and a check) without doing the work.\n\nOpen to a quick call to see if it's a fit? {{bookingLink}}\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-38",
+        "sequenceId": "seq-10",
+        "dayOffset": 4,
+        "channel": "email",
+        "subject": "Quick follow-up: ADU referral partnership for {{city}}",
+        "bodyTemplate": "Hi {{firstName}},\n\nTouching base on my previous note regarding modular ADU referral partnerships in {{city}}.\n\nOur pre-engineered modular units streamline permitting and installation, giving your clients fixed pricing with zero construction surprises.\n\nLet me know if you have 10 minutes this week to connect: {{bookingLink}}\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      }
+    ]
+  },
+  {
+    "id": "seq-11",
+    "name": "Contractor / Installer Network Track",
+    "segment": "P2",
+    "steps": [
+      {
+        "id": "step-39",
+        "sequenceId": "seq-11",
+        "dayOffset": 0,
+        "channel": "email",
+        "subject": "Referral partnership for {{city}} ADUs",
+        "bodyTemplate": "Hi {{firstName}},\n\nI work with {{brand}} — we design and build ADUs across California, factory-built with fixed pricing. I'm reaching out because we have steady modular install work and could use a reliable local crew.\n\nWe pay referral partners on closed projects and handle everything end to end, so your client gets a clean process and you get a differentiator (and a check) without doing the work.\n\nOpen to a quick call to see if it's a fit? {{bookingLink}}\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-40",
+        "sequenceId": "seq-11",
+        "dayOffset": 4,
+        "channel": "email",
+        "subject": "Quick follow-up: ADU referral partnership for {{city}}",
+        "bodyTemplate": "Hi {{firstName}},\n\nTouching base on my previous note regarding modular ADU referral partnerships in {{city}}.\n\nOur pre-engineered modular units streamline permitting and installation, giving your clients fixed pricing with zero construction surprises.\n\nLet me know if you have 10 minutes this week to connect: {{bookingLink}}\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      }
+    ]
+  },
+  {
+    "id": "seq-12",
+    "name": "Mortgage Broker Lending Track",
+    "segment": "P3",
+    "steps": [
+      {
+        "id": "step-41",
+        "sequenceId": "seq-12",
+        "dayOffset": 0,
+        "channel": "email",
+        "subject": "Referral partnership for {{city}} ADUs",
+        "bodyTemplate": "Hi {{firstName}},\n\nI work with {{brand}} — we design and build ADUs across California, factory-built with fixed pricing. I'm reaching out because ADU financing is a natural add-on to your pipeline — we can send referrals both ways.\n\nWe pay referral partners on closed projects and handle everything end to end, so your client gets a clean process and you get a differentiator (and a check) without doing the work.\n\nOpen to a quick call to see if it's a fit? {{bookingLink}}\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-42",
+        "sequenceId": "seq-12",
+        "dayOffset": 4,
+        "channel": "email",
+        "subject": "Quick follow-up: ADU referral partnership for {{city}}",
+        "bodyTemplate": "Hi {{firstName}},\n\nTouching base on my previous note regarding modular ADU referral partnerships in {{city}}.\n\nOur pre-engineered modular units streamline permitting and installation, giving your clients fixed pricing with zero construction surprises.\n\nLet me know if you have 10 minutes this week to connect: {{bookingLink}}\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      }
+    ]
+  },
+  {
+    "id": "seq-13",
+    "name": "Property Manager Portfolio Track",
+    "segment": "P4",
+    "steps": [
+      {
+        "id": "step-43",
+        "sequenceId": "seq-13",
+        "dayOffset": 0,
+        "channel": "email",
+        "subject": "Referral partnership for {{city}} ADUs",
+        "bodyTemplate": "Hi {{firstName}},\n\nI work with {{brand}} — we design and build ADUs across California, factory-built with fixed pricing. I'm reaching out because more rentable units on the properties you manage means more doors under management.\n\nWe pay referral partners on closed projects and handle everything end to end, so your client gets a clean process and you get a differentiator (and a check) without doing the work.\n\nOpen to a quick call to see if it's a fit? {{bookingLink}}\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      },
+      {
+        "id": "step-44",
+        "sequenceId": "seq-13",
+        "dayOffset": 4,
+        "channel": "email",
+        "subject": "Quick follow-up: ADU referral partnership for {{city}}",
+        "bodyTemplate": "Hi {{firstName}},\n\nTouching base on my previous note regarding modular ADU referral partnerships in {{city}}.\n\nOur pre-engineered modular units streamline permitting and installation, giving your clients fixed pricing with zero construction surprises.\n\nLet me know if you have 10 minutes this week to connect: {{bookingLink}}\n\n{{repName}}, {{brand}}\n{{companyAddress}} · Unsubscribe: {{unsubscribeLink}}"
+      }
+    ]
+  }
+]

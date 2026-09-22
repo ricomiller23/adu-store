@@ -1,30 +1,11 @@
 import React from 'react';
-import { prisma } from '@/lib/db';
+import { getDailyEmailDataAction } from '@/app/actions';
 import DailyEmailMonitor from '@/components/DailyEmailMonitor';
 
 export const revalidate = 0; // Disable caching
 
 export default async function DailyEmailPage() {
-  // Load email sends from today
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  const [sends, activeEnrollments, totalSuppressions] = await Promise.all([
-    prisma.emailSend.findMany({
-      where: {
-        createdAt: { gte: today }
-      },
-      include: {
-        lead: true
-      },
-      orderBy: { createdAt: 'desc' }
-    }),
-    prisma.enrollmentState.count({
-      where: { status: 'active' }
-    }),
-    prisma.suppression.count(),
-  ]);
-
+  const { sends, activeEnrollments, totalSuppressions } = await getDailyEmailDataAction();
   const cronSecret = process.env.CRON_SECRET || 'cron-secret-123';
 
   return (

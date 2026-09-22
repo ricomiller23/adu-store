@@ -1,0 +1,374 @@
+[
+  {
+    "id": "jur-1",
+    "name": "San Jose",
+    "ab1033OptIn": true,
+    "notes": "First city in CA to adopt AB 1033 condo conversion rules."
+  },
+  {
+    "id": "jur-2",
+    "name": "Santa Monica",
+    "ab1033OptIn": true,
+    "notes": "Adopted AB 1033 condo conversion rule in 2024."
+  },
+  {
+    "id": "jur-3",
+    "name": "Unincorporated San Diego County",
+    "ab1033OptIn": true,
+    "notes": "Adopted AB 1033 condo conversion rule in late 2025."
+  },
+  {
+    "id": "jur-4",
+    "name": "Los Angeles",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-5",
+    "name": "Orange County",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-6",
+    "name": "San Diego",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-7",
+    "name": "Sacramento",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-8",
+    "name": "San Francisco",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-17",
+    "name": "Berkeley",
+    "ab1033OptIn": true,
+    "notes": "Adopted AB 1033 condo conversion rules."
+  },
+  {
+    "id": "jur-18",
+    "name": "Santa Cruz",
+    "ab1033OptIn": true,
+    "notes": "Adopted AB 1033 condo conversion rules."
+  },
+  {
+    "id": "jur-19",
+    "name": "Stockton",
+    "ab1033OptIn": true,
+    "notes": "Adopted AB 1033 condo conversion rules."
+  },
+  {
+    "id": "jur-20",
+    "name": "Pasadena",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-21",
+    "name": "Oakland",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-22",
+    "name": "Fresno",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-23",
+    "name": "Bakersfield",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-24",
+    "name": "Riverside",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-25",
+    "name": "Santa Barbara",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-26",
+    "name": "Long Beach",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-27",
+    "name": "Anaheim",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-28",
+    "name": "Glendale",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-29",
+    "name": "Huntington Beach",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-30",
+    "name": "Modesto",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-31",
+    "name": "San Bernardino",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-32",
+    "name": "Oxnard",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-33",
+    "name": "Moreno Valley",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-34",
+    "name": "Hayward",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-35",
+    "name": "Fontana",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-36",
+    "name": "Rancho Cucamonga",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-37",
+    "name": "Corona",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-38",
+    "name": "Salinas",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-39",
+    "name": "El Monte",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-40",
+    "name": "Torrance",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-41",
+    "name": "Pomona",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-42",
+    "name": "Escondido",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-43",
+    "name": "Sunnyvale",
+    "ab1033OptIn": true,
+    "notes": "Adopted AB 1033 condo conversion rules."
+  },
+  {
+    "id": "jur-44",
+    "name": "Concord",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-45",
+    "name": "Thousand Oaks",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-46",
+    "name": "Visalia",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-47",
+    "name": "Simi Valley",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-48",
+    "name": "Victorville",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-49",
+    "name": "Roseville",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-50",
+    "name": "Vallejo",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-51",
+    "name": "Antioch",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-52",
+    "name": "Temecula",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-53",
+    "name": "El Cajon",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-54",
+    "name": "Palmdale",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-55",
+    "name": "Lancaster",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-56",
+    "name": "Murrieta",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-57",
+    "name": "Petaluma",
+    "ab1033OptIn": true,
+    "notes": "Adopted AB 1033 condo conversion rules."
+  },
+  {
+    "id": "jur-58",
+    "name": "Santa Rosa",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-59",
+    "name": "Ventura",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-60",
+    "name": "Costa Mesa",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-61",
+    "name": "Chula Vista",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-62",
+    "name": "Fremont",
+    "ab1033OptIn": true,
+    "notes": "Adopted AB 1033 condo conversion rules."
+  },
+  {
+    "id": "jur-63",
+    "name": "Daly City",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-64",
+    "name": "Santa Clara",
+    "ab1033OptIn": true,
+    "notes": "Adopted AB 1033 condo conversion rules."
+  },
+  {
+    "id": "jur-65",
+    "name": "San Mateo",
+    "ab1033OptIn": true,
+    "notes": "Adopted AB 1033 condo conversion rules."
+  },
+  {
+    "id": "jur-66",
+    "name": "Redding",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-67",
+    "name": "Elk Grove",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-68",
+    "name": "Inglewood",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-69",
+    "name": "West Covina",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  },
+  {
+    "id": "jur-70",
+    "name": "Downey",
+    "ab1033OptIn": false,
+    "notes": "Has not opted into AB 1033 yet."
+  }
+]
