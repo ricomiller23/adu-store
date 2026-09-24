@@ -352,9 +352,10 @@ export function generatePersonalizedOutboundEmail(
 
               <p style="margin: 24px 0 0 0; font-size: 14px; line-height: 1.6; color: #4a5568;">
                 Best regards,<br>
-                <strong style="color: #16352a;">David Miller</strong><br>
-                Director of Parcel Feasibility<br>
-                <strong>The ADU Store</strong> &bull; <a href="https://theadustore.com" style="color: #16352a; text-decoration: none;">theADUstore.com</a>
+                <strong style="color: #16352a;">James Haas</strong><br>
+                Director of Parcel Feasibility &bull; <strong>The ADU Store</strong><br>
+                Direct Phone: <a href="tel:714-612-4725" style="color: #16352a; font-weight: bold; text-decoration: none;">714-612-4725</a><br>
+                Email: <a href="mailto:theadumart@proton.me" style="color: #16352a; text-decoration: none;">theadumart@proton.me</a> &bull; <a href="https://theadustore.com" style="color: #16352a; text-decoration: none;">theADUstore.com</a>
               </p>
             </td>
           </tr>
@@ -409,9 +410,11 @@ ${bookingUrl}
 
 Best regards,
 
-David Miller
+James Haas
 Director of Parcel Feasibility
 The ADU Store | theADUstore.com
+Direct Phone: 714-612-4725
+Email: theadumart@proton.me
 100 Spectrum Center Dr, Suite 900, Irvine, CA 92618
 
 To opt out of future property notifications: https://hass-lead-generator.vercel.app/unsubscribe?email=${encodeURIComponent(lead.email)}
