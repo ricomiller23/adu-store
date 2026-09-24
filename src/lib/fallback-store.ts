@@ -319,28 +319,12 @@ class ResilientDataStore {
       const qual = qualifyProperty(lead);
       const emailDraft = generatePersonalizedOutboundEmail(lead, "equity_roi");
 
+      // All leads legitimately start as "draft_ready" until actually dispatched by user or cron.
+      // Zero fake "sent", "opened", or "replied" statuses.
       let status: "needs_draft" | "draft_ready" | "queued" | "sent" | "opened" | "replied" = "draft_ready";
       let sentAt: Date | undefined = undefined;
       let openedAt: Date | undefined = undefined;
       let repliedAt: Date | undefined = undefined;
-
-      if (idx % 7 === 0) {
-        status = "replied";
-        sentAt = new Date(now - 36 * 3600000);
-        openedAt = new Date(now - 32 * 3600000);
-        repliedAt = new Date(now - 14 * 3600000);
-      } else if (idx % 4 === 0) {
-        status = "opened";
-        sentAt = new Date(now - 28 * 3600000);
-        openedAt = new Date(now - 18 * 3600000);
-      } else if (idx % 3 === 0) {
-        status = "sent";
-        sentAt = new Date(now - 16 * 3600000);
-      } else if (idx % 8 === 1) {
-        status = "needs_draft";
-      } else {
-        status = "draft_ready";
-      }
 
       this.outboundRecords.set(lead.id, {
         id: lead.id,
@@ -884,8 +868,8 @@ class ResilientDataStore {
     const sentCount = all.filter(r => r.status === "sent" || r.status === "opened" || r.status === "replied").length;
     const openedCount = all.filter(r => r.status === "opened" || r.status === "replied").length;
     const repliedCount = all.filter(r => r.status === "replied").length;
-    const openRate = sentCount > 0 ? Math.round((openedCount / sentCount) * 100) : 38;
-    const replyRate = sentCount > 0 ? Math.round((repliedCount / sentCount) * 100) : 12;
+    const openRate = sentCount > 0 ? Math.round((openedCount / sentCount) * 100) : 0;
+    const replyRate = sentCount > 0 ? Math.round((repliedCount / sentCount) * 100) : 0;
 
     const totalEstValueMillions = Math.round(
       all.reduce((acc, r) => acc + (r.lotSizeSqft >= 7500 ? 350000 : r.lotSizeSqft >= 5000 ? 250000 : 180000), 0) / 1000000
@@ -909,7 +893,7 @@ class ResilientDataStore {
     const activities: any[] = [];
     for (const lead of Array.from(this.leads.values())) {
       for (const act of lead.activities) {
-        if (act.kind === "outbound_email_sent" || act.kind === "email_sent" || act.kind === "consult" || act.kind === "form") {
+        if (act.kind === "outbound_email_sent" || act.kind === "consult" || act.kind === "form") {
           activities.push({
             id: act.id,
             leadId: lead.id,
