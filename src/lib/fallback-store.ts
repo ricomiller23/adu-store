@@ -265,20 +265,8 @@ class ResilientDataStore {
         isAb1033Eligible: Boolean(raw.ab1033Eligible),
       });
 
-      // Email sends
+      // Email sends - starts empty; populated only upon actual outbound dispatch
       const emailSends: FallbackEmailSend[] = [];
-      if (idx % 3 === 0 && consent?.emailOptIn) {
-        const sendTime = new Date(now - (idx % 6) * 3600000);
-        emailSends.push({
-          id: `send-${leadId}-1`,
-          leadId,
-          sequenceStepId: 'step-H1-0',
-          subject: `Your ADU Feasibility & Zoning Read for ${raw.city || 'California'}`,
-          status: 'sent',
-          resendId: `resend_${leadId}_0`,
-          createdAt: sendTime,
-        });
-      }
 
       const lead: FallbackLead = {
         id: leadId,
