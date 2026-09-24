@@ -318,6 +318,31 @@ export default function OutreachPage() {
         </div>
       </div>
 
+      {/* Sender Identity & Proton Status Banner */}
+      <div className="bg-purple-50/60 border border-purple-200/80 rounded-xl p-4 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        <div className="flex items-center gap-3">
+          <div className="p-2 bg-purple-100 text-[#6d4aff] rounded-lg flex-shrink-0">
+            <Mail className="h-4 w-4" />
+          </div>
+          <div>
+            <div className="font-bold text-gray-900">
+              Sender Identity: James Haas &bull; <span className="font-mono text-[#6d4aff]">theadumart@proton.me</span> &bull; Direct: 714-612-4725
+            </div>
+            <div className="text-gray-500 mt-0.5">
+              Personalized ADU qualification reports link directly to theADUstore.com. Homeowner replies route straight to your Proton Mail inbox.
+            </div>
+          </div>
+        </div>
+        <div className="flex items-center gap-2 flex-shrink-0">
+          <span className="inline-flex items-center px-2 py-1 rounded text-[11px] font-bold bg-emerald-100 text-emerald-800">
+            Safe Drip: 15 / day
+          </span>
+          <span className="inline-flex items-center px-2 py-1 rounded text-[11px] font-medium bg-white border border-purple-200 text-purple-700">
+            Proton Mail Sync Ready
+          </span>
+        </div>
+      </div>
+
       {/* KPI Command Deck */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3.5">
         <div className="bg-white p-4 rounded-xl border border-[#e4dfd3] shadow-sm flex flex-col justify-between">
@@ -782,12 +807,23 @@ export default function OutreachPage() {
 
             {/* Footer Action Bar */}
             <div className="px-6 py-4 bg-white border-t border-[#e4dfd3] flex items-center justify-between flex-shrink-0">
-              <button
-                onClick={handleSaveDraft}
-                className="px-4 py-2 text-xs font-bold text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
-              >
-                Save Draft Changes
-              </button>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={handleSaveDraft}
+                  className="px-3.5 py-2 text-xs font-bold text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
+                >
+                  Save Draft
+                </button>
+
+                <a
+                  href={'mailto:' + activeEmail.recipientEmail + '?subject=' + encodeURIComponent(editedSubject) + '&body=' + encodeURIComponent(activeEmail.text)}
+                  className="flex items-center gap-1.5 px-3.5 py-2 text-xs font-bold text-[#6d4aff] bg-purple-50 hover:bg-purple-100 border border-purple-200 rounded-lg transition-colors shadow-sm"
+                  title="Open draft directly in Proton Mail or default desktop mail app"
+                >
+                  <ExternalLink className="h-3.5 w-3.5" />
+                  <span>Send in Proton / Mail App</span>
+                </a>
+              </div>
 
               <div className="flex items-center gap-3">
                 <button
