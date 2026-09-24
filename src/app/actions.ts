@@ -413,6 +413,17 @@ export async function getOutboundEmailAction(leadId: string, variant: "equity_ro
   }
 }
 
+export async function updateOutboundStatusAction(leadId: string, status: "draft_ready" | "sent" | "opened" | "replied") {
+  try {
+    const updated = fallbackStore.updateOutboundStatus(leadId, status);
+    revalidatePath("/outreach");
+    revalidatePath("/daily-email");
+    return { success: true, updated };
+  } catch (error: any) {
+    return { success: false, error: error?.message || "Failed to update status" };
+  }
+}
+
 export async function saveOutboundDraftAction(leadId: string, subject: string, bodyHtml: string, status: "draft_ready" | "queued" = "draft_ready") {
   try {
     const record = fallbackStore.saveOutboundDraft(leadId, subject, bodyHtml, status);

@@ -37,6 +37,7 @@ import {
   batchDispatchOutboundAction,
   getOutboundMetricsAction,
   getOutboundActivityFeedAction,
+  updateOutboundStatusAction,
 } from '@/app/actions';
 import { cn } from '@/lib/utils';
 
@@ -100,6 +101,15 @@ export default function OutreachPage() {
   }, [searchTerm, selectedCity, selectedTier, selectedStatus]);
 
   // Handle open review modal
+  // Handle toggle status between sent and draft_ready
+  const handleToggleStatus = (leadId: string, newStatus: "draft_ready" | "sent") => {
+    startTransition(async () => {
+      await updateOutboundStatusAction(leadId, newStatus);
+      showToast(newStatus === "sent" ? "Marked as Sent via Gmail!" : "Reverted to Draft Ready");
+      loadData();
+    });
+  };
+
   const handleOpenReview = async (leadId: string) => {
     setReviewLeadId(leadId);
     const email = await getOutboundEmailAction(leadId, activeVariant);
@@ -587,14 +597,38 @@ export default function OutreachPage() {
                         </span>
                       )}
                       {p.status === 'sent' && (
-                        <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-blue-100 text-blue-800 border border-blue-200">
-                          <Send className="h-3 w-3" /> Sent
-                        </span>
+                        <div className="flex items-center gap-1.5">
+                          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-blue-100 text-blue-800 border border-blue-200">
+                            <Check className="h-3 w-3 text-blue-600" /> Sent (Gmail)
+                          </span>
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleToggleStatus(p.leadId, 'draft_ready');
+                            }}
+                            className="text-[10px] text-gray-400 hover:text-gray-700 underline"
+                            title="Revert back to Draft Ready"
+                          >
+                            undo
+                          </button>
+                        </div>
                       )}
                       {p.status === 'draft_ready' && (
-                        <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-100 text-amber-800 border border-amber-200">
-                          <Clock className="h-3 w-3" /> Draft Ready
-                        </span>
+                        <div className="flex items-center gap-1.5">
+                          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-100 text-amber-800 border border-amber-200">
+                            <Clock className="h-3 w-3" /> Draft Ready
+                          </span>
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleToggleStatus(p.leadId, 'sent');
+                            }}
+                            className="text-[10px] text-blue-600 hover:text-blue-800 font-semibold underline"
+                            title="Mark as sent in Gmail"
+                          >
+                            mark sent
+                          </button>
+                        </div>
                       )}
                       {p.status === 'needs_draft' && (
                         <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-medium bg-gray-100 text-gray-600">
@@ -819,6 +853,9 @@ export default function OutreachPage() {
                   href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(activeEmail.recipientEmail)}&su=${encodeURIComponent(editedSubject)}&body=${encodeURIComponent(activeEmail.text)}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => {
+                    handleToggleStatus(activeEmail.leadId, 'sent');
+                  }}
                   className="flex items-center gap-1.5 px-3.5 py-2 text-xs font-bold text-red-700 bg-red-50 hover:bg-red-100 border border-red-200 rounded-lg transition-colors shadow-sm"
                   title="Open pre-filled draft directly in Gmail (ricomiller@gmail.com)"
                 >
