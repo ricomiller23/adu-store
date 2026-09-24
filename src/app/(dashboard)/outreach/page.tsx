@@ -168,6 +168,16 @@ export default function OutreachPage() {
     });
   };
 
+  // Safe Daily 15 Drip
+  const handleDailySafeDrip = async () => {
+    if (!confirm("Dispatch today's safe batch of 15 personalized emails from James Haas (theadumart@proton.me)?")) return;
+    startTransition(async () => {
+      const res = await batchDispatchOutboundAction(15);
+      showToast(`Dispatched ${res.count || 0} emails under daily safe limit. Account 100% protected!`);
+      loadData();
+    });
+  };
+
   // Batch Dispatch Queue
   const handleBatchDispatch = async () => {
     if (!confirm('Are you sure you want to dispatch outbound emails to all ready properties in the queue?')) return;
@@ -279,13 +289,23 @@ export default function OutreachPage() {
           </button>
 
           <button
+            onClick={handleDailySafeDrip}
+            disabled={isPending}
+            className="flex items-center gap-1.5 px-4 py-2 text-xs font-bold text-white bg-emerald-700 hover:bg-emerald-800 rounded-lg transition-all shadow-md active:scale-95"
+            title="Dispatch today's safe batch of 15 emails with zero risk of account suspension"
+          >
+            <ShieldCheck className="h-4 w-4 text-emerald-200" />
+            <span>Send Today's 15 Safe Batch</span>
+          </button>
+
+          <button
             onClick={handleBatchDispatch}
             disabled={isPending}
-            className="flex items-center gap-1.5 px-4 py-2 text-xs font-bold text-white bg-[#16352a] rounded-lg hover:bg-[#122b22] transition-all shadow-md active:scale-95"
-            title="Dispatch outbound queue with throttle and CAN-SPAM protection"
+            className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-all active:scale-95"
+            title="Dispatch full outbound queue"
           >
-            <Send className="h-3.5 w-3.5 text-[#a3b899]" />
-            <span>Dispatch Outbound Queue</span>
+            <Send className="h-3.5 w-3.5 text-gray-500" />
+            <span>Dispatch Full Queue</span>
           </button>
 
           <button

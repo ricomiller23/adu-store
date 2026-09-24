@@ -480,9 +480,9 @@ export async function batchGenerateOutboundDraftsAction(leadIds?: string[]) {
   }
 }
 
-export async function batchDispatchOutboundAction(leadIds?: string[]) {
+export async function batchDispatchOutboundAction(limitOrLeadIds?: number | string[]) {
   try {
-    const count = fallbackStore.batchDispatchOutbound(leadIds);
+    const count = fallbackStore.batchDispatchOutbound(limitOrLeadIds);
     revalidatePath("/outreach");
     revalidatePath("/daily-email");
     return { success: true, count };

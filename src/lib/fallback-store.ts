@@ -859,15 +859,27 @@ class ResilientDataStore {
     return generatedCount;
   }
 
-  public batchDispatchOutbound(leadIds?: string[]) {
+  public batchDispatchOutbound(limitOrLeadIds?: number | string[]) {
     this.init();
-    const targetIds = leadIds && leadIds.length > 0 ? leadIds : Array.from(this.outboundRecords.keys());
+    let targetIds: string[];
+    let maxLimit = Infinity;
+
+    if (typeof limitOrLeadIds === 'number') {
+      maxLimit = limitOrLeadIds;
+      targetIds = Array.from(this.outboundRecords.keys());
+    } else if (Array.isArray(limitOrLeadIds) && limitOrLeadIds.length > 0) {
+      targetIds = limitOrLeadIds;
+    } else {
+      targetIds = Array.from(this.outboundRecords.keys());
+    }
+
     let sentCount = 0;
 
     for (const id of targetIds) {
+      if (sentCount >= maxLimit) break;
       const record = this.outboundRecords.get(id);
       if (!record || record.status === "sent" || record.status === "replied") continue;
-      if (record.status === "draft_ready" || record.status === "queued" || !leadIds) {
+      if (record.status === "draft_ready" || record.status === "queued" || Array.isArray(limitOrLeadIds)) {
         this.sendOutboundEmail(id, record.subject, record.fullHtml || record.bodySnippet);
         sentCount++;
       }
