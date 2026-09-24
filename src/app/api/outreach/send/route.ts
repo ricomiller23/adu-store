@@ -17,7 +17,7 @@ export async function POST(req: Request) {
       const generated = await getOutboundEmailAction(leadId, angle || 'equity_roi');
       if (generated) {
         subject = subject || generated.subject;
-        bodyHtml = bodyHtml || generated.bodyHtml;
+        bodyHtml = bodyHtml || (generated as any).html || (generated as any).bodyHtml;
       }
     }
 

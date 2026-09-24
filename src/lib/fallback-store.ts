@@ -39,6 +39,7 @@ export interface FallbackEmailSend {
 }
 
 export interface OutboundRecord {
+  id?: string;
   leadId: string;
   recipientEmail: string;
   recipientName: string;
@@ -353,6 +354,7 @@ class ResilientDataStore {
       }
 
       this.outboundRecords.set(lead.id, {
+        id: lead.id,
         leadId: lead.id,
         recipientEmail: lead.email,
         recipientName: lead.name,
