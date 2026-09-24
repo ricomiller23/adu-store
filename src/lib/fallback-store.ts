@@ -319,25 +319,11 @@ class ResilientDataStore {
       const qual = qualifyProperty(lead);
       const emailDraft = generatePersonalizedOutboundEmail(lead, "equity_roi");
 
-      // Accurately synchronize with user manual dispatches:
-      // Exactly the first 4 verified leads sent by the user are marked "sent", all other 323 are "draft_ready".
-      const isUserSent = idx < 4;
-      let status: "needs_draft" | "draft_ready" | "queued" | "sent" | "opened" | "replied" = isUserSent ? "sent" : "draft_ready";
-      let sentAt: Date | undefined = isUserSent ? new Date(now - (4 - idx) * 12 * 60000) : undefined;
+      // All leads start legitimately as "draft_ready" until dispatched by user.
+      let status: "needs_draft" | "draft_ready" | "queued" | "sent" | "opened" | "replied" = "draft_ready";
+      let sentAt: Date | undefined = undefined;
       let openedAt: Date | undefined = undefined;
       let repliedAt: Date | undefined = undefined;
-
-      if (isUserSent) {
-        lead.emailSends.unshift({
-          id: "send-manual-" + lead.id,
-          leadId: lead.id,
-          sequenceStepId: null,
-          subject: emailDraft.subject,
-          status: "sent",
-          resendId: "manual-gmail-sent",
-          createdAt: sentAt!,
-        });
-      }
 
       this.outboundRecords.set(lead.id, {
         id: lead.id,

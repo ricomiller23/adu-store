@@ -1,13 +1,13 @@
 [
   {
     "id": "lead-1",
-    "name": "John Rodriguez",
-    "email": "john.rodriguez@yahoo.com",
+    "name": "Angel Zapien",
+    "email": "Angel@ZapienPropertyTeam.com",
     "phone": "408-287-1317",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
-    "lotSizeSqft": 6200,
+    "lotSizeSqft": 6800,
     "segment": "H1",
     "source": "quiz",
     "sourceDetail": "Feasibility Quiz",
@@ -37,17 +37,17 @@
         "summary": "Visited gallery"
       }
     ],
-    "contactName": "John Rodriguez"
+    "contactName": "Angel Zapien"
   },
   {
     "id": "lead-2",
-    "name": "Sarah and Mark Chen",
-    "email": "sandmarkchen@sbcglobal.net",
-    "phone": "310-394-1360",
-    "city": "Santa Monica",
-    "county": "Los Angeles",
-    "jurisdiction": "Santa Monica",
-    "lotSizeSqft": 4800,
+    "name": "Steve Johnston",
+    "email": "steve@pmisj.com",
+    "phone": "408-550-6600",
+    "city": "San Jose",
+    "county": "Santa Clara",
+    "jurisdiction": "San Jose",
+    "lotSizeSqft": 7200,
     "segment": "H2",
     "source": "google",
     "sourceDetail": "Paid Search",
@@ -77,24 +77,24 @@
         "summary": "Booked initial design consultation"
       }
     ],
-    "contactName": "Sarah and Mark Chen"
+    "contactName": "Steve Johnston"
   },
   {
     "id": "lead-3",
-    "name": "Eleanor Vance",
-    "email": "eleanorvance12@gmail.com",
-    "phone": "310-394-1403",
-    "city": "Los Angeles",
+    "name": "Martin Feinberg",
+    "email": "martin@martinfeinberg.com",
+    "phone": "310-394-1360",
+    "city": "Santa Monica",
     "county": "Los Angeles",
-    "jurisdiction": "Los Angeles",
-    "lotSizeSqft": 7500,
+    "jurisdiction": "Santa Monica",
+    "lotSizeSqft": 5400,
     "segment": "H3",
     "source": "direct_mail",
     "sourceDetail": "June Postcard QR",
     "stage": "Contacted",
     "type": "homeowner",
     "estValue": 160000,
-    "ab1033Eligible": false,
+    "ab1033Eligible": true,
     "consent": {
       "emailOptIn": true,
       "phoneOptIn": false,
@@ -117,24 +117,24 @@
         "summary": "Opened Welcome Email"
       }
     ],
-    "contactName": "Eleanor Vance"
+    "contactName": "Martin Feinberg"
   },
   {
     "id": "lead-4",
-    "name": "David Miller",
-    "email": "david.miller@icloud.com",
-    "phone": "619-224-1446",
-    "city": "San Diego",
-    "county": "San Diego",
-    "jurisdiction": "San Diego",
-    "lotSizeSqft": 3200,
+    "name": "Roque & Mark Properties",
+    "email": "info@roque-mark.com",
+    "phone": "310-828-7525",
+    "city": "Santa Monica",
+    "county": "Los Angeles",
+    "jurisdiction": "Santa Monica",
+    "lotSizeSqft": 6100,
     "segment": "H4",
     "source": "instagram",
     "sourceDetail": "Design Gallery Ad",
     "stage": "In design",
     "type": "homeowner",
     "estValue": 120000,
-    "ab1033Eligible": false,
+    "ab1033Eligible": true,
     "consent": {
       "emailOptIn": true,
       "phoneOptIn": true,
@@ -169,17 +169,17 @@
         "summary": "Moved lead from Contacted to In design"
       }
     ],
-    "contactName": "David Miller"
+    "contactName": "Roque & Mark Properties"
   },
   {
     "id": "lead-5",
-    "name": "Barbara Thompson",
-    "email": "bthompson@comcast.net",
-    "phone": "949-724-1489",
-    "city": "Irvine",
-    "county": "Orange",
-    "jurisdiction": "Orange County",
-    "lotSizeSqft": 5200,
+    "name": "Luis Adrian",
+    "email": "luisadrian@sd-pmi.com",
+    "phone": "619-354-9900",
+    "city": "San Diego",
+    "county": "San Diego",
+    "jurisdiction": "San Diego",
+    "lotSizeSqft": 7500,
     "segment": "H5",
     "source": "quiz",
     "sourceDetail": "Feasibility Quiz",
@@ -205,17 +205,17 @@
         "summary": "Read empty-nester guide blog article"
       }
     ],
-    "contactName": "Barbara Thompson"
+    "contactName": "Luis Adrian"
   },
   {
     "id": "lead-6",
-    "name": "Robert & Lisa Davis",
-    "email": "robertlisadavis15@outlook.com",
-    "phone": "310-478-1532",
-    "city": "Los Angeles",
-    "county": "Los Angeles",
-    "jurisdiction": "Los Angeles",
-    "lotSizeSqft": 8100,
+    "name": "Dwell West Homes",
+    "email": "info@dwellwesthomes.com",
+    "phone": "619-786-6300",
+    "city": "San Diego",
+    "county": "San Diego",
+    "jurisdiction": "San Diego",
+    "lotSizeSqft": 8200,
     "segment": "H6",
     "source": "google",
     "sourceDetail": "Paid Search",
@@ -245,17 +245,17 @@
         "summary": "Visited financing partner portal"
       }
     ],
-    "contactName": "Robert & Lisa Davis"
+    "contactName": "Dwell West Homes"
   },
   {
     "id": "lead-7",
-    "name": "Carlos Mendez",
-    "email": "carlos.mendez@att.net",
-    "phone": "949-854-1575",
-    "city": "Orange County",
-    "county": "Orange",
-    "jurisdiction": "Orange County",
-    "lotSizeSqft": 5800,
+    "name": "San Terra Properties",
+    "email": "contact@santerraproperties.com",
+    "phone": "858-576-2176",
+    "city": "San Diego",
+    "county": "San Diego",
+    "jurisdiction": "San Diego",
+    "lotSizeSqft": 6900,
     "segment": "H7",
     "source": "blog",
     "sourceDetail": "AB 2533 Article",
@@ -285,24 +285,24 @@
         "summary": "Visited blog"
       }
     ],
-    "contactName": "Carlos Mendez"
+    "contactName": "San Terra Properties"
   },
   {
     "id": "lead-8",
-    "name": "Pacific Heights Properties",
-    "email": "pheightsproperties@yahoo.com",
-    "phone": "619-467-1618",
-    "city": "Unincorporated San Diego County",
-    "county": "San Diego",
-    "jurisdiction": "Unincorporated San Diego County",
-    "lotSizeSqft": 12500,
+    "name": "Ken Wong",
+    "email": "kwong@propertymanagementinc.com",
+    "phone": "949-438-3232",
+    "city": "Irvine",
+    "county": "Orange",
+    "jurisdiction": "Irvine",
+    "lotSizeSqft": 6400,
     "segment": "H8",
     "source": "referral",
     "sourceDetail": "Agent Partner",
     "stage": "New",
     "type": "homeowner",
     "estValue": 450000,
-    "ab1033Eligible": true,
+    "ab1033Eligible": false,
     "consent": {
       "emailOptIn": true,
       "phoneOptIn": false,
@@ -317,17 +317,17 @@
         "summary": "Referred by Real Estate Agent partner"
       }
     ],
-    "contactName": "Pacific Heights Properties"
+    "contactName": "Ken Wong"
   },
   {
     "id": "lead-9",
-    "name": "James Wilson",
-    "email": "jameswilson18@sbcglobal.net",
-    "phone": "916-739-1661",
-    "city": "Sacramento",
-    "county": "Sacramento",
-    "jurisdiction": "Sacramento",
-    "lotSizeSqft": 9800,
+    "name": "HCM Property Management",
+    "email": "info@hcmpm.com",
+    "phone": "949-734-7309",
+    "city": "Irvine",
+    "county": "Orange",
+    "jurisdiction": "Irvine",
+    "lotSizeSqft": 5900,
     "segment": "H9",
     "source": "direct_mail",
     "sourceDetail": "New Homeowner Parcel List",
@@ -349,22 +349,22 @@
         "summary": "Visited website from direct mail postcard QR"
       }
     ],
-    "contactName": "James Wilson"
+    "contactName": "HCM Property Management"
   },
   {
     "id": "lead-10",
-    "name": "Jessica Taylor (Compass)",
-    "email": "jessica.taylor@compass.com",
-    "phone": "310-829-1704",
-    "city": "Santa Monica",
-    "county": "Los Angeles",
-    "jurisdiction": "Santa Monica",
+    "name": "Sergio Alvarado",
+    "email": "sergioalvarado@firstteam.com",
+    "phone": "949-299-8444",
+    "city": "Irvine",
+    "county": "Orange",
+    "jurisdiction": "Irvine",
     "segment": "P1",
     "source": "outreach",
     "sourceDetail": "LinkedIn Agent Campaign",
     "stage": "Vetting",
     "type": "partner",
-    "ab1033Eligible": true,
+    "ab1033Eligible": false,
     "consent": {
       "emailOptIn": true,
       "phoneOptIn": true,
@@ -379,16 +379,17 @@
         "summary": "Submitted Referral Partner Application"
       }
     ],
-    "contactName": "Jessica Taylor"
+    "contactName": "Sergio Alvarado",
+    "lotSizeSqft": 7100
   },
   {
     "id": "lead-11",
-    "name": "BuildWise Construction",
-    "email": "ryan.gallagher@buildwiseca.com",
-    "phone": "949-354-1747",
-    "city": "Irvine",
-    "county": "Orange",
-    "jurisdiction": "Orange County",
+    "name": "Figure 8 Management",
+    "email": "mgmt@8pmla.com",
+    "phone": "213-441-1000",
+    "city": "Los Angeles",
+    "county": "Los Angeles",
+    "jurisdiction": "Los Angeles",
     "segment": "P2",
     "source": "website",
     "sourceDetail": "Become a Contractor Form",
@@ -421,22 +422,23 @@
         "summary": "Moved from Terms sent to Active"
       }
     ],
-    "contactName": "Ryan Gallagher"
+    "contactName": "Figure 8 Management",
+    "lotSizeSqft": 5800
   },
   {
     "id": "lead-12",
-    "name": "Golden State Lenders (Marcus)",
-    "email": "marcus.vance@goldenstatelending.com",
-    "phone": "408-371-1790",
-    "city": "San Jose",
-    "county": "Santa Clara",
-    "jurisdiction": "San Jose",
+    "name": "MCM Property Management",
+    "email": "office@mcmprop.com",
+    "phone": "310-474-0000",
+    "city": "Los Angeles",
+    "county": "Los Angeles",
+    "jurisdiction": "Los Angeles",
     "segment": "P3",
     "source": "outreach",
     "sourceDetail": "Broker Partner Email Outreach",
     "stage": "Applied",
     "type": "partner",
-    "ab1033Eligible": true,
+    "ab1033Eligible": false,
     "consent": {
       "emailOptIn": true,
       "phoneOptIn": true,
@@ -455,16 +457,17 @@
         "summary": "Registered interest in financing network"
       }
     ],
-    "contactName": "Marcus Vance"
+    "contactName": "MCM Property Management",
+    "lotSizeSqft": 6500
   },
   {
     "id": "lead-13",
-    "name": "Bay Area Property Management",
-    "email": "david.thornton@bayareapm.com",
-    "phone": "415-552-1833",
-    "city": "San Francisco",
-    "county": "San Francisco",
-    "jurisdiction": "San Francisco",
+    "name": "SKY Properties Inc",
+    "email": "info@skypropertiesinc.com",
+    "phone": "323-882-6606",
+    "city": "Los Angeles",
+    "county": "Los Angeles",
+    "jurisdiction": "Los Angeles",
     "segment": "P4",
     "source": "website",
     "sourceDetail": "Sales Affiliate Form",
@@ -493,17 +496,18 @@
         "summary": "Moved from Vetting to Terms sent"
       }
     ],
-    "contactName": "David Thornton"
+    "contactName": "SKY Properties Inc",
+    "lotSizeSqft": 7300
   },
   {
     "id": "lead-14",
-    "name": "Robert Daniels",
-    "email": "robert.daniels@gmail.com",
-    "phone": "310-444-1876",
+    "name": "IET Real Estate",
+    "email": "info@ietrealestate.com",
+    "phone": "323-412-9000",
     "city": "Los Angeles",
     "county": "Los Angeles",
     "jurisdiction": "Los Angeles",
-    "lotSizeSqft": 5000,
+    "lotSizeSqft": 6200,
     "segment": "H1",
     "source": "quiz",
     "sourceDetail": "Feasibility Quiz",
@@ -537,24 +541,24 @@
         "summary": "Lead unsubscribed. Adding to suppression list."
       }
     ],
-    "contactName": "Robert Daniels"
+    "contactName": "IET Real Estate"
   },
   {
     "id": "lead-15",
-    "name": "Lisa Vandermill",
-    "email": "lisavandermill24@yahoo.com",
-    "phone": "408-294-1919",
-    "city": "San Jose",
-    "county": "Santa Clara",
-    "jurisdiction": "San Jose",
-    "lotSizeSqft": 8500,
+    "name": "Christina Rentals",
+    "email": "christina@sacramentorentals.com",
+    "phone": "916-452-6000",
+    "city": "Sacramento",
+    "county": "Sacramento",
+    "jurisdiction": "Sacramento",
+    "lotSizeSqft": 7000,
     "segment": "H1",
     "source": "quiz",
     "sourceDetail": "Feasibility Quiz",
     "stage": "Consult booked",
     "type": "homeowner",
     "estValue": 165000,
-    "ab1033Eligible": true,
+    "ab1033Eligible": false,
     "consent": {
       "emailOptIn": true,
       "phoneOptIn": true,
@@ -577,24 +581,24 @@
         "summary": "Completed consultation call"
       }
     ],
-    "contactName": "Lisa Vandermill"
+    "contactName": "Christina Rentals"
   },
   {
     "id": "lead-16",
-    "name": "Patricia Miller",
-    "email": "patricia.miller@sbcglobal.net",
-    "phone": "310-829-1962",
-    "city": "Santa Monica",
-    "county": "Los Angeles",
-    "jurisdiction": "Santa Monica",
-    "lotSizeSqft": 5100,
+    "name": "M&M Property Services",
+    "email": "hello@mmproperties.com",
+    "phone": "916-923-6181",
+    "city": "Sacramento",
+    "county": "Sacramento",
+    "jurisdiction": "Sacramento",
+    "lotSizeSqft": 7800,
     "segment": "H2",
     "source": "website",
     "sourceDetail": "Contact Form",
     "stage": "New",
     "type": "homeowner",
     "estValue": 195000,
-    "ab1033Eligible": true,
+    "ab1033Eligible": false,
     "consent": {
       "emailOptIn": true,
       "phoneOptIn": true,
@@ -609,22 +613,22 @@
         "summary": "Submitted contact form requesting info on 2BR units"
       }
     ],
-    "contactName": "Patricia Miller"
+    "contactName": "M&M Property Services"
   },
   {
     "id": "lead-17",
-    "name": "Jessica Abbott (Compass)",
-    "email": "jessica.abbott@compass.com",
-    "phone": "310-458-2005",
-    "city": "Santa Monica",
-    "county": "Los Angeles",
-    "jurisdiction": "Santa Monica",
+    "name": "Justin Frank",
+    "email": "justinfrank@pmiamericanriver.com",
+    "phone": "916-258-2000",
+    "city": "Sacramento",
+    "county": "Sacramento",
+    "jurisdiction": "Sacramento",
     "segment": "P1",
     "source": "website",
     "sourceDetail": "Agent Referral Form",
     "stage": "Active",
     "type": "partner",
-    "ab1033Eligible": true,
+    "ab1033Eligible": false,
     "consent": {
       "emailOptIn": true,
       "phoneOptIn": true,
@@ -639,22 +643,23 @@
         "summary": "Registered as a Compass referral agent partner"
       }
     ],
-    "contactName": "Jessica Abbott"
+    "contactName": "Justin Frank",
+    "lotSizeSqft": 6700
   },
   {
     "id": "lead-18",
-    "name": "Marco Abdelnour (Compass)",
-    "email": "marco.abdelnour@compass.com",
-    "phone": "310-393-2048",
-    "city": "Santa Monica",
-    "county": "Los Angeles",
-    "jurisdiction": "Santa Monica",
+    "name": "House Real Estate",
+    "email": "info@houserealestate.com",
+    "phone": "916-542-1000",
+    "city": "Sacramento",
+    "county": "Sacramento",
+    "jurisdiction": "Sacramento",
     "segment": "P1",
     "source": "website",
     "sourceDetail": "Agent Referral Form",
     "stage": "Vetting",
     "type": "partner",
-    "ab1033Eligible": true,
+    "ab1033Eligible": false,
     "consent": {
       "emailOptIn": true,
       "phoneOptIn": true,
@@ -669,16 +674,17 @@
         "summary": "Submitted real estate affiliate program request"
       }
     ],
-    "contactName": "Marco Abdelnour"
+    "contactName": "House Real Estate",
+    "lotSizeSqft": 8100
   },
   {
     "id": "lead-19",
-    "name": "David A. Berg (Compass)",
-    "email": "david.berg@compass.com",
-    "phone": "310-392-2091",
-    "city": "Santa Monica",
-    "county": "Los Angeles",
-    "jurisdiction": "Santa Monica",
+    "name": "A to B Management",
+    "email": "info@atobpropertymanagement.com",
+    "phone": "408-356-0000",
+    "city": "San Jose",
+    "county": "Santa Clara",
+    "jurisdiction": "San Jose",
     "segment": "P1",
     "source": "outreach",
     "sourceDetail": "Agent Directory Match",
@@ -699,16 +705,17 @@
         "summary": "Sent partnership introductory brochure"
       }
     ],
-    "contactName": "David A. Berg"
+    "contactName": "A to B Management",
+    "lotSizeSqft": 6300
   },
   {
     "id": "lead-20",
-    "name": "Ari Afshar (Compass)",
-    "email": "ari@compass.com",
-    "phone": "310-394-2134",
-    "city": "Santa Monica",
-    "county": "Los Angeles",
-    "jurisdiction": "Santa Monica",
+    "name": "Fireside Property Support",
+    "email": "support@firesidepm.com",
+    "phone": "408-560-0000",
+    "city": "San Jose",
+    "county": "Santa Clara",
+    "jurisdiction": "San Jose",
     "segment": "P1",
     "source": "website",
     "sourceDetail": "Agent Referral Form",
@@ -733,16 +740,17 @@
         "summary": "Moved from Vetting to Active"
       }
     ],
-    "contactName": "Ari Afshar"
+    "contactName": "Fireside Property Support",
+    "lotSizeSqft": 7400
   },
   {
     "id": "lead-21",
-    "name": "General Mortgage Capital Corp",
-    "email": "kevin@gmccloan.com",
-    "phone": "408-629-2177",
-    "city": "San Jose",
-    "county": "Santa Clara",
-    "jurisdiction": "San Jose",
+    "name": "Ron Michael Properties",
+    "email": "contact@ronmichaelproperties.com",
+    "phone": "310-829-0000",
+    "city": "Santa Monica",
+    "county": "Los Angeles",
+    "jurisdiction": "Santa Monica",
     "segment": "P3",
     "source": "outreach",
     "sourceDetail": "NMLS Registry lookup",
@@ -763,16 +771,17 @@
         "summary": "Sent welcome email regarding financing ADU builds"
       }
     ],
-    "contactName": "Kevin GMCC"
+    "contactName": "Ron Michael Properties",
+    "lotSizeSqft": 5200
   },
   {
     "id": "lead-22",
-    "name": "Cedar Mortgage",
-    "email": "ccedar@cedarmortgage.com",
-    "phone": "408-451-2220",
-    "city": "San Jose",
-    "county": "Santa Clara",
-    "jurisdiction": "San Jose",
+    "name": "Antola Coastal Real Estate",
+    "email": "info@antolaproperties.com",
+    "phone": "310-451-0000",
+    "city": "Santa Monica",
+    "county": "Los Angeles",
+    "jurisdiction": "Santa Monica",
     "segment": "P3",
     "source": "website",
     "sourceDetail": "Broker Application Form",
@@ -797,22 +806,23 @@
         "summary": "Moved from Applied to Active"
       }
     ],
-    "contactName": "Charles Cedar"
+    "contactName": "Antola Coastal Real Estate",
+    "lotSizeSqft": 6600
   },
   {
     "id": "lead-23",
-    "name": "The Mortgage Outlet",
-    "email": "joutlet@themortgageoutlet.com",
-    "phone": "408-294-2263",
-    "city": "San Jose",
-    "county": "Santa Clara",
-    "jurisdiction": "San Jose",
+    "name": "Hermitage Property Management",
+    "email": "info@hermitagepm.com",
+    "phone": "949-300-2634",
+    "city": "Irvine",
+    "county": "Orange",
+    "jurisdiction": "Irvine",
     "segment": "P3",
     "source": "website",
     "sourceDetail": "Broker Application Form",
     "stage": "Terms sent",
     "type": "partner",
-    "ab1033Eligible": true,
+    "ab1033Eligible": false,
     "consent": {
       "emailOptIn": true,
       "phoneOptIn": true,
@@ -831,16 +841,17 @@
         "summary": "Moved from Vetting to Terms sent"
       }
     ],
-    "contactName": "James Outlet"
+    "contactName": "Hermitage Property Management",
+    "lotSizeSqft": 6900
   },
   {
     "id": "lead-24",
-    "name": "Gordon Property Management",
-    "email": "robert.gordon@gpmsf.com",
-    "phone": "415-648-2306",
-    "city": "San Francisco",
-    "county": "San Francisco",
-    "jurisdiction": "San Francisco",
+    "name": "Fairgrove Property Management",
+    "email": "info@fairgrovepm.com",
+    "phone": "714-541-0200",
+    "city": "Irvine",
+    "county": "Orange",
+    "jurisdiction": "Irvine",
     "segment": "P4",
     "source": "website",
     "sourceDetail": "Affiliate Opt-in",
@@ -865,16 +876,17 @@
         "summary": "Moved from Vetting to Active"
       }
     ],
-    "contactName": "Robert Gordon"
+    "contactName": "Fairgrove Property Management",
+    "lotSizeSqft": 7200
   },
   {
     "id": "lead-25",
-    "name": "Structure Properties",
-    "email": "mark@structureproperties.com",
-    "phone": "415-922-2349",
-    "city": "San Francisco",
-    "county": "San Francisco",
-    "jurisdiction": "San Francisco",
+    "name": "Claudia Mejia",
+    "email": "claudia.mejia@c21affiliated.com",
+    "phone": "714-403-6495",
+    "city": "Orange County",
+    "county": "Orange",
+    "jurisdiction": "Orange County",
     "segment": "P4",
     "source": "outreach",
     "sourceDetail": "SFAA Member List",
@@ -895,7 +907,8 @@
         "summary": "Sent portfolio ADU income blueprint"
       }
     ],
-    "contactName": "Mark Structure"
+    "contactName": "Claudia Mejia",
+    "lotSizeSqft": 6000
   },
   {
     "id": "lead-26",
