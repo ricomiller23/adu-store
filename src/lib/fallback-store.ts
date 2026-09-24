@@ -1,3 +1,4 @@
+import { qualifyProperty, generatePersonalizedOutboundEmail, PropertyQualification, PersonalizedOutboundEmail } from "./outbound-engine";
 const rawLeads = require('./leads-data.json');
 const rawJurisdictions = require('./jurisdictions-data.json');
 const rawSequences = require('./sequences-data.json');
@@ -35,6 +36,30 @@ export interface FallbackEmailSend {
   unsubscribedAt?: Date | null;
   createdAt: Date;
   lead?: FallbackLead;
+}
+
+export interface OutboundRecord {
+  leadId: string;
+  recipientEmail: string;
+  recipientName: string;
+  address: string;
+  city: string;
+  county: string;
+  lotSizeSqft: number;
+  maxAduSqft: number;
+  estAddedValue: string;
+  estRental: string;
+  ab1033Eligible: boolean;
+  qualificationTier: string;
+  score: number;
+  status: "needs_draft" | "draft_ready" | "queued" | "sent" | "opened" | "replied";
+  subject: string;
+  bodySnippet: string;
+  fullHtml?: string;
+  fullText?: string;
+  sentAt?: Date;
+  openedAt?: Date;
+  repliedAt?: Date;
 }
 
 export interface FallbackLead {
@@ -135,6 +160,7 @@ class ResilientDataStore {
   private sequences: Map<string, FallbackSequence> = new Map();
   private suppressions: Map<string, FallbackSuppression> = new Map();
   private enrollments: Map<string, FallbackEnrollmentState> = new Map();
+  private outboundRecords: Map<string, OutboundRecord> = new Map();
   private initialized = false;
   private lastDiscoveryIndex = 0;
   private lastDiscoveryTimestamp = 0;
@@ -295,6 +321,60 @@ class ResilientDataStore {
           });
         }
       }
+    });
+
+    
+    // Initialize Outbound Records
+    Array.from(this.leads.values()).forEach((lead, idx) => {
+      const qual = qualifyProperty(lead);
+      const emailDraft = generatePersonalizedOutboundEmail(lead, "equity_roi");
+
+      let status: "needs_draft" | "draft_ready" | "queued" | "sent" | "opened" | "replied" = "draft_ready";
+      let sentAt: Date | undefined = undefined;
+      let openedAt: Date | undefined = undefined;
+      let repliedAt: Date | undefined = undefined;
+
+      if (idx % 7 === 0) {
+        status = "replied";
+        sentAt = new Date(now - 36 * 3600000);
+        openedAt = new Date(now - 32 * 3600000);
+        repliedAt = new Date(now - 14 * 3600000);
+      } else if (idx % 4 === 0) {
+        status = "opened";
+        sentAt = new Date(now - 28 * 3600000);
+        openedAt = new Date(now - 18 * 3600000);
+      } else if (idx % 3 === 0) {
+        status = "sent";
+        sentAt = new Date(now - 16 * 3600000);
+      } else if (idx % 8 === 1) {
+        status = "needs_draft";
+      } else {
+        status = "draft_ready";
+      }
+
+      this.outboundRecords.set(lead.id, {
+        leadId: lead.id,
+        recipientEmail: lead.email,
+        recipientName: lead.name,
+        address: qual.address,
+        city: qual.city,
+        county: qual.county,
+        lotSizeSqft: qual.lotSizeSqft,
+        maxAduSqft: qual.maxAduSqft,
+        estAddedValue: qual.estimatedAddedValue,
+        estRental: qual.estimatedRentalIncome,
+        ab1033Eligible: qual.ab1033Eligible,
+        qualificationTier: qual.qualificationTier,
+        score: lead.score,
+        status,
+        subject: emailDraft.subject,
+        bodySnippet: emailDraft.previewSnippet,
+        fullHtml: emailDraft.html,
+        fullText: emailDraft.text,
+        sentAt,
+        openedAt,
+        repliedAt,
+      });
     });
 
     this.initialized = true;
@@ -623,6 +703,221 @@ class ResilientDataStore {
       activeEnrollments: activeEnrollments || 85,
       totalSuppressions: this.suppressions.size,
     };
+  }
+
+  public getOutboundProperties(filters: {
+    search?: string;
+    city?: string;
+    tier?: string;
+    status?: string;
+  } = {}) {
+    this.init();
+    let records = Array.from(this.outboundRecords.values());
+
+    if (filters.search) {
+      const q = filters.search.toLowerCase().trim();
+      records = records.filter(r =>
+        r.recipientName.toLowerCase().includes(q) ||
+        r.recipientEmail.toLowerCase().includes(q) ||
+        r.address.toLowerCase().includes(q) ||
+        r.city.toLowerCase().includes(q)
+      );
+    }
+
+    if (filters.city && filters.city !== "all") {
+      records = records.filter(r => r.city.toLowerCase() === filters.city!.toLowerCase());
+    }
+
+    if (filters.tier && filters.tier !== "all") {
+      records = records.filter(r => r.qualificationTier === filters.tier);
+    }
+
+    if (filters.status && filters.status !== "all") {
+      records = records.filter(r => r.status === filters.status);
+    }
+
+    return records;
+  }
+
+  public getOutboundEmail(leadId: string, variant: "equity_roi" | "speed_permitting" | "family_lifestyle" = "equity_roi"): PersonalizedOutboundEmail | null {
+    this.init();
+    const lead = this.leads.get(leadId);
+    if (!lead) return null;
+
+    const existingRecord = this.outboundRecords.get(leadId);
+    const freshDraft = generatePersonalizedOutboundEmail(lead, variant);
+
+    if (existingRecord && existingRecord.fullHtml) {
+      return {
+        ...freshDraft,
+        subject: existingRecord.subject || freshDraft.subject,
+        html: existingRecord.fullHtml || freshDraft.html,
+        text: existingRecord.fullText || freshDraft.text,
+      };
+    }
+
+    return freshDraft;
+  }
+
+  public saveOutboundDraft(leadId: string, subject: string, bodyHtml: string, status: "draft_ready" | "queued" = "draft_ready") {
+    this.init();
+    const record = this.outboundRecords.get(leadId);
+    if (!record) return null;
+
+    record.subject = subject;
+    record.fullHtml = bodyHtml;
+    record.status = status;
+    return record;
+  }
+
+  public sendOutboundEmail(leadId: string, subject: string, bodyHtml: string) {
+    this.init();
+    const lead = this.leads.get(leadId);
+    if (!lead) return null;
+
+    const now = new Date();
+    let record = this.outboundRecords.get(leadId);
+    if (!record) {
+      const qual = qualifyProperty(lead);
+      record = {
+        leadId,
+        recipientEmail: lead.email,
+        recipientName: lead.name,
+        address: qual.address,
+        city: qual.city,
+        county: qual.county,
+        lotSizeSqft: qual.lotSizeSqft,
+        maxAduSqft: qual.maxAduSqft,
+        estAddedValue: qual.estimatedAddedValue,
+        estRental: qual.estimatedRentalIncome,
+        ab1033Eligible: qual.ab1033Eligible,
+        qualificationTier: qual.qualificationTier,
+        score: lead.score,
+        status: "sent",
+        subject,
+        bodySnippet: subject,
+        fullHtml: bodyHtml,
+        sentAt: now,
+      };
+      this.outboundRecords.set(leadId, record);
+    } else {
+      record.subject = subject;
+      record.fullHtml = bodyHtml;
+      record.status = "sent";
+      record.sentAt = now;
+    }
+
+    // Log Activity
+    const actId = "act-" + Date.now() + "-" + Math.random().toString(36).substring(2, 6);
+    const activity = {
+      id: actId,
+      leadId,
+      kind: "outbound_email_sent",
+      summary: "Outbound Property ADU Qualification Email Sent: " + subject,
+      payload: { subject, sentAt: now.toISOString() },
+      createdAt: now,
+    };
+    lead.activities.unshift(activity);
+
+    // Record in lead.emailSends
+    lead.emailSends.unshift({
+      id: "send-" + Date.now(),
+      leadId,
+      sequenceStepId: null,
+      subject,
+      status: "sent",
+      resendId: "resend-sim-" + Date.now(),
+      createdAt: now,
+    });
+
+    return record;
+  }
+
+  public batchGenerateOutboundDrafts(leadIds?: string[]) {
+    this.init();
+    const targetIds = leadIds && leadIds.length > 0 ? leadIds : Array.from(this.outboundRecords.keys());
+    let generatedCount = 0;
+
+    for (const id of targetIds) {
+      const lead = this.leads.get(id);
+      if (!lead) continue;
+      const draft = generatePersonalizedOutboundEmail(lead, "equity_roi");
+      const record = this.outboundRecords.get(id);
+      if (record && (record.status === "needs_draft" || record.status === "draft_ready")) {
+        record.subject = draft.subject;
+        record.fullHtml = draft.html;
+        record.fullText = draft.text;
+        record.status = "draft_ready";
+        generatedCount++;
+      }
+    }
+    return generatedCount;
+  }
+
+  public batchDispatchOutbound(leadIds?: string[]) {
+    this.init();
+    const targetIds = leadIds && leadIds.length > 0 ? leadIds : Array.from(this.outboundRecords.keys());
+    let sentCount = 0;
+
+    for (const id of targetIds) {
+      const record = this.outboundRecords.get(id);
+      if (!record || record.status === "sent" || record.status === "replied") continue;
+      if (record.status === "draft_ready" || record.status === "queued" || !leadIds) {
+        this.sendOutboundEmail(id, record.subject, record.fullHtml || record.bodySnippet);
+        sentCount++;
+      }
+    }
+    return sentCount;
+  }
+
+  public getOutboundMetrics() {
+    this.init();
+    const all = Array.from(this.outboundRecords.values());
+    const totalProperties = all.length;
+    const qualifiedCount = all.filter(r => r.maxAduSqft >= 800).length;
+    const draftsReady = all.filter(r => r.status === "draft_ready").length;
+    const sentCount = all.filter(r => r.status === "sent" || r.status === "opened" || r.status === "replied").length;
+    const openedCount = all.filter(r => r.status === "opened" || r.status === "replied").length;
+    const repliedCount = all.filter(r => r.status === "replied").length;
+    const openRate = sentCount > 0 ? Math.round((openedCount / sentCount) * 100) : 38;
+    const replyRate = sentCount > 0 ? Math.round((repliedCount / sentCount) * 100) : 12;
+
+    const totalEstValueMillions = Math.round(
+      all.reduce((acc, r) => acc + (r.lotSizeSqft >= 7500 ? 350000 : r.lotSizeSqft >= 5000 ? 250000 : 180000), 0) / 1000000
+    );
+
+    return {
+      totalProperties,
+      qualifiedCount,
+      draftsReady,
+      sentCount,
+      openedCount,
+      repliedCount,
+      openRate,
+      replyRate,
+      totalEstValueMillions,
+    };
+  }
+
+  public getOutboundActivityFeed(limit = 15) {
+    this.init();
+    const activities: any[] = [];
+    for (const lead of Array.from(this.leads.values())) {
+      for (const act of lead.activities) {
+        if (act.kind === "outbound_email_sent" || act.kind === "email_sent" || act.kind === "consult" || act.kind === "form") {
+          activities.push({
+            id: act.id,
+            leadId: lead.id,
+            leadName: lead.name,
+            leadCity: lead.city,
+            kind: act.kind,
+            summary: act.summary,
+            createdAt: act.createdAt,
+          });
+        }
+      }
+    }
+    return activities.sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime()).slice(0, limit);
   }
 }
 

@@ -22,7 +22,8 @@ import {
   User,
   Building2,
   Play,
-  RefreshCw
+  RefreshCw,
+  Send
 } from 'lucide-react';
 import { updateLeadStageAction, addLeadActivityAction } from '@/app/actions';
 import { cn } from '@/lib/utils';
@@ -907,6 +908,13 @@ export default function LeadsTable({ initialLeads, jurisdictions = [], initialSu
                   </h4>
                   <div className="flex gap-2">
                     {/* Email button: always enabled if lead has email */}
+                    <a
+                      href={`/outreach?search=${encodeURIComponent(selectedLead.name || selectedLead.contactName || "")}`}
+                      className="w-full flex items-center justify-center py-2 px-3 bg-[#16352a] text-white text-xs font-bold rounded shadow hover:bg-[#122b22] transition mb-2"
+                    >
+                      <Send className="h-4 w-4 mr-1.5 text-[#a3b899]" />
+                      Personalized Outbound Email (theADUstore.com)
+                    </a>
                     <button 
                       onClick={() => alert(`Queueing email to: ${selectedLead.email}`)}
                       className="flex-1 flex items-center justify-center py-2 px-3 bg-[#27537d] text-white text-xs font-bold rounded shadow hover:bg-[#1f4366] transition"

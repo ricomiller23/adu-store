@@ -384,3 +384,128 @@ export async function getDailyEmailDataAction() {
     return fallbackStore.getDailyEmailData() as any;
   }
 }
+
+
+// ==========================================
+// OUTBOUND EMAIL & PROPERTY QUALIFICATION CRM ACTIONS
+// ==========================================
+
+export async function getOutboundPropertiesAction(filters: {
+  search?: string;
+  city?: string;
+  tier?: string;
+  status?: string;
+} = {}) {
+  try {
+    return fallbackStore.getOutboundProperties(filters);
+  } catch (error) {
+    logFallbackWarning("getOutboundPropertiesAction", error);
+    return fallbackStore.getOutboundProperties(filters);
+  }
+}
+
+export async function getOutboundEmailAction(leadId: string, variant: "equity_roi" | "speed_permitting" | "family_lifestyle" = "equity_roi") {
+  try {
+    return fallbackStore.getOutboundEmail(leadId, variant);
+  } catch (error) {
+    logFallbackWarning("getOutboundEmailAction", error);
+    return fallbackStore.getOutboundEmail(leadId, variant);
+  }
+}
+
+export async function saveOutboundDraftAction(leadId: string, subject: string, bodyHtml: string, status: "draft_ready" | "queued" = "draft_ready") {
+  try {
+    const record = fallbackStore.saveOutboundDraft(leadId, subject, bodyHtml, status);
+    revalidatePath("/outreach");
+    return record;
+  } catch (error) {
+    logFallbackWarning("saveOutboundDraftAction", error);
+    return null;
+  }
+}
+
+export async function sendOutboundEmailAction(leadId: string, subject: string, bodyHtml: string) {
+  try {
+    const lead = fallbackStore.getLeadById(leadId);
+    if (lead) {
+      const suppressions = fallbackStore.getSuppressions();
+      const isSuppressed = suppressions.some(s => s.value.toLowerCase() === lead.email.toLowerCase());
+      if (isSuppressed) {
+        throw new Error("Recipient " + lead.email + " is on the Suppression / Do Not Contact list.");
+      }
+    }
+
+    const record = fallbackStore.sendOutboundEmail(leadId, subject, bodyHtml);
+
+    try {
+      if (prisma) {
+        await prisma.activity.create({
+          data: {
+            leadId,
+            kind: "outbound_email_sent",
+            summary: "Outbound Property ADU Qualification Email Sent: " + subject,
+            payload: { subject },
+          }
+        });
+        await prisma.emailSend.create({
+          data: {
+            leadId,
+            subject,
+            status: "sent",
+          }
+        });
+      }
+    } catch (dbErr) {
+      logFallbackWarning("sendOutboundEmailAction DB backup", dbErr);
+    }
+
+    revalidatePath("/outreach");
+    revalidatePath("/leads");
+    revalidatePath("/daily-email");
+    return { success: true, record };
+  } catch (error: any) {
+    logFallbackWarning("sendOutboundEmailAction", error);
+    return { success: false, error: error?.message || "Failed to dispatch outbound email." };
+  }
+}
+
+export async function batchGenerateOutboundDraftsAction(leadIds?: string[]) {
+  try {
+    const count = fallbackStore.batchGenerateOutboundDrafts(leadIds);
+    revalidatePath("/outreach");
+    return { success: true, count };
+  } catch (error: any) {
+    logFallbackWarning("batchGenerateOutboundDraftsAction", error);
+    return { success: false, error: error?.message || "Failed to batch generate drafts." };
+  }
+}
+
+export async function batchDispatchOutboundAction(leadIds?: string[]) {
+  try {
+    const count = fallbackStore.batchDispatchOutbound(leadIds);
+    revalidatePath("/outreach");
+    revalidatePath("/daily-email");
+    return { success: true, count };
+  } catch (error: any) {
+    logFallbackWarning("batchDispatchOutboundAction", error);
+    return { success: false, error: error?.message || "Failed to batch dispatch." };
+  }
+}
+
+export async function getOutboundMetricsAction() {
+  try {
+    return fallbackStore.getOutboundMetrics();
+  } catch (error) {
+    logFallbackWarning("getOutboundMetricsAction", error);
+    return fallbackStore.getOutboundMetrics();
+  }
+}
+
+export async function getOutboundActivityFeedAction(limit = 15) {
+  try {
+    return fallbackStore.getOutboundActivityFeed(limit);
+  } catch (error) {
+    logFallbackWarning("getOutboundActivityFeedAction", error);
+    return fallbackStore.getOutboundActivityFeed(limit);
+  }
+}
