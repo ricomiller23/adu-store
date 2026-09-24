@@ -420,7 +420,7 @@ To opt out of future property notifications: https://hass-lead-generator.vercel.
   return {
     leadId: qual.leadId,
     recipientEmail: lead.email,
-    recipientName: lead.name,
+    recipientName: lead.contactName || lead.name,
     subject,
     previewSnippet,
     html,

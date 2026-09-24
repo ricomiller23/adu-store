@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useTransition } from 'react';
 import {
   Mail,
+  Phone,
   Send,
   Sparkles,
   Search,
@@ -209,6 +210,7 @@ export default function OutreachPage() {
       `"${p.leadId}"`,
       `"${p.recipientName}"`,
       `"${p.recipientEmail}"`,
+      `"${p.phone || ''}"`,
       `"${p.address}"`,
       `"${p.city}"`,
       `"${p.county}"`,
@@ -479,7 +481,22 @@ export default function OutreachPage() {
                         <Home className="h-3 w-3 text-gray-400" />
                         <span>{p.address}</span>
                       </div>
-                      <div className="text-gray-400 text-[10px] mt-0.5">{p.recipientEmail}</div>
+                      <div className="text-gray-500 text-[11px] mt-1 flex items-center gap-2 flex-wrap">
+                        <span className="text-gray-700 font-medium">{p.recipientEmail}</span>
+                        {p.phone && (
+                          <>
+                            <span className="text-gray-300">•</span>
+                            <a
+                              href={'tel:' + p.phone}
+                              className="text-emerald-700 font-semibold font-mono text-[11px] bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200/50 flex items-center gap-1 hover:bg-emerald-100 transition-colors"
+                              onClick={(e) => e.stopPropagation()}
+                            >
+                              <Phone className="h-2.5 w-2.5" />
+                              {p.phone}
+                            </a>
+                          </>
+                        )}
+                      </div>
                     </td>
 
                     {/* Parcel Specs */}
@@ -587,8 +604,22 @@ export default function OutreachPage() {
                 <Mail className="h-5 w-5 text-[#a3b899]" />
                 <div>
                   <h3 className="font-bold text-base font-display">Personalized Outbound Email Composer</h3>
-                  <div className="text-[11px] text-[#a3b899]">
-                    Property: {activeEmail.qualification.address}
+                  <div className="text-[11px] text-[#a3b899] flex items-center gap-2 flex-wrap">
+                    <span>Owner: <strong className="text-white">{activeEmail.recipientName}</strong></span>
+                    <span>•</span>
+                    <span>{activeEmail.recipientEmail}</span>
+                    {properties.find(p => p.leadId === reviewLeadId)?.phone && (
+                      <>
+                        <span>•</span>
+                        <a 
+                          href={'tel:' + properties.find(p => p.leadId === reviewLeadId)?.phone}
+                          className="text-emerald-300 underline font-mono flex items-center gap-1"
+                        >
+                          <Phone className="h-3 w-3" />
+                          {properties.find(p => p.leadId === reviewLeadId)?.phone}
+                        </a>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>

@@ -43,6 +43,7 @@ export interface OutboundRecord {
   leadId: string;
   recipientEmail: string;
   recipientName: string;
+  phone?: string;
   address: string;
   city: string;
   county: string;
@@ -357,7 +358,8 @@ class ResilientDataStore {
         id: lead.id,
         leadId: lead.id,
         recipientEmail: lead.email,
-        recipientName: lead.name,
+        recipientName: lead.contactName || lead.name,
+        phone: lead.phone || undefined,
         address: qual.address,
         city: qual.city,
         county: qual.county,
@@ -784,7 +786,8 @@ class ResilientDataStore {
       record = {
         leadId,
         recipientEmail: lead.email,
-        recipientName: lead.name,
+        recipientName: lead.contactName || lead.name,
+        phone: lead.phone || undefined,
         address: qual.address,
         city: qual.city,
         county: qual.county,

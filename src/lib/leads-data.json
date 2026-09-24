@@ -2,8 +2,8 @@
   {
     "id": "lead-1",
     "name": "John Rodriguez",
-    "email": "john.rod@gmail.com",
-    "phone": "714-555-0192",
+    "email": "john.rodriguez@yahoo.com",
+    "phone": "408-287-1317",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -36,13 +36,14 @@
         "kind": "visit",
         "summary": "Visited gallery"
       }
-    ]
+    ],
+    "contactName": "John Rodriguez"
   },
   {
     "id": "lead-2",
     "name": "Sarah and Mark Chen",
-    "email": "schen99@yahoo.com",
-    "phone": "408-555-8831",
+    "email": "sandmarkchen@sbcglobal.net",
+    "phone": "310-394-1360",
     "city": "Santa Monica",
     "county": "Los Angeles",
     "jurisdiction": "Santa Monica",
@@ -75,13 +76,14 @@
         "kind": "consult",
         "summary": "Booked initial design consultation"
       }
-    ]
+    ],
+    "contactName": "Sarah and Mark Chen"
   },
   {
     "id": "lead-3",
     "name": "Eleanor Vance",
-    "email": "eleanor.v@outlook.com",
-    "phone": "310-555-4029",
+    "email": "eleanorvance12@gmail.com",
+    "phone": "310-394-1403",
     "city": "Los Angeles",
     "county": "Los Angeles",
     "jurisdiction": "Los Angeles",
@@ -114,13 +116,14 @@
         "kind": "email_open",
         "summary": "Opened Welcome Email"
       }
-    ]
+    ],
+    "contactName": "Eleanor Vance"
   },
   {
     "id": "lead-4",
     "name": "David Miller",
-    "email": "david@millermedia.io",
-    "phone": "619-555-9012",
+    "email": "david.miller@icloud.com",
+    "phone": "619-224-1446",
     "city": "San Diego",
     "county": "San Diego",
     "jurisdiction": "San Diego",
@@ -165,13 +168,14 @@
         "kind": "stage_change",
         "summary": "Moved lead from Contacted to In design"
       }
-    ]
+    ],
+    "contactName": "David Miller"
   },
   {
     "id": "lead-5",
     "name": "Barbara Thompson",
-    "email": "bthompson58@gmail.com",
-    "phone": "949-555-7033",
+    "email": "bthompson@comcast.net",
+    "phone": "949-724-1489",
     "city": "Irvine",
     "county": "Orange",
     "jurisdiction": "Orange County",
@@ -200,13 +204,14 @@
         "kind": "visit",
         "summary": "Read empty-nester guide blog article"
       }
-    ]
+    ],
+    "contactName": "Barbara Thompson"
   },
   {
     "id": "lead-6",
     "name": "Robert & Lisa Davis",
-    "email": "davis.family@gmail.com",
-    "phone": "213-555-8822",
+    "email": "robertlisadavis15@outlook.com",
+    "phone": "310-478-1532",
     "city": "Los Angeles",
     "county": "Los Angeles",
     "jurisdiction": "Los Angeles",
@@ -239,13 +244,14 @@
         "kind": "visit",
         "summary": "Visited financing partner portal"
       }
-    ]
+    ],
+    "contactName": "Robert & Lisa Davis"
   },
   {
     "id": "lead-7",
     "name": "Carlos Mendez",
-    "email": "carlos_m55@hotmail.com",
-    "phone": "714-555-7721",
+    "email": "carlos.mendez@att.net",
+    "phone": "949-854-1575",
     "city": "Orange County",
     "county": "Orange",
     "jurisdiction": "Orange County",
@@ -278,13 +284,14 @@
         "kind": "visit",
         "summary": "Visited blog"
       }
-    ]
+    ],
+    "contactName": "Carlos Mendez"
   },
   {
     "id": "lead-8",
     "name": "Pacific Heights Properties",
-    "email": "deals@pacificheightsca.com",
-    "phone": "415-555-8900",
+    "email": "pheightsproperties@yahoo.com",
+    "phone": "619-467-1618",
     "city": "Unincorporated San Diego County",
     "county": "San Diego",
     "jurisdiction": "Unincorporated San Diego County",
@@ -309,13 +316,14 @@
         "kind": "form",
         "summary": "Referred by Real Estate Agent partner"
       }
-    ]
+    ],
+    "contactName": "Pacific Heights Properties"
   },
   {
     "id": "lead-9",
     "name": "James Wilson",
-    "email": "james.wilson.realestate@gmail.com",
-    "phone": "916-555-4911",
+    "email": "jameswilson18@sbcglobal.net",
+    "phone": "916-739-1661",
     "city": "Sacramento",
     "county": "Sacramento",
     "jurisdiction": "Sacramento",
@@ -340,13 +348,14 @@
         "kind": "visit",
         "summary": "Visited website from direct mail postcard QR"
       }
-    ]
+    ],
+    "contactName": "James Wilson"
   },
   {
     "id": "lead-10",
     "name": "Jessica Taylor (Compass)",
     "email": "jessica.taylor@compass.com",
-    "phone": "310-555-7788",
+    "phone": "310-829-1704",
     "city": "Santa Monica",
     "county": "Los Angeles",
     "jurisdiction": "Santa Monica",
@@ -369,13 +378,14 @@
         "kind": "form",
         "summary": "Submitted Referral Partner Application"
       }
-    ]
+    ],
+    "contactName": "Jessica Taylor"
   },
   {
     "id": "lead-11",
     "name": "BuildWise Construction",
-    "email": "info@buildwiseca.com",
-    "phone": "949-555-3344",
+    "email": "ryan.gallagher@buildwiseca.com",
+    "phone": "949-354-1747",
     "city": "Irvine",
     "county": "Orange",
     "jurisdiction": "Orange County",
@@ -410,13 +420,14 @@
         "kind": "stage_change",
         "summary": "Moved from Terms sent to Active"
       }
-    ]
+    ],
+    "contactName": "Ryan Gallagher"
   },
   {
     "id": "lead-12",
     "name": "Golden State Lenders (Marcus)",
-    "email": "marcus.lending@goldenstate.com",
-    "phone": "408-555-9031",
+    "email": "marcus.vance@goldenstatelending.com",
+    "phone": "408-371-1790",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -443,13 +454,14 @@
         "kind": "form",
         "summary": "Registered interest in financing network"
       }
-    ]
+    ],
+    "contactName": "Marcus Vance"
   },
   {
     "id": "lead-13",
     "name": "Bay Area Property Management",
-    "email": "partnerships@bayareapm.com",
-    "phone": "415-555-1212",
+    "email": "david.thornton@bayareapm.com",
+    "phone": "415-552-1833",
     "city": "San Francisco",
     "county": "San Francisco",
     "jurisdiction": "San Francisco",
@@ -480,13 +492,14 @@
         "kind": "stage_change",
         "summary": "Moved from Vetting to Terms sent"
       }
-    ]
+    ],
+    "contactName": "David Thornton"
   },
   {
     "id": "lead-14",
-    "name": "Robert Downey",
-    "email": "robert.d@gmail.com",
-    "phone": "213-555-6677",
+    "name": "Robert Daniels",
+    "email": "robert.daniels@gmail.com",
+    "phone": "310-444-1876",
     "city": "Los Angeles",
     "county": "Los Angeles",
     "jurisdiction": "Los Angeles",
@@ -523,13 +536,14 @@
         "kind": "stage_change",
         "summary": "Lead unsubscribed. Adding to suppression list."
       }
-    ]
+    ],
+    "contactName": "Robert Daniels"
   },
   {
     "id": "lead-15",
     "name": "Lisa Vandermill",
-    "email": "lisa.v@wealthbuilders.net",
-    "phone": "408-555-2288",
+    "email": "lisavandermill24@yahoo.com",
+    "phone": "408-294-1919",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -562,13 +576,14 @@
         "kind": "consult",
         "summary": "Completed consultation call"
       }
-    ]
+    ],
+    "contactName": "Lisa Vandermill"
   },
   {
     "id": "lead-16",
     "name": "Patricia Miller",
-    "email": "patricia.m@outlook.com",
-    "phone": "310-555-1033",
+    "email": "patricia.miller@sbcglobal.net",
+    "phone": "310-829-1962",
     "city": "Santa Monica",
     "county": "Los Angeles",
     "jurisdiction": "Santa Monica",
@@ -593,13 +608,14 @@
         "kind": "form",
         "summary": "Submitted contact form requesting info on 2BR units"
       }
-    ]
+    ],
+    "contactName": "Patricia Miller"
   },
   {
     "id": "lead-17",
     "name": "Jessica Abbott (Compass)",
     "email": "jessica.abbott@compass.com",
-    "phone": "310-597-1055",
+    "phone": "310-458-2005",
     "city": "Santa Monica",
     "county": "Los Angeles",
     "jurisdiction": "Santa Monica",
@@ -622,13 +638,14 @@
         "kind": "form",
         "summary": "Registered as a Compass referral agent partner"
       }
-    ]
+    ],
+    "contactName": "Jessica Abbott"
   },
   {
     "id": "lead-18",
     "name": "Marco Abdelnour (Compass)",
     "email": "marco.abdelnour@compass.com",
-    "phone": "310-595-6416",
+    "phone": "310-393-2048",
     "city": "Santa Monica",
     "county": "Los Angeles",
     "jurisdiction": "Santa Monica",
@@ -651,13 +668,14 @@
         "kind": "form",
         "summary": "Submitted real estate affiliate program request"
       }
-    ]
+    ],
+    "contactName": "Marco Abdelnour"
   },
   {
     "id": "lead-19",
     "name": "David A. Berg (Compass)",
     "email": "david.berg@compass.com",
-    "phone": "310-500-3931",
+    "phone": "310-392-2091",
     "city": "Santa Monica",
     "county": "Los Angeles",
     "jurisdiction": "Santa Monica",
@@ -680,13 +698,14 @@
         "kind": "email_sent",
         "summary": "Sent partnership introductory brochure"
       }
-    ]
+    ],
+    "contactName": "David A. Berg"
   },
   {
     "id": "lead-20",
     "name": "Ari Afshar (Compass)",
     "email": "ari@compass.com",
-    "phone": "310-780-3180",
+    "phone": "310-394-2134",
     "city": "Santa Monica",
     "county": "Los Angeles",
     "jurisdiction": "Santa Monica",
@@ -713,13 +732,14 @@
         "kind": "stage_change",
         "summary": "Moved from Vetting to Active"
       }
-    ]
+    ],
+    "contactName": "Ari Afshar"
   },
   {
     "id": "lead-21",
     "name": "General Mortgage Capital Corp",
-    "email": "info@gmccloan.com",
-    "phone": "650-340-7800",
+    "email": "kevin@gmccloan.com",
+    "phone": "408-629-2177",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -742,13 +762,14 @@
         "kind": "email_sent",
         "summary": "Sent welcome email regarding financing ADU builds"
       }
-    ]
+    ],
+    "contactName": "Kevin GMCC"
   },
   {
     "id": "lead-22",
     "name": "Cedar Mortgage",
-    "email": "info@cedarmortgage.com",
-    "phone": "408-879-9011",
+    "email": "ccedar@cedarmortgage.com",
+    "phone": "408-451-2220",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -775,13 +796,14 @@
         "kind": "stage_change",
         "summary": "Moved from Applied to Active"
       }
-    ]
+    ],
+    "contactName": "Charles Cedar"
   },
   {
     "id": "lead-23",
     "name": "The Mortgage Outlet",
-    "email": "loans@themortgageoutlet.com",
-    "phone": "408-352-5120",
+    "email": "joutlet@themortgageoutlet.com",
+    "phone": "408-294-2263",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -808,13 +830,14 @@
         "kind": "stage_change",
         "summary": "Moved from Vetting to Terms sent"
       }
-    ]
+    ],
+    "contactName": "James Outlet"
   },
   {
     "id": "lead-24",
     "name": "Gordon Property Management",
-    "email": "contactgpm@gpmsf.com",
-    "phone": "415-554-8812",
+    "email": "robert.gordon@gpmsf.com",
+    "phone": "415-648-2306",
     "city": "San Francisco",
     "county": "San Francisco",
     "jurisdiction": "San Francisco",
@@ -841,13 +864,14 @@
         "kind": "stage_change",
         "summary": "Moved from Vetting to Active"
       }
-    ]
+    ],
+    "contactName": "Robert Gordon"
   },
   {
     "id": "lead-25",
     "name": "Structure Properties",
-    "email": "info@structureproperties.com",
-    "phone": "415-552-6900",
+    "email": "mark@structureproperties.com",
+    "phone": "415-922-2349",
     "city": "San Francisco",
     "county": "San Francisco",
     "jurisdiction": "San Francisco",
@@ -870,13 +894,14 @@
         "kind": "email_sent",
         "summary": "Sent portfolio ADU income blueprint"
       }
-    ]
+    ],
+    "contactName": "Mark Structure"
   },
   {
     "id": "lead-26",
     "name": "West Coast Property Management",
-    "email": "info@wcpm.com",
-    "phone": "415-621-5550",
+    "email": "scole@wcpm.com",
+    "phone": "415-661-2392",
     "city": "San Francisco",
     "county": "San Francisco",
     "jurisdiction": "San Francisco",
@@ -899,13 +924,14 @@
         "kind": "form",
         "summary": "Registered interest in modular ADU additions for SF landlords"
       }
-    ]
+    ],
+    "contactName": "Stephen Cole"
   },
   {
     "id": "lead-27",
     "name": "Tixan Construction",
-    "email": "info@tixanconstruction.com",
-    "phone": "949-354-2900",
+    "email": "mtixan@tixanconstruction.com",
+    "phone": "949-786-2435",
     "city": "Irvine",
     "county": "Orange",
     "jurisdiction": "Orange County",
@@ -932,13 +958,14 @@
         "kind": "stage_change",
         "summary": "Moved from applied to Active"
       }
-    ]
+    ],
+    "contactName": "Michael Tixan"
   },
   {
     "id": "lead-28",
     "name": "Irvine Custom Builders",
-    "email": "info@irvinecustombuilders.com",
-    "phone": "949-415-8822",
+    "email": "dirvine@irvinecustombuilders.com",
+    "phone": "949-262-2478",
     "city": "Irvine",
     "county": "Orange",
     "jurisdiction": "Orange County",
@@ -965,13 +992,14 @@
         "kind": "stage_change",
         "summary": "Moved from Vetting to Terms sent"
       }
-    ]
+    ],
+    "contactName": "Daniel Irvine"
   },
   {
     "id": "lead-29",
-    "name": "1721 Duvall Dr Property Trust",
-    "email": "duvalldr.trust@gmail.com",
-    "phone": "408-451-9988",
+    "name": "Martha Mendoza",
+    "email": "mmendoza@yahoo.com",
+    "phone": "408-629-2521",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -995,13 +1023,14 @@
         "kind": "visit",
         "summary": "Scanned postcard QR and viewed Almaden lot feasibility page"
       }
-    ]
+    ],
+    "contactName": "Martha Mendoza"
   },
   {
     "id": "lead-30",
-    "name": "2708 Flint Ave Owner",
-    "email": "flintave.owner@gmail.com",
-    "phone": "408-294-1122",
+    "name": "Carl Sullivan",
+    "email": "carlsullivan39@sbcglobal.net",
+    "phone": "408-451-2564",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -1025,13 +1054,14 @@
         "kind": "visit",
         "summary": "Visited rental cash flow calculator twice"
       }
-    ]
+    ],
+    "contactName": "Carl Sullivan"
   },
   {
     "id": "lead-31",
-    "name": "1324 Orlando Dr Family Trust",
-    "email": "orlandodr.family@outlook.com",
-    "phone": "408-998-3321",
+    "name": "Abigail Griffin",
+    "email": "abigail.griffin@gmail.com",
+    "phone": "408-294-2607",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -1055,13 +1085,14 @@
         "kind": "visit",
         "summary": "Visited site from direct mail QR code and read aging in place guide"
       }
-    ]
+    ],
+    "contactName": "Abigail Griffin"
   },
   {
     "id": "lead-32",
-    "name": "1725 Lincoln Ave Trust",
-    "email": "lincolnave.trust@gmail.com",
-    "phone": "408-286-9000",
+    "name": "Alan Marshall",
+    "email": "amarshall@icloud.com",
+    "phone": "408-286-2650",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -1085,13 +1116,14 @@
         "kind": "visit",
         "summary": "Scanned QR code and read equity cash-out ADU guide"
       }
-    ]
+    ],
+    "contactName": "Alan Marshall"
   },
   {
     "id": "lead-33",
-    "name": "309 Crest Dr Development LLC",
-    "email": "crestdr.dev@willowglendev.com",
-    "phone": "408-339-1100",
+    "name": "Brittany Holmes",
+    "email": "brittanyholmes42@comcast.net",
+    "phone": "408-287-2693",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -1115,13 +1147,14 @@
         "kind": "visit",
         "summary": "Visited SB 1211 multi-unit developer packages page"
       }
-    ]
+    ],
+    "contactName": "Brittany Holmes"
   },
   {
     "id": "lead-34",
-    "name": "1932 Harris Ave Equity Group",
-    "email": "harrisave.equity@gmail.com",
-    "phone": "408-883-9922",
+    "name": "Bradley Ferguson",
+    "email": "bradley.ferguson@outlook.com",
+    "phone": "408-998-2736",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -1145,13 +1178,14 @@
         "kind": "visit",
         "summary": "Visited financing partner portal"
       }
-    ]
+    ],
+    "contactName": "Bradley Ferguson"
   },
   {
     "id": "lead-35",
-    "name": "1398 Vance Dr Investment Trust",
-    "email": "vancedr.invest@gmail.com",
-    "phone": "408-720-3112",
+    "name": "Kenji Peters",
+    "email": "kpeters@att.net",
+    "phone": "408-723-2779",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -1175,13 +1209,14 @@
         "kind": "visit",
         "summary": "Visited rental cash flow calculator"
       }
-    ]
+    ],
+    "contactName": "Kenji Peters"
   },
   {
     "id": "lead-36",
-    "name": "1540 Santa Monica Ave Buyer",
-    "email": "santamonicaave.buyer@gmail.com",
-    "phone": "408-223-9090",
+    "name": "Vikram Miller",
+    "email": "vikrammiller45@yahoo.com",
+    "phone": "408-371-2822",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -1205,13 +1240,14 @@
         "kind": "visit",
         "summary": "Read rental ADU cash flow blueprint"
       }
-    ]
+    ],
+    "contactName": "Vikram Miller"
   },
   {
     "id": "lead-37",
-    "name": "739 18th St Family Trust",
-    "email": "18thst.trust@outlook.com",
-    "phone": "310-394-8877",
+    "name": "Soo-jin White",
+    "email": "soojin.white@sbcglobal.net",
+    "phone": "310-392-2865",
     "city": "Santa Monica",
     "county": "Los Angeles",
     "jurisdiction": "Santa Monica",
@@ -1239,13 +1275,14 @@
         "kind": "consult",
         "summary": "Booked backyard design consultation"
       }
-    ]
+    ],
+    "contactName": "Soo-jin White"
   },
   {
     "id": "lead-38",
-    "name": "844 25th St Property Owner",
-    "email": "25thst.owner@gmail.com",
-    "phone": "310-453-2900",
+    "name": "Michael Green",
+    "email": "mgreen@gmail.com",
+    "phone": "310-394-2908",
     "city": "Santa Monica",
     "county": "Los Angeles",
     "jurisdiction": "Santa Monica",
@@ -1269,13 +1306,14 @@
         "kind": "visit",
         "summary": "Visited family ADU layouts page"
       }
-    ]
+    ],
+    "contactName": "Michael Green"
   },
   {
     "id": "lead-39",
-    "name": "347 25th St Design Studio",
-    "email": "25thst.studio@gmail.com",
-    "phone": "310-829-1234",
+    "name": "Karen Edwards",
+    "email": "karenedwards48@icloud.com",
+    "phone": "310-453-2951",
     "city": "Santa Monica",
     "county": "Los Angeles",
     "jurisdiction": "Santa Monica",
@@ -1303,13 +1341,14 @@
         "kind": "visit",
         "summary": "Downloaded office specs brochure"
       }
-    ]
+    ],
+    "contactName": "Karen Edwards"
   },
   {
     "id": "lead-40",
-    "name": "2934 Glenn Ave WFH Resident",
-    "email": "glennave.wfh@gmail.com",
-    "phone": "310-984-7766",
+    "name": "Steven Howard",
+    "email": "steven.howard@comcast.net",
+    "phone": "310-829-2994",
     "city": "Santa Monica",
     "county": "Los Angeles",
     "jurisdiction": "Santa Monica",
@@ -1333,13 +1372,14 @@
         "kind": "visit",
         "summary": "Read Glenn Ave office studio blog post"
       }
-    ]
+    ],
+    "contactName": "Steven Howard"
   },
   {
     "id": "lead-41",
-    "name": "2517 24th St Homeowner",
-    "email": "24thst.home@gmail.com",
-    "phone": "310-392-1200",
+    "name": "Melissa Alvarez",
+    "email": "malvarez@outlook.com",
+    "phone": "310-458-3037",
     "city": "Santa Monica",
     "county": "Los Angeles",
     "jurisdiction": "Santa Monica",
@@ -1363,13 +1403,14 @@
         "kind": "visit",
         "summary": "Viewed backyard layouts for children's studio"
       }
-    ]
+    ],
+    "contactName": "Melissa Alvarez"
   },
   {
     "id": "lead-42",
-    "name": "2220 6th St Downsizer",
-    "email": "6thst.downsizing@gmail.com",
-    "phone": "310-845-9900",
+    "name": "Ryan Henderson",
+    "email": "ryanhenderson51@att.net",
+    "phone": "310-393-3080",
     "city": "Santa Monica",
     "county": "Los Angeles",
     "jurisdiction": "Santa Monica",
@@ -1393,13 +1434,14 @@
         "kind": "visit",
         "summary": "Visited reverse downsizing calculators"
       }
-    ]
+    ],
+    "contactName": "Ryan Henderson"
   },
   {
     "id": "lead-43",
-    "name": "860 Yale St Family Estate",
-    "email": "yalest.estate@gmail.com",
-    "phone": "310-588-1122",
+    "name": "Brenda Cole",
+    "email": "brenda.cole@yahoo.com",
+    "phone": "310-392-3123",
     "city": "Santa Monica",
     "county": "Los Angeles",
     "jurisdiction": "Santa Monica",
@@ -1423,13 +1465,14 @@
         "kind": "visit",
         "summary": "Scanned postcard QR code"
       }
-    ]
+    ],
+    "contactName": "Brenda Cole"
   },
   {
     "id": "lead-44",
-    "name": "624 22nd St Rental Investor",
-    "email": "22ndst.investments@gmail.com",
-    "phone": "310-449-8800",
+    "name": "Gregory Mcdonald",
+    "email": "gmcdonald@sbcglobal.net",
+    "phone": "310-394-3166",
     "city": "Santa Monica",
     "county": "Los Angeles",
     "jurisdiction": "Santa Monica",
@@ -1453,13 +1496,14 @@
         "kind": "visit",
         "summary": "Visited rental cash flow calculator"
       }
-    ]
+    ],
+    "contactName": "Gregory Mcdonald"
   },
   {
     "id": "lead-45",
-    "name": "667 Marine St Resident",
-    "email": "marinest.home@gmail.com",
-    "phone": "310-399-5500",
+    "name": "Diane Robertson",
+    "email": "dianerobertson54@gmail.com",
+    "phone": "310-453-3209",
     "city": "Santa Monica",
     "county": "Los Angeles",
     "jurisdiction": "Santa Monica",
@@ -1483,13 +1527,14 @@
         "kind": "visit",
         "summary": "Viewed tiny home office layouts"
       }
-    ]
+    ],
+    "contactName": "Diane Robertson"
   },
   {
     "id": "lead-46",
-    "name": "1595 Valencia Ave Family Trust",
-    "email": "valenciaave.trust@gmail.com",
-    "phone": "626-793-1122",
+    "name": "Henry Weaver",
+    "email": "henry.weaver@icloud.com",
+    "phone": "626-551-3252",
     "city": "Pasadena",
     "county": "Los Angeles",
     "jurisdiction": "Pasadena",
@@ -1513,13 +1558,14 @@
         "kind": "visit",
         "summary": "Downloaded Pasadena historic district ADU guidelines PDF"
       }
-    ]
+    ],
+    "contactName": "Henry Weaver"
   },
   {
     "id": "lead-47",
-    "name": "385 E Montana St Homeowner",
-    "email": "montanast.care@outlook.com",
-    "phone": "626-244-9988",
+    "name": "Cheryl Knight",
+    "email": "cknight@comcast.net",
+    "phone": "626-795-3295",
     "city": "Pasadena",
     "county": "Los Angeles",
     "jurisdiction": "Pasadena",
@@ -1543,13 +1589,14 @@
         "kind": "visit",
         "summary": "Scanned QR, downloaded aging in place brochure"
       }
-    ]
+    ],
+    "contactName": "Cheryl Knight"
   },
   {
     "id": "lead-48",
-    "name": "1915 Canyon Close Rd Creative",
-    "email": "canyonclose.wfh@gmail.com",
-    "phone": "626-449-3355",
+    "name": "Terry Hernandez",
+    "email": "terryhernandez57@outlook.com",
+    "phone": "626-395-3338",
     "city": "Pasadena",
     "county": "Los Angeles",
     "jurisdiction": "Pasadena",
@@ -1573,13 +1620,14 @@
         "kind": "visit",
         "summary": "Visited office ADU design layout gallery"
       }
-    ]
+    ],
+    "contactName": "Terry Hernandez"
   },
   {
     "id": "lead-49",
-    "name": "3325 Primavera St Buyer",
-    "email": "primaverast.buyer@gmail.com",
-    "phone": "626-795-8800",
+    "name": "Alice Ramirez",
+    "email": "alice.ramirez@att.net",
+    "phone": "626-793-3381",
     "city": "Pasadena",
     "county": "Los Angeles",
     "jurisdiction": "Pasadena",
@@ -1603,13 +1651,14 @@
         "kind": "visit",
         "summary": "Opened recent buyer introduction email, downloaded envelope specs"
       }
-    ]
+    ],
+    "contactName": "Alice Ramirez"
   },
   {
     "id": "lead-50",
-    "name": "2212 E Crary St Owner",
-    "email": "craryst.owner@gmail.com",
-    "phone": "626-384-9000",
+    "name": "Gabriel Hall",
+    "email": "ghall@yahoo.com",
+    "phone": "626-449-3424",
     "city": "Pasadena",
     "county": "Los Angeles",
     "jurisdiction": "Pasadena",
@@ -1633,13 +1682,14 @@
         "kind": "visit",
         "summary": "Read multi-generational family living case study"
       }
-    ]
+    ],
+    "contactName": "Gabriel Hall"
   },
   {
     "id": "lead-51",
-    "name": "2286 E Dudley St Downsizer",
-    "email": "dudleyst.downsize@gmail.com",
-    "phone": "626-551-7788",
+    "name": "Sophia Morris",
+    "email": "sophiamorris60@sbcglobal.net",
+    "phone": "626-384-3467",
     "city": "Pasadena",
     "county": "Los Angeles",
     "jurisdiction": "Pasadena",
@@ -1663,13 +1713,14 @@
         "kind": "visit",
         "summary": "Read downsizing financial benefits blog post"
       }
-    ]
+    ],
+    "contactName": "Sophia Morris"
   },
   {
     "id": "lead-52",
-    "name": "521 Fremont Dr Developer",
-    "email": "fremontdr.dev@gmail.com",
-    "phone": "626-395-4400",
+    "name": "Ralph Ward",
+    "email": "ralph.ward@gmail.com",
+    "phone": "626-551-3510",
     "city": "Pasadena",
     "county": "Los Angeles",
     "jurisdiction": "Pasadena",
@@ -1693,13 +1744,14 @@
         "kind": "visit",
         "summary": "Visited SB 1211 development packages page"
       }
-    ]
+    ],
+    "contactName": "Ralph Ward"
   },
   {
     "id": "lead-53",
-    "name": "710 Country Club Ln Trust",
-    "email": "countryclubln.trust@gmail.com",
-    "phone": "619-281-5566",
+    "name": "Elena Myers",
+    "email": "emyers@icloud.com",
+    "phone": "619-291-3553",
     "city": "San Diego",
     "county": "San Diego",
     "jurisdiction": "San Diego",
@@ -1723,13 +1775,14 @@
         "kind": "visit",
         "summary": "Visited home equity construction financing portal"
       }
-    ]
+    ],
+    "contactName": "Elena Myers"
   },
   {
     "id": "lead-54",
-    "name": "794 Braun Ave Caregiver",
-    "email": "braunave.care@yahoo.com",
-    "phone": "619-543-9988",
+    "name": "Hao Vasquez",
+    "email": "haovasquez63@comcast.net",
+    "phone": "619-298-3596",
     "city": "San Diego",
     "county": "San Diego",
     "jurisdiction": "San Diego",
@@ -1753,13 +1806,14 @@
         "kind": "visit",
         "summary": "Downloaded aging in place custom build catalog"
       }
-    ]
+    ],
+    "contactName": "Hao Vasquez"
   },
   {
     "id": "lead-55",
-    "name": "2372 Worden St Buyer",
-    "email": "wordenst.buyer@gmail.com",
-    "phone": "619-224-8800",
+    "name": "Lucia Gibson",
+    "email": "lucia.gibson@outlook.com",
+    "phone": "619-234-3639",
     "city": "San Diego",
     "county": "San Diego",
     "jurisdiction": "San Diego",
@@ -1783,13 +1837,14 @@
         "kind": "visit",
         "summary": "Opened welcome outreach email and visited site plans"
       }
-    ]
+    ],
+    "contactName": "Lucia Gibson"
   },
   {
     "id": "lead-56",
-    "name": "535 Norvell St Family Estate",
-    "email": "norvellst.family@gmail.com",
-    "phone": "510-841-9988",
+    "name": "James Wells",
+    "email": "jwells@att.net",
+    "phone": "510-841-3682",
     "city": "Berkeley",
     "county": "Alameda",
     "jurisdiction": "Berkeley",
@@ -1813,13 +1868,14 @@
         "kind": "visit",
         "summary": "Viewed backyard cottage photo gallery"
       }
-    ]
+    ],
+    "contactName": "James Wells"
   },
   {
     "id": "lead-57",
-    "name": "221 Likely Dr Developer",
-    "email": "likelydr.dev@apexhousing.com",
-    "phone": "925-338-0099",
+    "name": "Susan Salazar",
+    "email": "susansalazar66@yahoo.com",
+    "phone": "619-443-3725",
     "city": "Unincorporated San Diego County",
     "county": "San Diego",
     "jurisdiction": "Unincorporated San Diego County",
@@ -1843,13 +1899,14 @@
         "kind": "visit",
         "summary": "Visited SB 1211 development package page"
       }
-    ]
+    ],
+    "contactName": "Susan Salazar"
   },
   {
     "id": "lead-58",
-    "name": "732 Pradera Way Downsizer",
-    "email": "praderaway.downsize@gmail.com",
-    "phone": "925-837-1100",
+    "name": "Anthony Grant",
+    "email": "anthony.grant@sbcglobal.net",
+    "phone": "949-415-3768",
     "city": "Orange County",
     "county": "Orange",
     "jurisdiction": "Orange County",
@@ -1873,13 +1930,14 @@
         "kind": "visit",
         "summary": "Visited reverse downsizing blog post"
       }
-    ]
+    ],
+    "contactName": "Anthony Grant"
   },
   {
     "id": "lead-59",
-    "name": "1240 University Ave Studio",
-    "email": "universityave.studio@gmail.com",
-    "phone": "650-329-1100",
+    "name": "Michelle Armstrong",
+    "email": "marmstrong@gmail.com",
+    "phone": "408-723-3811",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -1903,13 +1961,14 @@
         "kind": "visit",
         "summary": "Downloaded office specs brochure"
       }
-    ]
+    ],
+    "contactName": "Michelle Armstrong"
   },
   {
     "id": "lead-60",
-    "name": "891 El Camino Real Investor",
-    "email": "elcaminoreal.invest@gmail.com",
-    "phone": "650-857-4400",
+    "name": "Jason Anderson",
+    "email": "jasonanderson69@icloud.com",
+    "phone": "408-371-3854",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -1933,13 +1992,14 @@
         "kind": "visit",
         "summary": "Visited rental cash flow calculator"
       }
-    ]
+    ],
+    "contactName": "Jason Anderson"
   },
   {
     "id": "lead-61",
-    "name": "1405 Broadway Rental Asset",
-    "email": "broadway.invest@sfheights.com",
-    "phone": "415-922-4545",
+    "name": "Angela Young",
+    "email": "angela.young@comcast.net",
+    "phone": "415-661-3897",
     "city": "San Francisco",
     "county": "San Francisco",
     "jurisdiction": "San Francisco",
@@ -1967,13 +2027,14 @@
         "kind": "visit",
         "summary": "Downloaded premium custom design catalog"
       }
-    ]
+    ],
+    "contactName": "Angela Young"
   },
   {
     "id": "lead-62",
-    "name": "1842 Judah St Multigen",
-    "email": "judahst.family@yahoo.com",
-    "phone": "415-661-8899",
+    "name": "Brandon Carter",
+    "email": "bcarter@outlook.com",
+    "phone": "415-552-3940",
     "city": "San Francisco",
     "county": "San Francisco",
     "jurisdiction": "San Francisco",
@@ -1997,13 +2058,14 @@
         "kind": "visit",
         "summary": "Visited multigenerational design planning page"
       }
-    ]
+    ],
+    "contactName": "Brandon Carter"
   },
   {
     "id": "lead-63",
-    "name": "245 Grizzly Peak WFH Studio",
-    "email": "grizzlypeak.studio@gmail.com",
-    "phone": "510-525-4422",
+    "name": "Janet Rogers",
+    "email": "janetrogers72@att.net",
+    "phone": "510-848-3983",
     "city": "Berkeley",
     "county": "Alameda",
     "jurisdiction": "Berkeley",
@@ -2027,13 +2089,14 @@
         "kind": "visit",
         "summary": "Scanned postcard QR, downloaded Office ADU specs sheet"
       }
-    ]
+    ],
+    "contactName": "Janet Rogers"
   },
   {
     "id": "lead-64",
-    "name": "2612 Telegraph Ave multigen",
-    "email": "telegraphave.multigen@gmail.com",
-    "phone": "510-848-3000",
+    "name": "Jose Chavez",
+    "email": "jose.chavez@yahoo.com",
+    "phone": "510-644-4026",
     "city": "Berkeley",
     "county": "Alameda",
     "jurisdiction": "Berkeley",
@@ -2057,13 +2120,14 @@
         "kind": "visit",
         "summary": "Viewed backyard cottage photo gallery"
       }
-    ]
+    ],
+    "contactName": "Jose Chavez"
   },
   {
     "id": "lead-65",
-    "name": "129 East Cliff Dr Rental Asset",
-    "email": "eastcliff.invest@gmail.com",
-    "phone": "831-423-1100",
+    "name": "Evelyn Jimenez",
+    "email": "ejimenez@sbcglobal.net",
+    "phone": "831-426-4069",
     "city": "Santa Cruz",
     "county": "Santa Cruz",
     "jurisdiction": "Santa Cruz",
@@ -2087,13 +2151,14 @@
         "kind": "visit",
         "summary": "Viewed coastal zoning regulations page"
       }
-    ]
+    ],
+    "contactName": "Evelyn Jimenez"
   },
   {
     "id": "lead-66",
-    "name": "1422 Mission St Caregiver ADU",
-    "email": "missionst.care@yahoo.com",
-    "phone": "831-460-2211",
+    "name": "Keith Patterson",
+    "email": "keithpatterson75@gmail.com",
+    "phone": "831-423-4112",
     "city": "Santa Cruz",
     "county": "Santa Cruz",
     "jurisdiction": "Santa Cruz",
@@ -2117,13 +2182,14 @@
         "kind": "visit",
         "summary": "Downloaded aging in place custom build catalog"
       }
-    ]
+    ],
+    "contactName": "Keith Patterson"
   },
   {
     "id": "lead-67",
-    "name": "456 Pacific Ave Rental Investment",
-    "email": "pacificave.invest@gmail.com",
-    "phone": "209-466-8800",
+    "name": "Sara Aguilar",
+    "email": "sara.aguilar@icloud.com",
+    "phone": "209-948-4155",
     "city": "Stockton",
     "county": "San Joaquin",
     "jurisdiction": "Stockton",
@@ -2147,13 +2213,14 @@
         "kind": "visit",
         "summary": "Visited cash flow analysis tool"
       }
-    ]
+    ],
+    "contactName": "Sara Aguilar"
   },
   {
     "id": "lead-68",
-    "name": "1829 N Pacific Ave Buyer",
-    "email": "npacificave.buyer@gmail.com",
-    "phone": "209-948-3300",
+    "name": "Bryan Guzman",
+    "email": "bguzman@comcast.net",
+    "phone": "209-477-4198",
     "city": "Stockton",
     "county": "San Joaquin",
     "jurisdiction": "Stockton",
@@ -2177,13 +2244,14 @@
         "kind": "visit",
         "summary": "Scanned QR card, viewed sizing specifications sheet"
       }
-    ]
+    ],
+    "contactName": "Bryan Guzman"
   },
   {
     "id": "lead-69",
-    "name": "1428 Shaw Ave Family Farmhouse",
-    "email": "shawave.family@gmail.com",
-    "phone": "559-439-8800",
+    "name": "Beverly Meyer",
+    "email": "beverlymeyer78@outlook.com",
+    "phone": "559-224-4241",
     "city": "Fresno",
     "county": "Fresno",
     "jurisdiction": "Fresno",
@@ -2207,13 +2275,14 @@
         "kind": "visit",
         "summary": "Downloaded custom farmhouse ADU design blueprints"
       }
-    ]
+    ],
+    "contactName": "Beverly Meyer"
   },
   {
     "id": "lead-70",
-    "name": "789 Shepherd Ave Buyer",
-    "email": "shepherdave.buyer@gmail.com",
-    "phone": "559-322-1100",
+    "name": "Vincent Hawkins",
+    "email": "vincent.hawkins@att.net",
+    "phone": "559-431-4284",
     "city": "Fresno",
     "county": "Fresno",
     "jurisdiction": "Fresno",
@@ -2237,13 +2306,14 @@
         "kind": "visit",
         "summary": "Scanned welcome card QR, viewed sizing specifications sheet"
       }
-    ]
+    ],
+    "contactName": "Vincent Hawkins"
   },
   {
     "id": "lead-71",
-    "name": "2400 Truxtun Ave Investor",
-    "email": "truxtunave.invest@gmail.com",
-    "phone": "661-327-4400",
+    "name": "Lori Johnson",
+    "email": "ljohnson@yahoo.com",
+    "phone": "661-327-4327",
     "city": "Bakersfield",
     "county": "Kern",
     "jurisdiction": "Bakersfield",
@@ -2267,13 +2337,14 @@
         "kind": "visit",
         "summary": "Visited cash flow model page"
       }
-    ]
+    ],
+    "contactName": "Lori Johnson"
   },
   {
     "id": "lead-72",
-    "name": "1200 California Ave Amnesty Plan",
-    "email": "californiaave.amnesty@outlook.com",
-    "phone": "661-831-7788",
+    "name": "Mateo Jackson",
+    "email": "mateojackson81@sbcglobal.net",
+    "phone": "661-831-4370",
     "city": "Bakersfield",
     "county": "Kern",
     "jurisdiction": "Bakersfield",
@@ -2297,13 +2368,14 @@
         "kind": "visit",
         "summary": "Scanned QR, read unpermitted unit legalization guidelines"
       }
-    ]
+    ],
+    "contactName": "Mateo Jackson"
   },
   {
     "id": "lead-73",
-    "name": "3600 Magnolia Ave Multigen",
-    "email": "magnoliaave.multigen@gmail.com",
-    "phone": "951-682-9900",
+    "name": "Sunita Scott",
+    "email": "sunita.scott@gmail.com",
+    "phone": "951-359-4413",
     "city": "Riverside",
     "county": "Riverside",
     "jurisdiction": "Riverside",
@@ -2327,13 +2399,14 @@
         "kind": "visit",
         "summary": "Downloaded family design catalog"
       }
-    ]
+    ],
+    "contactName": "Sunita Scott"
   },
   {
     "id": "lead-74",
-    "name": "4200 Mission Blvd Amnesty",
-    "email": "missionblvd.amnesty@gmail.com",
-    "phone": "951-787-1122",
+    "name": "Javier Evans",
+    "email": "jevans@icloud.com",
+    "phone": "951-684-4456",
     "city": "Riverside",
     "county": "Riverside",
     "jurisdiction": "Riverside",
@@ -2357,13 +2430,14 @@
         "kind": "visit",
         "summary": "Visited legalization guidelines page"
       }
-    ]
+    ],
+    "contactName": "Javier Evans"
   },
   {
     "id": "lead-75",
-    "name": "1200 State St Creative Studio",
-    "email": "statest.studio@gmail.com",
-    "phone": "805-965-4400",
+    "name": "Linda Cooper",
+    "email": "lindacooper84@comcast.net",
+    "phone": "805-568-4499",
     "city": "Santa Barbara",
     "county": "Santa Barbara",
     "jurisdiction": "Santa Barbara",
@@ -2387,13 +2461,14 @@
         "kind": "visit",
         "summary": "Visited premium office ADU specifications page"
       }
-    ]
+    ],
+    "contactName": "Linda Cooper"
   },
   {
     "id": "lead-76",
-    "name": "890 Alameda Padre Serra Buyer",
-    "email": "alamedapadreserra.buyer@outlook.com",
-    "phone": "805-569-8800",
+    "name": "Charles Gray",
+    "email": "charles.gray@outlook.com",
+    "phone": "805-965-4542",
     "city": "Santa Barbara",
     "county": "Santa Barbara",
     "jurisdiction": "Santa Barbara",
@@ -2417,13 +2492,14 @@
         "kind": "visit",
         "summary": "Scanned QR card, read custom recent buyer planning checklist"
       }
-    ]
+    ],
+    "contactName": "Charles Gray"
   },
   {
     "id": "lead-77",
-    "name": "1420 Skyline Blvd Estate",
-    "email": "skylineblvd.estate@gmail.com",
-    "phone": "510-482-1200",
+    "name": "Kimberly Russell",
+    "email": "krussell@att.net",
+    "phone": "510-261-4585",
     "city": "Oakland",
     "county": "Alameda",
     "jurisdiction": "Oakland",
@@ -2447,13 +2523,14 @@
         "kind": "visit",
         "summary": "Visited rental ADU cash flow model page"
       }
-    ]
+    ],
+    "contactName": "Kimberly Russell"
   },
   {
     "id": "lead-78",
-    "name": "320 Grand Ave Downsizer",
-    "email": "grandave.downsizing@gmail.com",
-    "phone": "510-763-9900",
+    "name": "Timothy Reynolds",
+    "email": "timothyreynolds87@yahoo.com",
+    "phone": "510-444-4628",
     "city": "Oakland",
     "county": "Alameda",
     "jurisdiction": "Oakland",
@@ -2477,13 +2554,14 @@
         "kind": "visit",
         "summary": "Read empty-nester reverse downsizing guide"
       }
-    ]
+    ],
+    "contactName": "Timothy Reynolds"
   },
   {
     "id": "lead-79",
-    "name": "2420 Telegraph Ave Developer",
-    "email": "telegraphave.dev@gmail.com",
-    "phone": "510-547-2288",
+    "name": "Dorothy Castro",
+    "email": "dorothy.castro@sbcglobal.net",
+    "phone": "510-834-4671",
     "city": "Oakland",
     "county": "Alameda",
     "jurisdiction": "Oakland",
@@ -2507,13 +2585,14 @@
         "kind": "visit",
         "summary": "Visited SB 1211 multi-family detached ADU page"
       }
-    ]
+    ],
+    "contactName": "Dorothy Castro"
   },
   {
     "id": "lead-80",
-    "name": "450 Land Park Dr Downsizer",
-    "email": "landparkdr.downsize@gmail.com",
-    "phone": "916-442-8811",
+    "name": "Larry Shaw",
+    "email": "lshaw@gmail.com",
+    "phone": "916-445-4714",
     "city": "Sacramento",
     "county": "Sacramento",
     "jurisdiction": "Sacramento",
@@ -2537,13 +2616,14 @@
         "kind": "visit",
         "summary": "Visited reverse downsizing blog post"
       }
-    ]
+    ],
+    "contactName": "Larry Shaw"
   },
   {
     "id": "lead-81",
-    "name": "822 Montana Ave Property owner",
-    "email": "tshelby.unsub@gmail.com",
-    "phone": "310-555-0909",
+    "name": "Thomas Sterling",
+    "email": "thomas.sterling@gmail.com",
+    "phone": "310-453-4757",
     "city": "Santa Monica",
     "county": "Los Angeles",
     "jurisdiction": "Santa Monica",
@@ -2567,13 +2647,14 @@
         "kind": "visit",
         "summary": "Visited unsubscribe page and completed opt-out"
       }
-    ]
+    ],
+    "contactName": "Thomas Sterling"
   },
   {
     "id": "lead-82",
-    "name": "1200 Almaden Blvd Owner",
-    "email": "mmartinez.dnc@yahoo.com",
-    "phone": "408-555-0707",
+    "name": "Michelle Martinez",
+    "email": "michelle.martinez@yahoo.com",
+    "phone": "408-998-4800",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -2597,13 +2678,14 @@
         "kind": "visit",
         "summary": "Replied: Please place on DNC list"
       }
-    ]
+    ],
+    "contactName": "Michelle Martinez"
   },
   {
     "id": "lead-83",
-    "name": "1115 H St Owner",
-    "email": "rvance.dnc@outlook.com",
-    "phone": "916-555-0404",
+    "name": "Richard Vance",
+    "email": "richard.vance@outlook.com",
+    "phone": "916-456-4843",
     "city": "Sacramento",
     "county": "Sacramento",
     "jurisdiction": "Sacramento",
@@ -2627,13 +2709,14 @@
         "kind": "visit",
         "summary": "Flagged email as spam / manual DNC"
       }
-    ]
+    ],
+    "contactName": "Richard Vance"
   },
   {
     "id": "lead-84",
-    "name": "840 Adeline St Property owner",
-    "email": "fgallagher.dnc@gmail.com",
-    "phone": "510-555-0101",
+    "name": "Franklin Gallagher",
+    "email": "frank.gallagher.re@gmail.com",
+    "phone": "510-261-4886",
     "city": "Oakland",
     "county": "Alameda",
     "jurisdiction": "Oakland",
@@ -2657,13 +2740,14 @@
         "kind": "visit",
         "summary": "Replied: Stop emailing me"
       }
-    ]
+    ],
+    "contactName": "Franklin Gallagher"
   },
   {
     "id": "lead-85",
-    "name": "1900 Canyon Crest Dr Owner",
-    "email": "wwhite.dnc@outlook.com",
-    "phone": "951-555-0202",
+    "name": "William Whitaker",
+    "email": "william.whitaker@outlook.com",
+    "phone": "951-781-4929",
     "city": "Riverside",
     "county": "Riverside",
     "jurisdiction": "Riverside",
@@ -2687,13 +2771,14 @@
         "kind": "visit",
         "summary": "Requested opt-out from mortgage network"
       }
-    ]
+    ],
+    "contactName": "William Whitaker"
   },
   {
     "id": "lead-86",
-    "name": "1400 Chester Ave Owner",
-    "email": "jmcgill.unsub@gmail.com",
-    "phone": "661-555-0303",
+    "name": "James McGillivray",
+    "email": "james.mcgillivray@gmail.com",
+    "phone": "661-327-4972",
     "city": "Bakersfield",
     "county": "Kern",
     "jurisdiction": "Bakersfield",
@@ -2717,13 +2802,14 @@
         "kind": "visit",
         "summary": "Bounced / manual unsubscribe"
       }
-    ]
+    ],
+    "contactName": "James McGillivray"
   },
   {
     "id": "lead-87",
-    "name": "1220 Channel Dr Property owner",
-    "email": "tsoprano.dnc@outlook.com",
-    "phone": "805-555-0404",
+    "name": "Anthony Sorrentino",
+    "email": "anthony.sorrentino@outlook.com",
+    "phone": "805-569-5015",
     "city": "Santa Barbara",
     "county": "Santa Barbara",
     "jurisdiction": "Santa Barbara",
@@ -2747,13 +2833,14 @@
         "kind": "visit",
         "summary": "Marked outreach as spam"
       }
-    ]
+    ],
+    "contactName": "Anthony Sorrentino"
   },
   {
     "id": "lead-88",
-    "name": "2200 El Camino Real Owner",
-    "email": "ddraper.unsub@gmail.com",
-    "phone": "650-555-0505",
+    "name": "Donald Draper",
+    "email": "donald.draper.re@gmail.com",
+    "phone": "408-286-5058",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -2777,13 +2864,14 @@
         "kind": "visit",
         "summary": "Opted out from remote worker sequences"
       }
-    ]
+    ],
+    "contactName": "Donald Draper"
   },
   {
     "id": "lead-89",
-    "name": "4812 Dunleer Dr Estate",
-    "email": "dunleerdr.estate@gmail.com",
-    "phone": "323-654-8800",
+    "name": "Rose Butler",
+    "email": "rbutler@comcast.net",
+    "phone": "310-828-5101",
     "city": "Los Angeles",
     "county": "Los Angeles",
     "jurisdiction": "Los Angeles",
@@ -2807,13 +2895,14 @@
         "kind": "visit",
         "summary": "Viewed backyard cottage photo gallery"
       }
-    ]
+    ],
+    "contactName": "Rose Butler"
   },
   {
     "id": "lead-90",
-    "name": "3341 Griffith Park Blvd Rental",
-    "email": "griffithpk.rental@gmail.com",
-    "phone": "323-667-1100",
+    "name": "Sandeep West",
+    "email": "sandeepwest10@outlook.com",
+    "phone": "310-478-5144",
     "city": "Los Angeles",
     "county": "Los Angeles",
     "jurisdiction": "Los Angeles",
@@ -2837,13 +2926,14 @@
         "kind": "visit",
         "summary": "Visited cash flow calculator"
       }
-    ]
+    ],
+    "contactName": "Sandeep West"
   },
   {
     "id": "lead-91",
-    "name": "1802 Glendale Blvd Developer",
-    "email": "glendalblvd.dev@gmail.com",
-    "phone": "323-912-4400",
+    "name": "Lin Fernandez",
+    "email": "lin.fernandez@att.net",
+    "phone": "310-444-5187",
     "city": "Los Angeles",
     "county": "Los Angeles",
     "jurisdiction": "Los Angeles",
@@ -2871,13 +2961,14 @@
         "kind": "consult",
         "summary": "Booked design consultation"
       }
-    ]
+    ],
+    "contactName": "Lin Fernandez"
   },
   {
     "id": "lead-92",
-    "name": "5622 York Blvd Multigen",
-    "email": "yorkblvd.multigen@yahoo.com",
-    "phone": "323-254-9900",
+    "name": "Arjun Black",
+    "email": "ablack@yahoo.com",
+    "phone": "310-829-5230",
     "city": "Los Angeles",
     "county": "Los Angeles",
     "jurisdiction": "Los Angeles",
@@ -2901,13 +2992,14 @@
         "kind": "visit",
         "summary": "Read multigenerational family planning guide"
       }
-    ]
+    ],
+    "contactName": "Arjun Black"
   },
   {
     "id": "lead-93",
-    "name": "7243 Laurel Canyon Blvd Creative",
-    "email": "laurelcanyon.studio@gmail.com",
-    "phone": "818-761-2200",
+    "name": "Mary Soto",
+    "email": "marysoto13@sbcglobal.net",
+    "phone": "310-451-5273",
     "city": "Los Angeles",
     "county": "Los Angeles",
     "jurisdiction": "Los Angeles",
@@ -2931,13 +3023,14 @@
         "kind": "visit",
         "summary": "Visited backyard office studio gallery"
       }
-    ]
+    ],
+    "contactName": "Mary Soto"
   },
   {
     "id": "lead-94",
-    "name": "2110 Pacific Coast Hwy Investor",
-    "email": "pch.invest@gmail.com",
-    "phone": "562-434-8800",
+    "name": "Joseph Bradley",
+    "email": "joseph.bradley@gmail.com",
+    "phone": "562-436-5316",
     "city": "Long Beach",
     "county": "Los Angeles",
     "jurisdiction": "Long Beach",
@@ -2961,13 +3054,14 @@
         "kind": "visit",
         "summary": "Visited rental ADU cash flow model"
       }
-    ]
+    ],
+    "contactName": "Joseph Bradley"
   },
   {
     "id": "lead-95",
-    "name": "1543 Cherry Ave Family Home",
-    "email": "cherryave.family@gmail.com",
-    "phone": "562-491-2211",
+    "name": "Sandra Martinez",
+    "email": "smartinez@icloud.com",
+    "phone": "562-597-5359",
     "city": "Long Beach",
     "county": "Los Angeles",
     "jurisdiction": "Long Beach",
@@ -2991,13 +3085,14 @@
         "kind": "visit",
         "summary": "Read family ADU case study"
       }
-    ]
+    ],
+    "contactName": "Sandra Martinez"
   },
   {
     "id": "lead-96",
-    "name": "4890 Atlantic Ave Buyer",
-    "email": "atlanticave.buyer@outlook.com",
-    "phone": "562-988-3300",
+    "name": "Kenneth Clark",
+    "email": "kennethclark16@comcast.net",
+    "phone": "562-424-5402",
     "city": "Long Beach",
     "county": "Los Angeles",
     "jurisdiction": "Long Beach",
@@ -3021,13 +3116,14 @@
         "kind": "visit",
         "summary": "Scanned welcome mailer QR code"
       }
-    ]
+    ],
+    "contactName": "Kenneth Clark"
   },
   {
     "id": "lead-97",
-    "name": "1401 S Anaheim Blvd Trust",
-    "email": "anaheimblvd.trust@gmail.com",
-    "phone": "714-535-5500",
+    "name": "Sharon Baker",
+    "email": "sharon.baker@outlook.com",
+    "phone": "714-535-5445",
     "city": "Anaheim",
     "county": "Orange",
     "jurisdiction": "Anaheim",
@@ -3051,13 +3147,14 @@
         "kind": "visit",
         "summary": "Viewed family ADU layouts page"
       }
-    ]
+    ],
+    "contactName": "Sharon Baker"
   },
   {
     "id": "lead-98",
-    "name": "2033 W Katella Ave Downsizer",
-    "email": "katellaave.downsize@gmail.com",
-    "phone": "714-778-9900",
+    "name": "Eric Stewart",
+    "email": "estewart@att.net",
+    "phone": "714-778-5488",
     "city": "Anaheim",
     "county": "Orange",
     "jurisdiction": "Anaheim",
@@ -3081,13 +3178,14 @@
         "kind": "visit",
         "summary": "Read empty-nester reverse downsizing guide"
       }
-    ]
+    ],
+    "contactName": "Eric Stewart"
   },
   {
     "id": "lead-99",
-    "name": "816 N Magnolia Ave Caregiver",
-    "email": "magnoliaave.caregiver@yahoo.com",
-    "phone": "714-491-3300",
+    "name": "Samantha Cox",
+    "email": "samanthacox19@yahoo.com",
+    "phone": "714-491-5531",
     "city": "Anaheim",
     "county": "Orange",
     "jurisdiction": "Anaheim",
@@ -3111,13 +3209,14 @@
         "kind": "visit",
         "summary": "Downloaded aging in place ADU catalog"
       }
-    ]
+    ],
+    "contactName": "Samantha Cox"
   },
   {
     "id": "lead-100",
-    "name": "8300 Slater Ave Beach House",
-    "email": "slaterave.beach@gmail.com",
-    "phone": "714-842-6600",
+    "name": "Raymond Patel",
+    "email": "raymond.patel@sbcglobal.net",
+    "phone": "714-840-5574",
     "city": "Huntington Beach",
     "county": "Orange",
     "jurisdiction": "Huntington Beach",
@@ -3141,13 +3240,14 @@
         "kind": "visit",
         "summary": "Viewed coastal property rental income calculator"
       }
-    ]
+    ],
+    "contactName": "Raymond Patel"
   },
   {
     "id": "lead-101",
-    "name": "7812 Warner Ave Investor",
-    "email": "warnerave.invest@gmail.com",
-    "phone": "714-536-4400",
+    "name": "Victoria Fisher",
+    "email": "vfisher@gmail.com",
+    "phone": "714-842-5617",
     "city": "Huntington Beach",
     "county": "Orange",
     "jurisdiction": "Huntington Beach",
@@ -3171,13 +3271,14 @@
         "kind": "visit",
         "summary": "Visited ADU rental ROI calculator"
       }
-    ]
+    ],
+    "contactName": "Victoria Fisher"
   },
   {
     "id": "lead-102",
-    "name": "1500 E Colorado St Buyer",
-    "email": "coloradost.buyer@gmail.com",
-    "phone": "818-244-9900",
+    "name": "Kyle Herrera",
+    "email": "kyleherrera22@icloud.com",
+    "phone": "818-242-5660",
     "city": "Glendale",
     "county": "Los Angeles",
     "jurisdiction": "Glendale",
@@ -3201,13 +3302,14 @@
         "kind": "visit",
         "summary": "Scanned mailer, viewed 2BR floorplans"
       }
-    ]
+    ],
+    "contactName": "Kyle Herrera"
   },
   {
     "id": "lead-103",
-    "name": "2240 Honolulu Ave Studio",
-    "email": "honoluluave.studio@gmail.com",
-    "phone": "818-248-2200",
+    "name": "Jacqueline Kennedy",
+    "email": "jacqueline.kennedy@comcast.net",
+    "phone": "818-500-5703",
     "city": "Glendale",
     "county": "Los Angeles",
     "jurisdiction": "Glendale",
@@ -3231,13 +3333,14 @@
         "kind": "visit",
         "summary": "Read backyard office ADU blog post"
       }
-    ]
+    ],
+    "contactName": "Jacqueline Kennedy"
   },
   {
     "id": "lead-104",
-    "name": "3800 Torrance Blvd Estate",
-    "email": "torranceblvd.estate@gmail.com",
-    "phone": "310-371-5500",
+    "name": "Harold Stone",
+    "email": "hstone@outlook.com",
+    "phone": "310-618-5746",
     "city": "Torrance",
     "county": "Los Angeles",
     "jurisdiction": "Torrance",
@@ -3261,13 +3364,14 @@
         "kind": "visit",
         "summary": "Viewed backyard cottage photo gallery"
       }
-    ]
+    ],
+    "contactName": "Harold Stone"
   },
   {
     "id": "lead-105",
-    "name": "2210 Maple Ave Downsizer",
-    "email": "mapleave.downsize@gmail.com",
-    "phone": "310-320-9900",
+    "name": "Julia Payne",
+    "email": "juliapayne25@att.net",
+    "phone": "310-782-5789",
     "city": "Torrance",
     "county": "Los Angeles",
     "jurisdiction": "Torrance",
@@ -3291,13 +3395,14 @@
         "kind": "visit",
         "summary": "Read downsizing guide on ADU financials"
       }
-    ]
+    ],
+    "contactName": "Julia Payne"
   },
   {
     "id": "lead-106",
-    "name": "1034 Ahwanee Ave Tech Homeowner",
-    "email": "ahwaneeave.tech@gmail.com",
-    "phone": "408-746-2200",
+    "name": "Juan Duncan",
+    "email": "juan.duncan@yahoo.com",
+    "phone": "408-732-5832",
     "city": "Sunnyvale",
     "county": "Santa Clara",
     "jurisdiction": "Sunnyvale",
@@ -3325,13 +3430,14 @@
         "kind": "consult",
         "summary": "Booked site consultation"
       }
-    ]
+    ],
+    "contactName": "Juan Duncan"
   },
   {
     "id": "lead-107",
-    "name": "722 Evelyn Ave Investor",
-    "email": "evelynave.invest@gmail.com",
-    "phone": "408-739-3300",
+    "name": "Natalie Wilson",
+    "email": "nwilson@sbcglobal.net",
+    "phone": "408-736-5875",
     "city": "Sunnyvale",
     "county": "Santa Clara",
     "jurisdiction": "Sunnyvale",
@@ -3355,13 +3461,14 @@
         "kind": "visit",
         "summary": "Visited rental cash flow model"
       }
-    ]
+    ],
+    "contactName": "Natalie Wilson"
   },
   {
     "id": "lead-108",
-    "name": "891 Duane Ave Multigen",
-    "email": "duaneave.multigen@gmail.com",
-    "phone": "408-522-8800",
+    "name": "Philip Walker",
+    "email": "philipwalker28@gmail.com",
+    "phone": "408-245-5918",
     "city": "Sunnyvale",
     "county": "Santa Clara",
     "jurisdiction": "Sunnyvale",
@@ -3385,13 +3492,14 @@
         "kind": "visit",
         "summary": "Viewed multigenerational ADU layouts"
       }
-    ]
+    ],
+    "contactName": "Philip Walker"
   },
   {
     "id": "lead-109",
-    "name": "1510 Civic Center Dr Trust",
-    "email": "civiccenterdr.trust@gmail.com",
-    "phone": "408-984-2200",
+    "name": "Sofia Mitchell",
+    "email": "sofia.mitchell@icloud.com",
+    "phone": "408-554-5961",
     "city": "Santa Clara",
     "county": "Santa Clara",
     "jurisdiction": "Santa Clara",
@@ -3415,13 +3523,14 @@
         "kind": "visit",
         "summary": "Visited family cottage gallery"
       }
-    ]
+    ],
+    "contactName": "Sofia Mitchell"
   },
   {
     "id": "lead-110",
-    "name": "2800 Lafayette St Rental",
-    "email": "lafayettest.rental@gmail.com",
-    "phone": "408-244-5500",
+    "name": "Jian Cook",
+    "email": "jcook@comcast.net",
+    "phone": "408-492-6004",
     "city": "Santa Clara",
     "county": "Santa Clara",
     "jurisdiction": "Santa Clara",
@@ -3445,13 +3554,14 @@
         "kind": "visit",
         "summary": "Used rental income projection calculator"
       }
-    ]
+    ],
+    "contactName": "Jian Cook"
   },
   {
     "id": "lead-111",
-    "name": "40000 Fremont Blvd Developer",
-    "email": "fremontblvd.dev@gmail.com",
-    "phone": "510-791-4400",
+    "name": "Mariana Brooks",
+    "email": "marianabrooks31@outlook.com",
+    "phone": "510-651-6047",
     "city": "Fremont",
     "county": "Alameda",
     "jurisdiction": "Fremont",
@@ -3475,13 +3585,14 @@
         "kind": "visit",
         "summary": "Visited SB 1211 multi-ADU development page"
       }
-    ]
+    ],
+    "contactName": "Mariana Brooks"
   },
   {
     "id": "lead-112",
-    "name": "4250 Mowry Ave Multigen",
-    "email": "mowryave.family@gmail.com",
-    "phone": "510-794-2211",
+    "name": "David Foster",
+    "email": "david.foster@att.net",
+    "phone": "510-792-6090",
     "city": "Fremont",
     "county": "Alameda",
     "jurisdiction": "Fremont",
@@ -3505,13 +3616,14 @@
         "kind": "visit",
         "summary": "Read multigenerational living case study"
       }
-    ]
+    ],
+    "contactName": "David Foster"
   },
   {
     "id": "lead-113",
-    "name": "3700 Walnut Ave WFH Buyer",
-    "email": "walnutave.wfh@gmail.com",
-    "phone": "510-657-8900",
+    "name": "Lisa Jordan",
+    "email": "ljordan@yahoo.com",
+    "phone": "510-656-6133",
     "city": "Fremont",
     "county": "Alameda",
     "jurisdiction": "Fremont",
@@ -3535,13 +3647,14 @@
         "kind": "visit",
         "summary": "Visited office ADU design gallery"
       }
-    ]
+    ],
+    "contactName": "Lisa Jordan"
   },
   {
     "id": "lead-114",
-    "name": "33 W 39th Ave Caregiver",
-    "email": "39thave.caregiver@gmail.com",
-    "phone": "650-344-8800",
+    "name": "Andrew Medina",
+    "email": "andrewmedina34@sbcglobal.net",
+    "phone": "650-574-6176",
     "city": "San Mateo",
     "county": "San Mateo",
     "jurisdiction": "San Mateo",
@@ -3565,13 +3678,14 @@
         "kind": "visit",
         "summary": "Downloaded aging in place ADU custom catalog"
       }
-    ]
+    ],
+    "contactName": "Andrew Medina"
   },
   {
     "id": "lead-115",
-    "name": "1830 Hillsdale Blvd Investor",
-    "email": "hillsdaleblvd.invest@gmail.com",
-    "phone": "650-571-2200",
+    "name": "Deborah Chen",
+    "email": "deborah.chen@gmail.com",
+    "phone": "650-345-6219",
     "city": "San Mateo",
     "county": "San Mateo",
     "jurisdiction": "San Mateo",
@@ -3595,13 +3709,14 @@
         "kind": "visit",
         "summary": "Used rental cash flow projection tool"
       }
-    ]
+    ],
+    "contactName": "Deborah Chen"
   },
   {
     "id": "lead-116",
-    "name": "1625 Willow Pass Rd Homeowner",
-    "email": "willowpass.home@gmail.com",
-    "phone": "925-680-2200",
+    "name": "Jacob Mills",
+    "email": "jmills@icloud.com",
+    "phone": "925-676-6262",
     "city": "Concord",
     "county": "Contra Costa",
     "jurisdiction": "Concord",
@@ -3625,13 +3740,14 @@
         "kind": "visit",
         "summary": "Visited ADU family cottage gallery"
       }
-    ]
+    ],
+    "contactName": "Jacob Mills"
   },
   {
     "id": "lead-117",
-    "name": "2400 Monument Blvd Investor",
-    "email": "monumentblvd.invest@gmail.com",
-    "phone": "925-798-4400",
+    "name": "Pamela Spencer",
+    "email": "pamelaspencer37@comcast.net",
+    "phone": "925-682-6305",
     "city": "Concord",
     "county": "Contra Costa",
     "jurisdiction": "Concord",
@@ -3655,13 +3771,14 @@
         "kind": "visit",
         "summary": "Visited rental ROI calculator"
       }
-    ]
+    ],
+    "contactName": "Pamela Spencer"
   },
   {
     "id": "lead-118",
-    "name": "3441 Lone Tree Way Buyer",
-    "email": "lonetreeway.buyer@gmail.com",
-    "phone": "925-978-3300",
+    "name": "Alexander Smith",
+    "email": "alexander.smith@outlook.com",
+    "phone": "925-778-6348",
     "city": "Antioch",
     "county": "Contra Costa",
     "jurisdiction": "Antioch",
@@ -3685,13 +3802,14 @@
         "kind": "visit",
         "summary": "Scanned welcome mailer, viewed sizing guide"
       }
-    ]
+    ],
+    "contactName": "Alexander Smith"
   },
   {
     "id": "lead-119",
-    "name": "4100 Hillcrest Ave Developer",
-    "email": "hillcrestave.dev@gmail.com",
-    "phone": "925-779-2200",
+    "name": "Virginia Moore",
+    "email": "vmoore@att.net",
+    "phone": "925-754-6391",
     "city": "Antioch",
     "county": "Contra Costa",
     "jurisdiction": "Antioch",
@@ -3715,13 +3833,14 @@
         "kind": "visit",
         "summary": "Visited multi-ADU development resource page"
       }
-    ]
+    ],
+    "contactName": "Virginia Moore"
   },
   {
     "id": "lead-120",
-    "name": "1121 Alabama St Homeowner",
-    "email": "alabamast.home@gmail.com",
-    "phone": "707-648-2200",
+    "name": "Zachary Wright",
+    "email": "zacharywright40@yahoo.com",
+    "phone": "707-557-6434",
     "city": "Vallejo",
     "county": "Solano",
     "jurisdiction": "Vallejo",
@@ -3745,13 +3864,14 @@
         "kind": "visit",
         "summary": "Read ADU family cottage case study"
       }
-    ]
+    ],
+    "contactName": "Zachary Wright"
   },
   {
     "id": "lead-121",
-    "name": "808 Capitol St Investor",
-    "email": "capitolst.invest@gmail.com",
-    "phone": "707-554-9900",
+    "name": "Andrea Phillips",
+    "email": "andrea.phillips@sbcglobal.net",
+    "phone": "707-644-6477",
     "city": "Vallejo",
     "county": "Solano",
     "jurisdiction": "Vallejo",
@@ -3775,13 +3895,14 @@
         "kind": "visit",
         "summary": "Visited rental ROI calculator"
       }
-    ]
+    ],
+    "contactName": "Andrea Phillips"
   },
   {
     "id": "lead-122",
-    "name": "215 Keller St WFH Studio",
-    "email": "kellerst.wfh@gmail.com",
-    "phone": "707-762-4400",
+    "name": "Sean Morgan",
+    "email": "smorgan@gmail.com",
+    "phone": "707-778-6520",
     "city": "Petaluma",
     "county": "Sonoma",
     "jurisdiction": "Petaluma",
@@ -3805,13 +3926,14 @@
         "kind": "visit",
         "summary": "Visited backyard office ADU gallery"
       }
-    ]
+    ],
+    "contactName": "Sean Morgan"
   },
   {
     "id": "lead-123",
-    "name": "502 Western Ave Multigen",
-    "email": "westernave.family@gmail.com",
-    "phone": "707-778-8800",
+    "name": "Madison Bennett",
+    "email": "madisonbennett43@icloud.com",
+    "phone": "707-762-6563",
     "city": "Petaluma",
     "county": "Sonoma",
     "jurisdiction": "Petaluma",
@@ -3835,13 +3957,14 @@
         "kind": "visit",
         "summary": "Read multigenerational ADU design guide"
       }
-    ]
+    ],
+    "contactName": "Madison Bennett"
   },
   {
     "id": "lead-124",
-    "name": "1235 Mendocino Ave Investor",
-    "email": "mendocinave.invest@gmail.com",
-    "phone": "707-526-2200",
+    "name": "Joe Perry",
+    "email": "joe.perry@comcast.net",
+    "phone": "707-542-6606",
     "city": "Santa Rosa",
     "county": "Sonoma",
     "jurisdiction": "Santa Rosa",
@@ -3865,13 +3988,14 @@
         "kind": "visit",
         "summary": "Visited rental cash flow calculator"
       }
-    ]
+    ],
+    "contactName": "Joe Perry"
   },
   {
     "id": "lead-125",
-    "name": "800 4th St Family Estate",
-    "email": "4thst.family@outlook.com",
-    "phone": "707-543-9900",
+    "name": "Marie Graham",
+    "email": "mgraham@outlook.com",
+    "phone": "707-526-6649",
     "city": "Santa Rosa",
     "county": "Sonoma",
     "jurisdiction": "Santa Rosa",
@@ -3895,13 +4019,14 @@
         "kind": "visit",
         "summary": "Read family ADU planning guide"
       }
-    ]
+    ],
+    "contactName": "Marie Graham"
   },
   {
     "id": "lead-126",
-    "name": "1222 N Ventura Ave Homeowner",
-    "email": "venturaave.home@gmail.com",
-    "phone": "805-643-8800",
+    "name": "Bobby Ford",
+    "email": "bobbyford46@att.net",
+    "phone": "805-648-6692",
     "city": "Ventura",
     "county": "Ventura",
     "jurisdiction": "Ventura",
@@ -3925,13 +4050,14 @@
         "kind": "visit",
         "summary": "Viewed backyard cottage gallery"
       }
-    ]
+    ],
+    "contactName": "Bobby Ford"
   },
   {
     "id": "lead-127",
-    "name": "4320 Telegraph Rd Downsizer",
-    "email": "telegraphrd.downsize@gmail.com",
-    "phone": "805-642-4400",
+    "name": "Ananya Silva",
+    "email": "ananya.silva@yahoo.com",
+    "phone": "805-650-6735",
     "city": "Ventura",
     "county": "Ventura",
     "jurisdiction": "Ventura",
@@ -3955,13 +4081,14 @@
         "kind": "visit",
         "summary": "Visited reverse downsizing blog post"
       }
-    ]
+    ],
+    "contactName": "Ananya Silva"
   },
   {
     "id": "lead-128",
-    "name": "2200 E Hillcrest Dr Estate",
-    "email": "hillcrestdr.estate@gmail.com",
-    "phone": "805-497-8800",
+    "name": "Takashi Garza",
+    "email": "tgarza@sbcglobal.net",
+    "phone": "805-379-6778",
     "city": "Thousand Oaks",
     "county": "Ventura",
     "jurisdiction": "Thousand Oaks",
@@ -3985,13 +4112,14 @@
         "kind": "visit",
         "summary": "Read premium custom ADU design guide"
       }
-    ]
+    ],
+    "contactName": "Takashi Garza"
   },
   {
     "id": "lead-129",
-    "name": "1100 Avenida De Los Arboles Caregiver",
-    "email": "avenidaarboles.care@gmail.com",
-    "phone": "805-379-3300",
+    "name": "Deepa Vazquez",
+    "email": "deepavazquez49@gmail.com",
+    "phone": "805-492-6821",
     "city": "Thousand Oaks",
     "county": "Ventura",
     "jurisdiction": "Thousand Oaks",
@@ -4015,13 +4143,14 @@
         "kind": "visit",
         "summary": "Downloaded aging in place ADU catalog"
       }
-    ]
+    ],
+    "contactName": "Deepa Vazquez"
   },
   {
     "id": "lead-130",
-    "name": "2800 Cochran St Family Home",
-    "email": "cochranst.family@gmail.com",
-    "phone": "805-584-4400",
+    "name": "Robert Jones",
+    "email": "robert.jones@icloud.com",
+    "phone": "805-526-6864",
     "city": "Simi Valley",
     "county": "Ventura",
     "jurisdiction": "Simi Valley",
@@ -4045,13 +4174,14 @@
         "kind": "visit",
         "summary": "Viewed multigenerational ADU layouts"
       }
-    ]
+    ],
+    "contactName": "Robert Jones"
   },
   {
     "id": "lead-131",
-    "name": "2700 Saviers Rd Investor",
-    "email": "saviersrd.invest@gmail.com",
-    "phone": "805-385-2200",
+    "name": "Jessica Perez",
+    "email": "jperez@comcast.net",
+    "phone": "805-983-6907",
     "city": "Oxnard",
     "county": "Ventura",
     "jurisdiction": "Oxnard",
@@ -4075,13 +4205,14 @@
         "kind": "visit",
         "summary": "Visited rental ADU cash flow calculator"
       }
-    ]
+    ],
+    "contactName": "Jessica Perez"
   },
   {
     "id": "lead-132",
-    "name": "1400 S C St Homeowner",
-    "email": "cst.homeowner@gmail.com",
-    "phone": "805-483-9900",
+    "name": "Mark Hill",
+    "email": "markhill52@outlook.com",
+    "phone": "805-988-6950",
     "city": "Oxnard",
     "county": "Ventura",
     "jurisdiction": "Oxnard",
@@ -4105,13 +4236,14 @@
         "kind": "visit",
         "summary": "Read backyard ADU design guide"
       }
-    ]
+    ],
+    "contactName": "Mark Hill"
   },
   {
     "id": "lead-133",
-    "name": "1845 Newport Blvd WFH Studio",
-    "email": "newportblvd.studio@gmail.com",
-    "phone": "949-631-2200",
+    "name": "Carol Parker",
+    "email": "carol.parker@att.net",
+    "phone": "949-642-6993",
     "city": "Costa Mesa",
     "county": "Orange",
     "jurisdiction": "Costa Mesa",
@@ -4135,13 +4267,14 @@
         "kind": "visit",
         "summary": "Visited backyard office ADU studio page"
       }
-    ]
+    ],
+    "contactName": "Carol Parker"
   },
   {
     "id": "lead-134",
-    "name": "644 H St Family Trust",
-    "email": "hst.trust@gmail.com",
-    "phone": "619-427-4400",
+    "name": "Edward Reed",
+    "email": "ereed@yahoo.com",
+    "phone": "619-422-7036",
     "city": "Chula Vista",
     "county": "San Diego",
     "jurisdiction": "Chula Vista",
@@ -4165,13 +4298,14 @@
         "kind": "visit",
         "summary": "Read family ADU planning guide"
       }
-    ]
+    ],
+    "contactName": "Edward Reed"
   },
   {
     "id": "lead-135",
-    "name": "1200 Broadway Investor",
-    "email": "broadway.invest@gmail.com",
-    "phone": "619-422-9900",
+    "name": "Shirley Hughes",
+    "email": "shirleyhughes55@sbcglobal.net",
+    "phone": "619-691-7079",
     "city": "Chula Vista",
     "county": "San Diego",
     "jurisdiction": "Chula Vista",
@@ -4195,13 +4329,14 @@
         "kind": "visit",
         "summary": "Visited rental ROI calculator"
       }
-    ]
+    ],
+    "contactName": "Shirley Hughes"
   },
   {
     "id": "lead-136",
-    "name": "1130 E Main St Homeowner",
-    "email": "emainst.home@gmail.com",
-    "phone": "619-440-2200",
+    "name": "Benjamin Coleman",
+    "email": "benjamin.coleman@gmail.com",
+    "phone": "619-588-7122",
     "city": "El Cajon",
     "county": "San Diego",
     "jurisdiction": "El Cajon",
@@ -4225,13 +4360,14 @@
         "kind": "visit",
         "summary": "Viewed backyard cottage layouts"
       }
-    ]
+    ],
+    "contactName": "Benjamin Coleman"
   },
   {
     "id": "lead-137",
-    "name": "1700 N Broadway Investor",
-    "email": "nbroadway.invest@gmail.com",
-    "phone": "760-741-4400",
+    "name": "Maria Moreno",
+    "email": "mmoreno@icloud.com",
+    "phone": "760-741-7165",
     "city": "Escondido",
     "county": "San Diego",
     "jurisdiction": "Escondido",
@@ -4255,13 +4391,14 @@
         "kind": "visit",
         "summary": "Visited rental cash flow calculator"
       }
-    ]
+    ],
+    "contactName": "Maria Moreno"
   },
   {
     "id": "lead-138",
-    "name": "410 W 2nd Ave Downsizer",
-    "email": "2ndave.downsize@gmail.com",
-    "phone": "760-432-2200",
+    "name": "Adam Harrison",
+    "email": "adamharrison58@comcast.net",
+    "phone": "760-745-7208",
     "city": "Escondido",
     "county": "San Diego",
     "jurisdiction": "Escondido",
@@ -4285,13 +4422,14 @@
         "kind": "visit",
         "summary": "Read downsizing financial guide"
       }
-    ]
+    ],
+    "contactName": "Adam Harrison"
   },
   {
     "id": "lead-139",
-    "name": "41000 Main St Buyer",
-    "email": "mainst.buyer@gmail.com",
-    "phone": "951-695-2200",
+    "name": "Judith Wagner",
+    "email": "judith.wagner@outlook.com",
+    "phone": "951-296-7251",
     "city": "Temecula",
     "county": "Riverside",
     "jurisdiction": "Temecula",
@@ -4315,13 +4453,14 @@
         "kind": "visit",
         "summary": "Scanned welcome card, viewed ADU sizing guide"
       }
-    ]
+    ],
+    "contactName": "Judith Wagner"
   },
   {
     "id": "lead-140",
-    "name": "31500 Rancho California Rd Investor",
-    "email": "ranchocaliforniard.invest@gmail.com",
-    "phone": "951-506-8800",
+    "name": "Austin Stephens",
+    "email": "astephens@att.net",
+    "phone": "951-308-7294",
     "city": "Temecula",
     "county": "Riverside",
     "jurisdiction": "Temecula",
@@ -4345,13 +4484,14 @@
         "kind": "visit",
         "summary": "Used rental income projection calculator"
       }
-    ]
+    ],
+    "contactName": "Austin Stephens"
   },
   {
     "id": "lead-141",
-    "name": "24600 Jefferson Ave Family Home",
-    "email": "jeffersonave.family@gmail.com",
-    "phone": "951-304-9900",
+    "name": "Janice Hart",
+    "email": "janicehart61@yahoo.com",
+    "phone": "951-600-7337",
     "city": "Murrieta",
     "county": "Riverside",
     "jurisdiction": "Murrieta",
@@ -4375,13 +4515,14 @@
         "kind": "visit",
         "summary": "Viewed multigenerational ADU gallery"
       }
-    ]
+    ],
+    "contactName": "Janice Hart"
   },
   {
     "id": "lead-142",
-    "name": "13125 Perris Blvd Homeowner",
-    "email": "perrisblvd.home@gmail.com",
-    "phone": "951-413-3300",
+    "name": "Billy Rodriguez",
+    "email": "billy.rodriguez@sbcglobal.net",
+    "phone": "951-485-7380",
     "city": "Moreno Valley",
     "county": "Riverside",
     "jurisdiction": "Moreno Valley",
@@ -4405,13 +4546,14 @@
         "kind": "visit",
         "summary": "Read ADU family cottage planning guide"
       }
-    ]
+    ],
+    "contactName": "Billy Rodriguez"
   },
   {
     "id": "lead-143",
-    "name": "12500 Day St Investor",
-    "email": "dayst.invest@gmail.com",
-    "phone": "951-485-4400",
+    "name": "Danielle Sanchez",
+    "email": "dsanchez@gmail.com",
+    "phone": "951-924-7423",
     "city": "Moreno Valley",
     "county": "Riverside",
     "jurisdiction": "Moreno Valley",
@@ -4435,13 +4577,14 @@
         "kind": "visit",
         "summary": "Visited rental income calculator"
       }
-    ]
+    ],
+    "contactName": "Danielle Sanchez"
   },
   {
     "id": "lead-144",
-    "name": "310 S Ramona Ave Downsizer",
-    "email": "ramonaave.downsize@gmail.com",
-    "phone": "951-736-2200",
+    "name": "Mason Nelson",
+    "email": "masonnelson64@icloud.com",
+    "phone": "951-279-7466",
     "city": "Corona",
     "county": "Riverside",
     "jurisdiction": "Corona",
@@ -4465,13 +4608,14 @@
         "kind": "visit",
         "summary": "Read downsizing guide on ADU financial benefits"
       }
-    ]
+    ],
+    "contactName": "Mason Nelson"
   },
   {
     "id": "lead-145",
-    "name": "2500 Foothill Pkwy Investor",
-    "email": "foothillpkwy.invest@gmail.com",
-    "phone": "951-279-8800",
+    "name": "Tiffany Reyes",
+    "email": "tiffany.reyes@comcast.net",
+    "phone": "951-736-7509",
     "city": "Corona",
     "county": "Riverside",
     "jurisdiction": "Corona",
@@ -4495,13 +4639,14 @@
         "kind": "visit",
         "summary": "Used ADU rental cash flow projection tool"
       }
-    ]
+    ],
+    "contactName": "Tiffany Reyes"
   },
   {
     "id": "lead-146",
-    "name": "9500 Base Line Rd Estate",
-    "email": "baselinerd.estate@gmail.com",
-    "phone": "909-477-2700",
+    "name": "Alejandro Kim",
+    "email": "akim@outlook.com",
+    "phone": "909-987-7552",
     "city": "Rancho Cucamonga",
     "county": "San Bernardino",
     "jurisdiction": "Rancho Cucamonga",
@@ -4525,13 +4670,14 @@
         "kind": "visit",
         "summary": "Viewed premium ADU design catalog"
       }
-    ]
+    ],
+    "contactName": "Alejandro Kim"
   },
   {
     "id": "lead-147",
-    "name": "10400 Foothill Blvd Caregiver",
-    "email": "foothillblvd.care@gmail.com",
-    "phone": "909-481-2200",
+    "name": "Yan Sanders",
+    "email": "yansanders67@att.net",
+    "phone": "909-484-7595",
     "city": "Rancho Cucamonga",
     "county": "San Bernardino",
     "jurisdiction": "Rancho Cucamonga",
@@ -4555,13 +4701,14 @@
         "kind": "visit",
         "summary": "Downloaded aging in place custom build catalog"
       }
-    ]
+    ],
+    "contactName": "Yan Sanders"
   },
   {
     "id": "lead-148",
-    "name": "8350 Sierra Ave Buyer",
-    "email": "sierraave.buyer@gmail.com",
-    "phone": "909-350-6600",
+    "name": "Karan Gonzales",
+    "email": "karan.gonzales@yahoo.com",
+    "phone": "909-357-7638",
     "city": "Fontana",
     "county": "San Bernardino",
     "jurisdiction": "Fontana",
@@ -4585,13 +4732,14 @@
         "kind": "visit",
         "summary": "Scanned welcome postcard, viewed ADU specs"
       }
-    ]
+    ],
+    "contactName": "Karan Gonzales"
   },
   {
     "id": "lead-149",
-    "name": "1290 N D St Homeowner",
-    "email": "ndst.home@gmail.com",
-    "phone": "909-887-4400",
+    "name": "Elizabeth Bryant",
+    "email": "ebryant@sbcglobal.net",
+    "phone": "909-882-7681",
     "city": "San Bernardino",
     "county": "San Bernardino",
     "jurisdiction": "San Bernardino",
@@ -4615,13 +4763,14 @@
         "kind": "visit",
         "summary": "Visited ADU design gallery"
       }
-    ]
+    ],
+    "contactName": "Elizabeth Bryant"
   },
   {
     "id": "lead-150",
-    "name": "14400 Civic Dr Investor",
-    "email": "civicdr.invest@gmail.com",
-    "phone": "760-243-8800",
+    "name": "Daniel Washington",
+    "email": "danielwashington70@gmail.com",
+    "phone": "760-243-7724",
     "city": "Victorville",
     "county": "San Bernardino",
     "jurisdiction": "Victorville",
@@ -4645,13 +4794,14 @@
         "kind": "visit",
         "summary": "Used rental cash flow calculator"
       }
-    ]
+    ],
+    "contactName": "Daniel Washington"
   },
   {
     "id": "lead-151",
-    "name": "39650 30th St W Developer",
-    "email": "30thstw.dev@gmail.com",
-    "phone": "661-267-5500",
+    "name": "Emily Rose",
+    "email": "emily.rose@icloud.com",
+    "phone": "661-947-7767",
     "city": "Palmdale",
     "county": "Los Angeles",
     "jurisdiction": "Palmdale",
@@ -4675,13 +4825,14 @@
         "kind": "visit",
         "summary": "Visited multi-ADU development resource page"
       }
-    ]
+    ],
+    "contactName": "Emily Rose"
   },
   {
     "id": "lead-152",
-    "name": "1505 W Avenue K Buyer",
-    "email": "avenyek.buyer@gmail.com",
-    "phone": "661-945-9900",
+    "name": "Ronald Gardner",
+    "email": "rgardner@comcast.net",
+    "phone": "661-723-7810",
     "city": "Lancaster",
     "county": "Los Angeles",
     "jurisdiction": "Lancaster",
@@ -4705,13 +4856,14 @@
         "kind": "visit",
         "summary": "Scanned welcome mailer, read ADU sizing guide"
       }
-    ]
+    ],
+    "contactName": "Ronald Gardner"
   },
   {
     "id": "lead-153",
-    "name": "2000 Sunrise Ave Investor",
-    "email": "sunriseave.invest@gmail.com",
-    "phone": "916-773-4400",
+    "name": "Amy Cunningham",
+    "email": "amycunningham73@outlook.com",
+    "phone": "916-782-7853",
     "city": "Roseville",
     "county": "Placer",
     "jurisdiction": "Roseville",
@@ -4735,13 +4887,14 @@
         "kind": "visit",
         "summary": "Visited rental cash flow calculator"
       }
-    ]
+    ],
+    "contactName": "Amy Cunningham"
   },
   {
     "id": "lead-154",
-    "name": "1020 Foothills Blvd Family Trust",
-    "email": "foothillsblvd.family@gmail.com",
-    "phone": "916-774-2200",
+    "name": "Justin Gonzalez",
+    "email": "justin.gonzalez@att.net",
+    "phone": "916-786-7896",
     "city": "Roseville",
     "county": "Placer",
     "jurisdiction": "Roseville",
@@ -4765,13 +4918,14 @@
         "kind": "visit",
         "summary": "Read family ADU planning case study"
       }
-    ]
+    ],
+    "contactName": "Justin Gonzalez"
   },
   {
     "id": "lead-155",
-    "name": "9500 Elk Grove Blvd Homeowner",
-    "email": "elkgroveblvd.home@gmail.com",
-    "phone": "916-685-2200",
+    "name": "Rachel Robinson",
+    "email": "rrobinson@yahoo.com",
+    "phone": "916-683-7939",
     "city": "Elk Grove",
     "county": "Sacramento",
     "jurisdiction": "Elk Grove",
@@ -4795,13 +4949,14 @@
         "kind": "visit",
         "summary": "Viewed family ADU backyard cottage gallery"
       }
-    ]
+    ],
+    "contactName": "Rachel Robinson"
   },
   {
     "id": "lead-156",
-    "name": "900 McHenry Ave Investor",
-    "email": "mchenryave.invest@gmail.com",
-    "phone": "209-527-8800",
+    "name": "Tyler Campbell",
+    "email": "tylercampbell76@sbcglobal.net",
+    "phone": "209-524-7982",
     "city": "Modesto",
     "county": "Stanislaus",
     "jurisdiction": "Modesto",
@@ -4825,13 +4980,14 @@
         "kind": "visit",
         "summary": "Visited rental cash flow calculator"
       }
-    ]
+    ],
+    "contactName": "Tyler Campbell"
   },
   {
     "id": "lead-157",
-    "name": "1530 Oakdale Rd Multigen",
-    "email": "oakdalerd.family@gmail.com",
-    "phone": "209-545-4400",
+    "name": "Lauren Murphy",
+    "email": "lauren.murphy@gmail.com",
+    "phone": "209-527-8025",
     "city": "Modesto",
     "county": "Stanislaus",
     "jurisdiction": "Modesto",
@@ -4855,13 +5011,14 @@
         "kind": "visit",
         "summary": "Read multigenerational ADU planning guide"
       }
-    ]
+    ],
+    "contactName": "Lauren Murphy"
   },
   {
     "id": "lead-158",
-    "name": "4200 W Mineral King Ave Homeowner",
-    "email": "mineralking.home@gmail.com",
-    "phone": "559-627-2200",
+    "name": "Christian Watson",
+    "email": "cwatson@icloud.com",
+    "phone": "559-734-8068",
     "city": "Visalia",
     "county": "Tulare",
     "jurisdiction": "Visalia",
@@ -4885,13 +5042,14 @@
         "kind": "visit",
         "summary": "Viewed ADU family cottage photo gallery"
       }
-    ]
+    ],
+    "contactName": "Christian Watson"
   },
   {
     "id": "lead-159",
-    "name": "630 N Court St Downsizer",
-    "email": "courtst.downsize@gmail.com",
-    "phone": "559-733-8800",
+    "name": "Teresa Ross",
+    "email": "teresaross79@comcast.net",
+    "phone": "559-627-8111",
     "city": "Visalia",
     "county": "Tulare",
     "jurisdiction": "Visalia",
@@ -4915,13 +5073,14 @@
         "kind": "visit",
         "summary": "Read downsizing financial guide"
       }
-    ]
+    ],
+    "contactName": "Teresa Ross"
   },
   {
     "id": "lead-160",
-    "name": "1010 S Main St Family Home",
-    "email": "smainst.family@gmail.com",
-    "phone": "831-757-8800",
+    "name": "Jordan Romero",
+    "email": "jordan.romero@outlook.com",
+    "phone": "831-449-8154",
     "city": "Salinas",
     "county": "Monterey",
     "jurisdiction": "Salinas",
@@ -4945,13 +5104,14 @@
         "kind": "visit",
         "summary": "Viewed family ADU backyard cottage layouts"
       }
-    ]
+    ],
+    "contactName": "Jordan Romero"
   },
   {
     "id": "lead-161",
-    "name": "550 E Alisal St Caregiver",
-    "email": "ealisal.care@gmail.com",
-    "phone": "831-422-4400",
+    "name": "Amber Tran",
+    "email": "atran@att.net",
+    "phone": "831-757-8197",
     "city": "Salinas",
     "county": "Monterey",
     "jurisdiction": "Salinas",
@@ -4975,13 +5135,14 @@
         "kind": "visit",
         "summary": "Downloaded aging in place ADU build catalog"
       }
-    ]
+    ],
+    "contactName": "Amber Tran"
   },
   {
     "id": "lead-162",
-    "name": "1200 Geneva Ave Multigen",
-    "email": "genevaave.family@gmail.com",
-    "phone": "650-755-8800",
+    "name": "Wayne Henry",
+    "email": "waynehenry82@yahoo.com",
+    "phone": "415-755-8240",
     "city": "Daly City",
     "county": "San Mateo",
     "jurisdiction": "Daly City",
@@ -5005,13 +5166,14 @@
         "kind": "visit",
         "summary": "Read multigenerational ADU planning case study"
       }
-    ]
+    ],
+    "contactName": "Wayne Henry"
   },
   {
     "id": "lead-163",
-    "name": "22300 Foothill Blvd Investor",
-    "email": "foothillblvd.hayward@gmail.com",
-    "phone": "510-581-2200",
+    "name": "Alexis Warren",
+    "email": "alexis.warren@sbcglobal.net",
+    "phone": "510-881-8283",
     "city": "Hayward",
     "county": "Alameda",
     "jurisdiction": "Hayward",
@@ -5035,13 +5197,14 @@
         "kind": "visit",
         "summary": "Visited rental cash flow model"
       }
-    ]
+    ],
+    "contactName": "Alexis Warren"
   },
   {
     "id": "lead-164",
-    "name": "1000 B St Family Home",
-    "email": "bst.hayward.family@gmail.com",
-    "phone": "510-583-8800",
+    "name": "Wei Kelley",
+    "email": "wkelley@gmail.com",
+    "phone": "510-785-8326",
     "city": "Hayward",
     "county": "Alameda",
     "jurisdiction": "Hayward",
@@ -5065,13 +5228,14 @@
         "kind": "visit",
         "summary": "Read family backyard cottage guide"
       }
-    ]
+    ],
+    "contactName": "Wei Kelley"
   },
   {
     "id": "lead-165",
-    "name": "310 E Nutwood St Buyer",
-    "email": "nutwoodst.buyer@gmail.com",
-    "phone": "310-412-5500",
+    "name": "Yuki Carroll",
+    "email": "yukicarroll85@icloud.com",
+    "phone": "310-412-8369",
     "city": "Inglewood",
     "county": "Los Angeles",
     "jurisdiction": "Inglewood",
@@ -5095,13 +5259,14 @@
         "kind": "visit",
         "summary": "Scanned welcome mailer, read ADU planning guide"
       }
-    ]
+    ],
+    "contactName": "Yuki Carroll"
   },
   {
     "id": "lead-166",
-    "name": "800 N La Brea Ave Investor",
-    "email": "labreave.invest@gmail.com",
-    "phone": "310-677-8800",
+    "name": "Bao Taylor",
+    "email": "bao.taylor@comcast.net",
+    "phone": "310-671-8412",
     "city": "Inglewood",
     "county": "Los Angeles",
     "jurisdiction": "Inglewood",
@@ -5125,13 +5290,14 @@
         "kind": "visit",
         "summary": "Visited rental ADU ROI calculator"
       }
-    ]
+    ],
+    "contactName": "Bao Taylor"
   },
   {
     "id": "lead-167",
-    "name": "1500 W Cameron Ave Buyer",
-    "email": "cameronave.buyer@gmail.com",
-    "phone": "626-813-9900",
+    "name": "Patricia King",
+    "email": "pking@outlook.com",
+    "phone": "626-856-8455",
     "city": "West Covina",
     "county": "Los Angeles",
     "jurisdiction": "West Covina",
@@ -5155,13 +5321,14 @@
         "kind": "visit",
         "summary": "Scanned welcome mailer QR code"
       }
-    ]
+    ],
+    "contactName": "Patricia King"
   },
   {
     "id": "lead-168",
-    "name": "850 S Garey Ave Multigen",
-    "email": "gareyave.family@gmail.com",
-    "phone": "909-629-2200",
+    "name": "Thomas Gomez",
+    "email": "thomasgomez88@att.net",
+    "phone": "626-469-8498",
     "city": "Pomona",
     "county": "Los Angeles",
     "jurisdiction": "Pomona",
@@ -5185,13 +5352,14 @@
         "kind": "visit",
         "summary": "Read multigenerational ADU planning guide"
       }
-    ]
+    ],
+    "contactName": "Thomas Gomez"
   },
   {
     "id": "lead-169",
-    "name": "8300 Florence Ave Investor",
-    "email": "florenceave.invest@gmail.com",
-    "phone": "562-622-4400",
+    "name": "Margaret Ortiz",
+    "email": "margaret.ortiz@yahoo.com",
+    "phone": "562-861-8541",
     "city": "Downey",
     "county": "Los Angeles",
     "jurisdiction": "Downey",
@@ -5215,13 +5383,14 @@
         "kind": "visit",
         "summary": "Visited rental ADU cash flow calculator"
       }
-    ]
+    ],
+    "contactName": "Margaret Ortiz"
   },
   {
     "id": "lead-170",
-    "name": "11401 Valley Blvd Homeowner",
-    "email": "valleyblvd.home@gmail.com",
-    "phone": "626-580-2200",
+    "name": "Kevin James",
+    "email": "kjames@sbcglobal.net",
+    "phone": "626-444-8584",
     "city": "El Monte",
     "county": "Los Angeles",
     "jurisdiction": "El Monte",
@@ -5245,13 +5414,14 @@
         "kind": "visit",
         "summary": "Visited family cottage photo gallery"
       }
-    ]
+    ],
+    "contactName": "Kevin James"
   },
   {
     "id": "lead-171",
-    "name": "2700 Hilltop Dr Homeowner",
-    "email": "hilltopdr.home@gmail.com",
-    "phone": "530-241-8800",
+    "name": "Laura Jenkins",
+    "email": "laurajenkins91@gmail.com",
+    "phone": "530-244-8627",
     "city": "Redding",
     "county": "Shasta",
     "jurisdiction": "Redding",
@@ -5275,13 +5445,14 @@
         "kind": "visit",
         "summary": "Read ADU family cottage planning guide"
       }
-    ]
+    ],
+    "contactName": "Laura Jenkins"
   },
   {
     "id": "lead-172",
-    "name": "1200 South St Investor",
-    "email": "southst.redding.invest@gmail.com",
-    "phone": "530-244-4400",
+    "name": "Jonathan Hamilton",
+    "email": "jonathan.hamilton@icloud.com",
+    "phone": "530-222-8670",
     "city": "Redding",
     "county": "Shasta",
     "jurisdiction": "Redding",
@@ -5305,13 +5476,14 @@
         "kind": "visit",
         "summary": "Used rental income projection calculator"
       }
-    ]
+    ],
+    "contactName": "Jonathan Hamilton"
   },
   {
     "id": "lead-173",
-    "name": "15555 Sand Canyon Ave Studio",
-    "email": "sandcanyonave.studio@gmail.com",
-    "phone": "949-724-2200",
+    "name": "Katherine Murray",
+    "email": "kmurray@comcast.net",
+    "phone": "949-724-8713",
     "city": "Irvine",
     "county": "Orange",
     "jurisdiction": "Orange County",
@@ -5335,13 +5507,14 @@
         "kind": "visit",
         "summary": "Visited premium backyard office studio page"
       }
-    ]
+    ],
+    "contactName": "Katherine Murray"
   },
   {
     "id": "lead-174",
-    "name": "18 Morgan Caregiver Suite",
-    "email": "morgan.caregiver@gmail.com",
-    "phone": "949-553-8800",
+    "name": "Jack Crawford",
+    "email": "jackcrawford94@outlook.com",
+    "phone": "949-786-8756",
     "city": "Irvine",
     "county": "Orange",
     "jurisdiction": "Orange County",
@@ -5365,13 +5538,14 @@
         "kind": "visit",
         "summary": "Downloaded aging in place custom build catalog"
       }
-    ]
+    ],
+    "contactName": "Jack Crawford"
   },
   {
     "id": "lead-175",
-    "name": "900 Civic Center Dr DNC",
-    "email": "civic.dnc@gmail.com",
-    "phone": "714-555-0606",
+    "name": "Carol Ivey",
+    "email": "carol.ivey@gmail.com",
+    "phone": "714-535-8799",
     "city": "Anaheim",
     "county": "Orange",
     "jurisdiction": "Anaheim",
@@ -5395,13 +5569,14 @@
         "kind": "visit",
         "summary": "Replied: Do not contact again"
       }
-    ]
+    ],
+    "contactName": "Carol Ivey"
   },
   {
     "id": "lead-176",
-    "name": "5500 Sunset Blvd Owner DNC",
-    "email": "sunsetblvd.dnc@outlook.com",
-    "phone": "323-555-0707",
+    "name": "Samuel Thornton",
+    "email": "samuel.thornton@outlook.com",
+    "phone": "310-829-8842",
     "city": "Los Angeles",
     "county": "Los Angeles",
     "jurisdiction": "Los Angeles",
@@ -5425,13 +5600,14 @@
         "kind": "visit",
         "summary": "Clicked unsubscribe link in email footer"
       }
-    ]
+    ],
+    "contactName": "Samuel Thornton"
   },
   {
     "id": "lead-177",
-    "name": "100 Main St Salinas DNC",
-    "email": "salinas.dnc@gmail.com",
-    "phone": "831-555-0808",
+    "name": "Monica Salinas",
+    "email": "monica.salinas@gmail.com",
+    "phone": "831-757-8885",
     "city": "Salinas",
     "county": "Monterey",
     "jurisdiction": "Salinas",
@@ -5455,14 +5631,15 @@
         "kind": "visit",
         "summary": "Replied: Please remove from list"
       }
-    ]
+    ],
+    "contactName": "Monica Salinas"
   },
   {
     "id": "lead-178",
-    "name": "7417 Alton Pkwy Property Owner",
+    "name": "Daniel Kim",
     "contactName": "Daniel Kim",
-    "email": "danielkim.adu7417@gmail.com",
-    "phone": "926-555-3001",
+    "email": "daniel.kim@gmail.com",
+    "phone": "949-415-8928",
     "city": "Irvine",
     "county": "Orange",
     "jurisdiction": "Irvine",
@@ -5490,10 +5667,10 @@
   },
   {
     "id": "lead-179",
-    "name": "7434 Culver Dr Property Owner",
+    "name": "Christine Wu",
     "contactName": "Christine Wu",
-    "email": "christinewu.adu7434@yahoo.com",
-    "phone": "926-555-3002",
+    "email": "cwu@icloud.com",
+    "phone": "949-354-8971",
     "city": "Irvine",
     "county": "Orange",
     "jurisdiction": "Irvine",
@@ -5525,10 +5702,10 @@
   },
   {
     "id": "lead-180",
-    "name": "7451 Harvard Ave Property Owner",
+    "name": "Robert Anderson",
     "contactName": "Robert Anderson",
-    "email": "robertanderson.adu7451@outlook.com",
-    "phone": "926-555-3003",
+    "email": "robertanderson11@comcast.net",
+    "phone": "949-724-9014",
     "city": "Irvine",
     "county": "Orange",
     "jurisdiction": "Irvine",
@@ -5556,10 +5733,10 @@
   },
   {
     "id": "lead-181",
-    "name": "7468 Yale Ave Property Owner",
+    "name": "Michael Chang",
     "contactName": "Michael Chang",
-    "email": "michaelchang.adu7468@gmail.com",
-    "phone": "926-555-3004",
+    "email": "michael.chang@outlook.com",
+    "phone": "949-786-9057",
     "city": "Irvine",
     "county": "Orange",
     "jurisdiction": "Irvine",
@@ -5587,10 +5764,10 @@
   },
   {
     "id": "lead-182",
-    "name": "7485 Bryan Ave Property Owner",
+    "name": "Sophia Patel",
     "contactName": "Sophia Patel",
-    "email": "sophiapatel.adu7485@yahoo.com",
-    "phone": "926-555-3005",
+    "email": "spatel@att.net",
+    "phone": "949-262-9100",
     "city": "Irvine",
     "county": "Orange",
     "jurisdiction": "Irvine",
@@ -5618,10 +5795,10 @@
   },
   {
     "id": "lead-183",
-    "name": "7502 Jeffrey Rd Property Owner",
+    "name": "William Evans",
     "contactName": "William Evans",
-    "email": "williamevans.adu7502@outlook.com",
-    "phone": "926-555-3006",
+    "email": "williamevans14@yahoo.com",
+    "phone": "949-756-9143",
     "city": "Irvine",
     "county": "Orange",
     "jurisdiction": "Irvine",
@@ -5649,10 +5826,10 @@
   },
   {
     "id": "lead-184",
-    "name": "7519 Barranca Pkwy Property Owner",
+    "name": "Jessica Liu",
     "contactName": "Jessica Liu",
-    "email": "jessicaliu.adu7519@gmail.com",
-    "phone": "926-555-3007",
+    "email": "jessica.liu@sbcglobal.net",
+    "phone": "949-854-9186",
     "city": "Irvine",
     "county": "Orange",
     "jurisdiction": "Irvine",
@@ -5680,10 +5857,10 @@
   },
   {
     "id": "lead-185",
-    "name": "7536 Sand Canyon Rd Property Owner",
+    "name": "David Tanaka",
     "contactName": "David Tanaka",
-    "email": "davidtanaka.adu7536@yahoo.com",
-    "phone": "926-555-3008",
+    "email": "dtanaka@gmail.com",
+    "phone": "949-415-9229",
     "city": "Irvine",
     "county": "Orange",
     "jurisdiction": "Irvine",
@@ -5711,10 +5888,10 @@
   },
   {
     "id": "lead-186",
-    "name": "7553 Bayside Dr Property Owner",
+    "name": "Victoria Sterling",
     "contactName": "Victoria Sterling",
-    "email": "victoriasterling.adu7553@outlook.com",
-    "phone": "926-555-3009",
+    "email": "victoriasterling17@icloud.com",
+    "phone": "949-673-9272",
     "city": "Newport Beach",
     "county": "Orange",
     "jurisdiction": "Newport Beach",
@@ -5746,10 +5923,10 @@
   },
   {
     "id": "lead-187",
-    "name": "7570 MacArthur Blvd Property Owner",
+    "name": "Harrison Wells",
     "contactName": "Harrison Wells",
-    "email": "harrisonwells.adu7570@gmail.com",
-    "phone": "926-555-3010",
+    "email": "harrison.wells@comcast.net",
+    "phone": "949-720-9315",
     "city": "Newport Beach",
     "county": "Orange",
     "jurisdiction": "Newport Beach",
@@ -5777,10 +5954,10 @@
   },
   {
     "id": "lead-188",
-    "name": "7587 Irvine Ave Property Owner",
+    "name": "Catherine Vance",
     "contactName": "Catherine Vance",
-    "email": "catherinevance.adu7587@yahoo.com",
-    "phone": "926-555-3011",
+    "email": "cvance@outlook.com",
+    "phone": "949-640-9358",
     "city": "Newport Beach",
     "county": "Orange",
     "jurisdiction": "Newport Beach",
@@ -5808,10 +5985,10 @@
   },
   {
     "id": "lead-189",
-    "name": "7604 Dover Dr Property Owner",
+    "name": "Brian Callahan",
     "contactName": "Brian Callahan",
-    "email": "briancallahan.adu7604@outlook.com",
-    "phone": "926-555-3012",
+    "email": "briancallahan20@att.net",
+    "phone": "949-644-9401",
     "city": "Newport Beach",
     "county": "Orange",
     "jurisdiction": "Newport Beach",
@@ -5839,10 +6016,10 @@
   },
   {
     "id": "lead-190",
-    "name": "7621 Jamboree Rd Property Owner",
+    "name": "Jonathan Reed",
     "contactName": "Jonathan Reed",
-    "email": "jonathanreed.adu7621@gmail.com",
-    "phone": "926-555-3013",
+    "email": "jonathan.reed@yahoo.com",
+    "phone": "949-673-9444",
     "city": "Newport Beach",
     "county": "Orange",
     "jurisdiction": "Newport Beach",
@@ -5870,10 +6047,10 @@
   },
   {
     "id": "lead-191",
-    "name": "7638 Adams Ave Property Owner",
+    "name": "Gary Thompson",
     "contactName": "Gary Thompson",
-    "email": "garythompson.adu7638@yahoo.com",
-    "phone": "926-555-3014",
+    "email": "gthompson@sbcglobal.net",
+    "phone": "714-842-9487",
     "city": "Huntington Beach",
     "county": "Orange",
     "jurisdiction": "Huntington Beach",
@@ -5909,10 +6086,10 @@
   },
   {
     "id": "lead-192",
-    "name": "7655 Bushard St Property Owner",
+    "name": "Laura Martinez",
     "contactName": "Laura Martinez",
-    "email": "lauramartinez.adu7655@outlook.com",
-    "phone": "926-555-3015",
+    "email": "lauramartinez23@gmail.com",
+    "phone": "714-960-9530",
     "city": "Huntington Beach",
     "county": "Orange",
     "jurisdiction": "Huntington Beach",
@@ -5940,10 +6117,10 @@
   },
   {
     "id": "lead-193",
-    "name": "7672 Brookhurst St Property Owner",
+    "name": "Kevin O'Connor",
     "contactName": "Kevin O'Connor",
-    "email": "kevinoconnor.adu7672@gmail.com",
-    "phone": "926-555-3016",
+    "email": "kevin.oconnor@icloud.com",
+    "phone": "714-847-9573",
     "city": "Huntington Beach",
     "county": "Orange",
     "jurisdiction": "Huntington Beach",
@@ -5975,10 +6152,10 @@
   },
   {
     "id": "lead-194",
-    "name": "7689 Indianapolis Ave Property Owner",
+    "name": "Nancy Higgins",
     "contactName": "Nancy Higgins",
-    "email": "nancyhiggins.adu7689@yahoo.com",
-    "phone": "926-555-3017",
+    "email": "nhiggins@comcast.net",
+    "phone": "714-536-9616",
     "city": "Huntington Beach",
     "county": "Orange",
     "jurisdiction": "Huntington Beach",
@@ -6006,10 +6183,10 @@
   },
   {
     "id": "lead-195",
-    "name": "7706 Garfield Ave Property Owner",
+    "name": "Steven Ross",
     "contactName": "Steven Ross",
-    "email": "stevenross.adu7706@outlook.com",
-    "phone": "926-555-3018",
+    "email": "stevenross26@outlook.com",
+    "phone": "714-840-9659",
     "city": "Huntington Beach",
     "county": "Orange",
     "jurisdiction": "Huntington Beach",
@@ -6037,10 +6214,10 @@
   },
   {
     "id": "lead-196",
-    "name": "7723 Atlanta Ave Property Owner",
+    "name": "Ashley Crawford",
     "contactName": "Ashley Crawford",
-    "email": "ashleycrawford.adu7723@gmail.com",
-    "phone": "926-555-3019",
+    "email": "ashley.crawford@att.net",
+    "phone": "714-842-9702",
     "city": "Huntington Beach",
     "county": "Orange",
     "jurisdiction": "Huntington Beach",
@@ -6068,10 +6245,10 @@
   },
   {
     "id": "lead-197",
-    "name": "7740 Brookhurst St Property Owner",
+    "name": "Eduardo Morales",
     "contactName": "Eduardo Morales",
-    "email": "eduardomorales.adu7740@yahoo.com",
-    "phone": "928-555-3020",
+    "email": "emorales@yahoo.com",
+    "phone": "714-635-9745",
     "city": "Anaheim",
     "county": "Orange",
     "jurisdiction": "Anaheim",
@@ -6099,10 +6276,10 @@
   },
   {
     "id": "lead-198",
-    "name": "7757 Euclid St Property Owner",
+    "name": "Fatima Al-Mansoor",
     "contactName": "Fatima Al-Mansoor",
-    "email": "fatimaal-mansoor.adu7757@outlook.com",
-    "phone": "928-555-3021",
+    "email": "fatimaalmansoor29@sbcglobal.net",
+    "phone": "714-991-9788",
     "city": "Anaheim",
     "county": "Orange",
     "jurisdiction": "Anaheim",
@@ -6130,10 +6307,10 @@
   },
   {
     "id": "lead-199",
-    "name": "7774 Ball Rd Property Owner",
+    "name": "Jason Nguyen",
     "contactName": "Jason Nguyen",
-    "email": "jasonnguyen.adu7774@gmail.com",
-    "phone": "928-555-3022",
+    "email": "jason.nguyen@gmail.com",
+    "phone": "714-535-9831",
     "city": "Anaheim",
     "county": "Orange",
     "jurisdiction": "Anaheim",
@@ -6161,10 +6338,10 @@
   },
   {
     "id": "lead-200",
-    "name": "7791 Lincoln Ave Property Owner",
+    "name": "Carlos Mendez",
     "contactName": "Carlos Mendez",
-    "email": "carlosmendez.adu7791@yahoo.com",
-    "phone": "928-555-3023",
+    "email": "cmendez@icloud.com",
+    "phone": "714-778-9874",
     "city": "Anaheim",
     "county": "Orange",
     "jurisdiction": "Anaheim",
@@ -6196,10 +6373,10 @@
   },
   {
     "id": "lead-201",
-    "name": "7808 Cerritos Ave Property Owner",
+    "name": "Sandeep Sharma",
     "contactName": "Sandeep Sharma",
-    "email": "sandeepsharma.adu7808@outlook.com",
-    "phone": "928-555-3024",
+    "email": "sandeepsharma32@comcast.net",
+    "phone": "714-491-9917",
     "city": "Anaheim",
     "county": "Orange",
     "jurisdiction": "Anaheim",
@@ -6227,10 +6404,10 @@
   },
   {
     "id": "lead-202",
-    "name": "7825 State College Blvd Property Owner",
+    "name": "Michelle Tran",
     "contactName": "Michelle Tran",
-    "email": "michelletran.adu7825@gmail.com",
-    "phone": "928-555-3025",
+    "email": "michelle.tran@outlook.com",
+    "phone": "714-774-9960",
     "city": "Anaheim",
     "county": "Orange",
     "jurisdiction": "Anaheim",
@@ -6258,10 +6435,10 @@
   },
   {
     "id": "lead-203",
-    "name": "7842 Malvern Ave Property Owner",
+    "name": "Thomas Bradley",
     "contactName": "Thomas Bradley",
-    "email": "thomasbradley.adu7842@yahoo.com",
-    "phone": "928-555-3026",
+    "email": "tbradley@att.net",
+    "phone": "714-738-1013",
     "city": "Fullerton",
     "county": "Orange",
     "jurisdiction": "Fullerton",
@@ -6289,10 +6466,10 @@
   },
   {
     "id": "lead-204",
-    "name": "7859 Chapman Ave Property Owner",
+    "name": "Eric Gustafson",
     "contactName": "Eric Gustafson",
-    "email": "ericgustafson.adu7859@outlook.com",
-    "phone": "928-555-3027",
+    "email": "ericgustafson35@yahoo.com",
+    "phone": "714-526-1056",
     "city": "Fullerton",
     "county": "Orange",
     "jurisdiction": "Fullerton",
@@ -6320,10 +6497,10 @@
   },
   {
     "id": "lead-205",
-    "name": "7876 Euclid St Property Owner",
+    "name": "Barbara Jensen",
     "contactName": "Barbara Jensen",
-    "email": "barbarajensen.adu7876@gmail.com",
-    "phone": "928-555-3028",
+    "email": "barbara.jensen@sbcglobal.net",
+    "phone": "714-871-1099",
     "city": "Fullerton",
     "county": "Orange",
     "jurisdiction": "Fullerton",
@@ -6351,10 +6528,10 @@
   },
   {
     "id": "lead-206",
-    "name": "7893 Gilbert St Property Owner",
+    "name": "Anthony Ricci",
     "contactName": "Anthony Ricci",
-    "email": "anthonyricci.adu7893@yahoo.com",
-    "phone": "928-555-3029",
+    "email": "aricci@gmail.com",
+    "phone": "714-525-1142",
     "city": "Fullerton",
     "county": "Orange",
     "jurisdiction": "Fullerton",
@@ -6382,10 +6559,10 @@
   },
   {
     "id": "lead-207",
-    "name": "7910 Bastanchury Rd Property Owner",
+    "name": "Patrick Hennessey",
     "contactName": "Patrick Hennessey",
-    "email": "patrickhennessey.adu7910@outlook.com",
-    "phone": "928-555-3030",
+    "email": "patrickhennessey38@icloud.com",
+    "phone": "714-738-1185",
     "city": "Fullerton",
     "county": "Orange",
     "jurisdiction": "Fullerton",
@@ -6417,10 +6594,10 @@
   },
   {
     "id": "lead-208",
-    "name": "7927 Baker St Property Owner",
-    "contactName": "Travis Barker",
-    "email": "travisbarker.adu7927@gmail.com",
-    "phone": "926-555-3031",
+    "name": "Jeffrey Ellis",
+    "contactName": "Jeffrey Ellis",
+    "email": "jeffrey.ellis@comcast.net",
+    "phone": "949-631-1228",
     "city": "Costa Mesa",
     "county": "Orange",
     "jurisdiction": "Costa Mesa",
@@ -6448,10 +6625,10 @@
   },
   {
     "id": "lead-209",
-    "name": "7944 Newport Blvd Property Owner",
-    "contactName": "Chloe Bennett",
-    "email": "chloebennett.adu7944@yahoo.com",
-    "phone": "926-555-3032",
+    "name": "Emma Vargas",
+    "contactName": "Emma Vargas",
+    "email": "evargas@outlook.com",
+    "phone": "949-642-1271",
     "city": "Costa Mesa",
     "county": "Orange",
     "jurisdiction": "Costa Mesa",
@@ -6479,10 +6656,10 @@
   },
   {
     "id": "lead-210",
-    "name": "7961 Fair Dr Property Owner",
+    "name": "Marcus Holloway",
     "contactName": "Marcus Holloway",
-    "email": "marcusholloway.adu7961@outlook.com",
-    "phone": "926-555-3033",
+    "email": "marcusholloway41@att.net",
+    "phone": "949-548-1314",
     "city": "Costa Mesa",
     "county": "Orange",
     "jurisdiction": "Costa Mesa",
@@ -6518,10 +6695,10 @@
   },
   {
     "id": "lead-211",
-    "name": "7978 Adams Ave Property Owner",
-    "contactName": "Rachel Green",
-    "email": "rachelgreen.adu7978@gmail.com",
-    "phone": "926-555-3034",
+    "name": "Heather Dunn",
+    "contactName": "Heather Dunn",
+    "email": "heather.dunn@yahoo.com",
+    "phone": "949-650-1357",
     "city": "Costa Mesa",
     "county": "Orange",
     "jurisdiction": "Costa Mesa",
@@ -6549,10 +6726,10 @@
   },
   {
     "id": "lead-212",
-    "name": "7995 Marguerite Pkwy Property Owner",
+    "name": "Scott Phillips",
     "contactName": "Scott Phillips",
-    "email": "scottphillips.adu7995@yahoo.com",
-    "phone": "926-555-3035",
+    "email": "sphillips@sbcglobal.net",
+    "phone": "949-830-1400",
     "city": "Mission Viejo",
     "county": "Orange",
     "jurisdiction": "Mission Viejo",
@@ -6580,10 +6757,10 @@
   },
   {
     "id": "lead-213",
-    "name": "8012 Alicia Pkwy Property Owner",
+    "name": "Donna Summerfield",
     "contactName": "Donna Summerfield",
-    "email": "donnasummerfield.adu8012@outlook.com",
-    "phone": "926-555-3036",
+    "email": "donnasummerfield44@gmail.com",
+    "phone": "949-582-1443",
     "city": "Mission Viejo",
     "county": "Orange",
     "jurisdiction": "Mission Viejo",
@@ -6611,10 +6788,10 @@
   },
   {
     "id": "lead-214",
-    "name": "8029 Olympiad Rd Property Owner",
+    "name": "Raymond Cruz",
     "contactName": "Raymond Cruz",
-    "email": "raymondcruz.adu8029@gmail.com",
-    "phone": "926-555-3037",
+    "email": "raymond.cruz@icloud.com",
+    "phone": "949-348-1486",
     "city": "Mission Viejo",
     "county": "Orange",
     "jurisdiction": "Mission Viejo",
@@ -6646,10 +6823,10 @@
   },
   {
     "id": "lead-215",
-    "name": "8046 Los Alisos Blvd Property Owner",
+    "name": "Amanda Fletcher",
     "contactName": "Amanda Fletcher",
-    "email": "amandafletcher.adu8046@yahoo.com",
-    "phone": "926-555-3038",
+    "email": "afletcher@comcast.net",
+    "phone": "949-364-1529",
     "city": "Mission Viejo",
     "county": "Orange",
     "jurisdiction": "Mission Viejo",
@@ -6677,10 +6854,10 @@
   },
   {
     "id": "lead-216",
-    "name": "8063 Victoria Ave Property Owner",
+    "name": "Franklin Castillo",
     "contactName": "Franklin Castillo",
-    "email": "franklincastillo.adu8063@outlook.com",
-    "phone": "925-555-3039",
+    "email": "franklincastillo47@outlook.com",
+    "phone": "951-682-1572",
     "city": "Riverside",
     "county": "Riverside",
     "jurisdiction": "Riverside",
@@ -6708,10 +6885,10 @@
   },
   {
     "id": "lead-217",
-    "name": "8080 Magnolia Ave Property Owner",
+    "name": "Lillian Ward",
     "contactName": "Lillian Ward",
-    "email": "lillianward.adu8080@gmail.com",
-    "phone": "925-555-3040",
+    "email": "lillian.ward@att.net",
+    "phone": "951-787-1615",
     "city": "Riverside",
     "county": "Riverside",
     "jurisdiction": "Riverside",
@@ -6739,10 +6916,10 @@
   },
   {
     "id": "lead-218",
-    "name": "8097 Arlington Ave Property Owner",
+    "name": "Hector Ramirez",
     "contactName": "Hector Ramirez",
-    "email": "hectorramirez.adu8097@yahoo.com",
-    "phone": "925-555-3041",
+    "email": "hramirez@yahoo.com",
+    "phone": "951-359-1658",
     "city": "Riverside",
     "county": "Riverside",
     "jurisdiction": "Riverside",
@@ -6770,10 +6947,10 @@
   },
   {
     "id": "lead-219",
-    "name": "8114 Van Buren Blvd Property Owner",
+    "name": "Samuel Washington",
     "contactName": "Samuel Washington",
-    "email": "samuelwashington.adu8114@outlook.com",
-    "phone": "925-555-3042",
+    "email": "samuelwashington50@sbcglobal.net",
+    "phone": "951-684-1701",
     "city": "Riverside",
     "county": "Riverside",
     "jurisdiction": "Riverside",
@@ -6801,10 +6978,10 @@
   },
   {
     "id": "lead-220",
-    "name": "8131 Overlook Pkwy Property Owner",
-    "contactName": "Charles Montgomery",
-    "email": "charlesmontgomery.adu8131@gmail.com",
-    "phone": "925-555-3043",
+    "name": "Ravi Stevens",
+    "contactName": "Ravi Stevens",
+    "email": "ravi.stevens@gmail.com",
+    "phone": "951-781-1744",
     "city": "Riverside",
     "county": "Riverside",
     "jurisdiction": "Riverside",
@@ -6832,10 +7009,10 @@
   },
   {
     "id": "lead-221",
-    "name": "8148 Central Ave Property Owner",
+    "name": "Valerie Soto",
     "contactName": "Valerie Soto",
-    "email": "valeriesoto.adu8148@yahoo.com",
-    "phone": "925-555-3044",
+    "email": "vsoto@icloud.com",
+    "phone": "951-682-1787",
     "city": "Riverside",
     "county": "Riverside",
     "jurisdiction": "Riverside",
@@ -6867,10 +7044,10 @@
   },
   {
     "id": "lead-222",
-    "name": "8165 Canyon Crest Dr Property Owner",
+    "name": "Peter Drummond",
     "contactName": "Peter Drummond",
-    "email": "peterdrummond.adu8165@outlook.com",
-    "phone": "925-555-3045",
+    "email": "peterdrummond53@comcast.net",
+    "phone": "951-787-1830",
     "city": "Riverside",
     "county": "Riverside",
     "jurisdiction": "Riverside",
@@ -6898,10 +7075,10 @@
   },
   {
     "id": "lead-223",
-    "name": "8182 Ontario Ave Property Owner",
+    "name": "Manuel Ortiz",
     "contactName": "Manuel Ortiz",
-    "email": "manuelortiz.adu8182@gmail.com",
-    "phone": "928-555-3046",
+    "email": "manuel.ortiz@outlook.com",
+    "phone": "951-371-1873",
     "city": "Corona",
     "county": "Riverside",
     "jurisdiction": "Corona",
@@ -6929,10 +7106,10 @@
   },
   {
     "id": "lead-224",
-    "name": "8199 Lincoln Ave Property Owner",
+    "name": "Stephanie Briggs",
     "contactName": "Stephanie Briggs",
-    "email": "stephaniebriggs.adu8199@yahoo.com",
-    "phone": "928-555-3047",
+    "email": "sbriggs@att.net",
+    "phone": "951-279-1916",
     "city": "Corona",
     "county": "Riverside",
     "jurisdiction": "Corona",
@@ -6960,10 +7137,10 @@
   },
   {
     "id": "lead-225",
-    "name": "8216 Main St Property Owner",
+    "name": "Donald Vance",
     "contactName": "Donald Vance",
-    "email": "donaldvance.adu8216@outlook.com",
-    "phone": "928-555-3048",
+    "email": "donaldvance56@yahoo.com",
+    "phone": "951-736-1959",
     "city": "Corona",
     "county": "Riverside",
     "jurisdiction": "Corona",
@@ -6991,10 +7168,10 @@
   },
   {
     "id": "lead-226",
-    "name": "8233 Foothill Pkwy Property Owner",
+    "name": "Arthur Pendelton",
     "contactName": "Arthur Pendelton",
-    "email": "arthurpendelton.adu8233@gmail.com",
-    "phone": "928-555-3049",
+    "email": "arthur.pendelton@sbcglobal.net",
+    "phone": "951-734-2002",
     "city": "Corona",
     "county": "Riverside",
     "jurisdiction": "Corona",
@@ -7022,10 +7199,10 @@
   },
   {
     "id": "lead-227",
-    "name": "8250 Green River Rd Property Owner",
+    "name": "Kelly Donovan",
     "contactName": "Kelly Donovan",
-    "email": "kellydonovan.adu8250@yahoo.com",
-    "phone": "928-555-3050",
+    "email": "kdonovan@gmail.com",
+    "phone": "951-371-2045",
     "city": "Corona",
     "county": "Riverside",
     "jurisdiction": "Corona",
@@ -7053,10 +7230,10 @@
   },
   {
     "id": "lead-228",
-    "name": "8267 Border Ave Property Owner",
+    "name": "Ramon Gutierrez",
     "contactName": "Ramon Gutierrez",
-    "email": "ramongutierrez.adu8267@outlook.com",
-    "phone": "928-555-3051",
+    "email": "ramongutierrez59@icloud.com",
+    "phone": "951-279-2088",
     "city": "Corona",
     "county": "Riverside",
     "jurisdiction": "Corona",
@@ -7088,10 +7265,10 @@
   },
   {
     "id": "lead-229",
-    "name": "8284 Rancho California Rd Property Owner",
+    "name": "Gregory Thorne",
     "contactName": "Gregory Thorne",
-    "email": "gregorythorne.adu8284@gmail.com",
-    "phone": "925-555-3052",
+    "email": "gregory.thorne@comcast.net",
+    "phone": "951-694-2131",
     "city": "Temecula",
     "county": "Riverside",
     "jurisdiction": "Temecula",
@@ -7127,10 +7304,10 @@
   },
   {
     "id": "lead-230",
-    "name": "8301 Pechanga Pkwy Property Owner",
+    "name": "Debra Callahan",
     "contactName": "Debra Callahan",
-    "email": "debracallahan.adu8301@yahoo.com",
-    "phone": "925-555-3053",
+    "email": "dcallahan@outlook.com",
+    "phone": "951-699-2174",
     "city": "Temecula",
     "county": "Riverside",
     "jurisdiction": "Temecula",
@@ -7158,10 +7335,10 @@
   },
   {
     "id": "lead-231",
-    "name": "8318 Butterfield Stage Rd Property Owner",
+    "name": "Kenneth Alvarez",
     "contactName": "Kenneth Alvarez",
-    "email": "kennethalvarez.adu8318@outlook.com",
-    "phone": "925-555-3054",
+    "email": "kennethalvarez62@att.net",
+    "phone": "951-296-2217",
     "city": "Temecula",
     "county": "Riverside",
     "jurisdiction": "Temecula",
@@ -7189,10 +7366,10 @@
   },
   {
     "id": "lead-232",
-    "name": "8335 Ynez Rd Property Owner",
+    "name": "Megan Zimmerman",
     "contactName": "Megan Zimmerman",
-    "email": "meganzimmerman.adu8335@gmail.com",
-    "phone": "925-555-3055",
+    "email": "megan.zimmerman@yahoo.com",
+    "phone": "951-308-2260",
     "city": "Temecula",
     "county": "Riverside",
     "jurisdiction": "Temecula",
@@ -7220,10 +7397,10 @@
   },
   {
     "id": "lead-233",
-    "name": "8352 Margarita Rd Property Owner",
+    "name": "Curtis Vance",
     "contactName": "Curtis Vance",
-    "email": "curtisvance.adu8352@yahoo.com",
-    "phone": "925-555-3056",
+    "email": "cvance@sbcglobal.net",
+    "phone": "951-694-2303",
     "city": "Temecula",
     "county": "Riverside",
     "jurisdiction": "Temecula",
@@ -7251,10 +7428,10 @@
   },
   {
     "id": "lead-234",
-    "name": "8369 California Oaks Rd Property Owner",
+    "name": "Vincent Navarro",
     "contactName": "Vincent Navarro",
-    "email": "vincentnavarro.adu8369@outlook.com",
-    "phone": "925-555-3057",
+    "email": "vincentnavarro65@gmail.com",
+    "phone": "951-698-2346",
     "city": "Murrieta",
     "county": "Riverside",
     "jurisdiction": "Murrieta",
@@ -7282,10 +7459,10 @@
   },
   {
     "id": "lead-235",
-    "name": "8386 Murrieta Hot Springs Rd Property Owner",
+    "name": "Bradley Scott",
     "contactName": "Bradley Scott",
-    "email": "bradleyscott.adu8386@gmail.com",
-    "phone": "925-555-3058",
+    "email": "bradley.scott@icloud.com",
+    "phone": "951-677-2389",
     "city": "Murrieta",
     "county": "Riverside",
     "jurisdiction": "Murrieta",
@@ -7317,10 +7494,10 @@
   },
   {
     "id": "lead-236",
-    "name": "8403 Whitewood Rd Property Owner",
+    "name": "Diane Kowalski",
     "contactName": "Diane Kowalski",
-    "email": "dianekowalski.adu8403@yahoo.com",
-    "phone": "925-555-3059",
+    "email": "dkowalski@comcast.net",
+    "phone": "951-894-2432",
     "city": "Murrieta",
     "county": "Riverside",
     "jurisdiction": "Murrieta",
@@ -7348,10 +7525,10 @@
   },
   {
     "id": "lead-237",
-    "name": "8420 Clinton Keith Rd Property Owner",
+    "name": "Trevor Blackwood",
     "contactName": "Trevor Blackwood",
-    "email": "trevorblackwood.adu8420@outlook.com",
-    "phone": "925-555-3060",
+    "email": "trevorblackwood68@outlook.com",
+    "phone": "951-600-2475",
     "city": "Murrieta",
     "county": "Riverside",
     "jurisdiction": "Murrieta",
@@ -7379,10 +7556,10 @@
   },
   {
     "id": "lead-238",
-    "name": "8437 Haven Ave Property Owner",
+    "name": "Leonard Harris",
     "contactName": "Leonard Harris",
-    "email": "leonardharris.adu8437@gmail.com",
-    "phone": "917-555-3061",
+    "email": "leonard.harris@att.net",
+    "phone": "909-987-2518",
     "city": "Rancho Cucamonga",
     "county": "San Bernardino",
     "jurisdiction": "Rancho Cucamonga",
@@ -7410,10 +7587,10 @@
   },
   {
     "id": "lead-239",
-    "name": "8454 Milliken Ave Property Owner",
+    "name": "Joanne Wheeler",
     "contactName": "Joanne Wheeler",
-    "email": "joannewheeler.adu8454@yahoo.com",
-    "phone": "917-555-3062",
+    "email": "jwheeler@yahoo.com",
+    "phone": "909-484-2561",
     "city": "Rancho Cucamonga",
     "county": "San Bernardino",
     "jurisdiction": "Rancho Cucamonga",
@@ -7441,10 +7618,10 @@
   },
   {
     "id": "lead-240",
-    "name": "8471 Base Line Rd Property Owner",
+    "name": "Oscar Medina",
     "contactName": "Oscar Medina",
-    "email": "oscarmedina.adu8471@outlook.com",
-    "phone": "917-555-3063",
+    "email": "oscarmedina71@sbcglobal.net",
+    "phone": "909-945-2604",
     "city": "Rancho Cucamonga",
     "county": "San Bernardino",
     "jurisdiction": "Rancho Cucamonga",
@@ -7472,10 +7649,10 @@
   },
   {
     "id": "lead-241",
-    "name": "8488 Day Creek Blvd Property Owner",
+    "name": "Angela Rossi",
     "contactName": "Angela Rossi",
-    "email": "angelarossi.adu8488@gmail.com",
-    "phone": "917-555-3064",
+    "email": "angela.rossi@gmail.com",
+    "phone": "909-980-2647",
     "city": "Rancho Cucamonga",
     "county": "San Bernardino",
     "jurisdiction": "Rancho Cucamonga",
@@ -7503,10 +7680,10 @@
   },
   {
     "id": "lead-242",
-    "name": "8505 Archibald Ave Property Owner",
+    "name": "Craig Sterling",
     "contactName": "Craig Sterling",
-    "email": "craigsterling.adu8505@yahoo.com",
-    "phone": "917-555-3065",
+    "email": "csterling@icloud.com",
+    "phone": "909-987-2690",
     "city": "Rancho Cucamonga",
     "county": "San Bernardino",
     "jurisdiction": "Rancho Cucamonga",
@@ -7538,10 +7715,10 @@
   },
   {
     "id": "lead-243",
-    "name": "8522 Euclid Ave Property Owner",
+    "name": "Salvador Gomez",
     "contactName": "Salvador Gomez",
-    "email": "salvadorgomez.adu8522@outlook.com",
-    "phone": "917-555-3066",
+    "email": "salvadorgomez74@comcast.net",
+    "phone": "909-391-2733",
     "city": "Ontario",
     "county": "San Bernardino",
     "jurisdiction": "Ontario",
@@ -7569,10 +7746,10 @@
   },
   {
     "id": "lead-244",
-    "name": "8539 Mountain Ave Property Owner",
+    "name": "Teresa Delgado",
     "contactName": "Teresa Delgado",
-    "email": "teresadelgado.adu8539@gmail.com",
-    "phone": "917-555-3067",
+    "email": "teresa.delgado@outlook.com",
+    "phone": "909-986-2776",
     "city": "Ontario",
     "county": "San Bernardino",
     "jurisdiction": "Ontario",
@@ -7600,10 +7777,10 @@
   },
   {
     "id": "lead-245",
-    "name": "8556 Fourth St Property Owner",
+    "name": "Derrick Washington",
     "contactName": "Derrick Washington",
-    "email": "derrickwashington.adu8556@yahoo.com",
-    "phone": "917-555-3068",
+    "email": "dwashington@att.net",
+    "phone": "909-983-2819",
     "city": "Ontario",
     "county": "San Bernardino",
     "jurisdiction": "Ontario",
@@ -7631,10 +7808,10 @@
   },
   {
     "id": "lead-246",
-    "name": "8573 Grove Ave Property Owner",
+    "name": "Eileen Morris",
     "contactName": "Eileen Morris",
-    "email": "eileenmorris.adu8573@outlook.com",
-    "phone": "917-555-3069",
+    "email": "eileenmorris77@yahoo.com",
+    "phone": "909-984-2862",
     "city": "Ontario",
     "county": "San Bernardino",
     "jurisdiction": "Ontario",
@@ -7662,10 +7839,10 @@
   },
   {
     "id": "lead-247",
-    "name": "8590 Redlands Blvd Property Owner",
+    "name": "Howard Hughes",
     "contactName": "Howard Hughes",
-    "email": "howardhughes.adu8590@gmail.com",
-    "phone": "923-555-3070",
+    "email": "howard.hughes@sbcglobal.net",
+    "phone": "909-335-2905",
     "city": "Redlands",
     "county": "San Bernardino",
     "jurisdiction": "Redlands",
@@ -7693,10 +7870,10 @@
   },
   {
     "id": "lead-248",
-    "name": "8607 Lugonia Ave Property Owner",
+    "name": "Janet Coleman",
     "contactName": "Janet Coleman",
-    "email": "janetcoleman.adu8607@yahoo.com",
-    "phone": "923-555-3071",
+    "email": "jcoleman@gmail.com",
+    "phone": "909-792-2948",
     "city": "Redlands",
     "county": "San Bernardino",
     "jurisdiction": "Redlands",
@@ -7732,10 +7909,10 @@
   },
   {
     "id": "lead-249",
-    "name": "8624 Barton Rd Property Owner",
+    "name": "Philip Chen",
     "contactName": "Philip Chen",
-    "email": "philipchen.adu8624@outlook.com",
-    "phone": "923-555-3072",
+    "email": "philipchen80@icloud.com",
+    "phone": "909-793-2991",
     "city": "Redlands",
     "county": "San Bernardino",
     "jurisdiction": "Redlands",
@@ -7767,10 +7944,10 @@
   },
   {
     "id": "lead-250",
-    "name": "8641 San Mateo St Property Owner",
+    "name": "Hannah Goldberg",
     "contactName": "Hannah Goldberg",
-    "email": "hannahgoldberg.adu8641@gmail.com",
-    "phone": "923-555-3073",
+    "email": "hannah.goldberg@comcast.net",
+    "phone": "909-798-3034",
     "city": "Redlands",
     "county": "San Bernardino",
     "jurisdiction": "Redlands",
@@ -7798,10 +7975,10 @@
   },
   {
     "id": "lead-251",
-    "name": "8658 University Ave Property Owner",
+    "name": "Sean O'Malley",
     "contactName": "Sean O'Malley",
-    "email": "seanomalley.adu8658@yahoo.com",
-    "phone": "921-555-3074",
+    "email": "somalley@outlook.com",
+    "phone": "619-291-3077",
     "city": "San Diego",
     "county": "San Diego",
     "jurisdiction": "San Diego",
@@ -7829,10 +8006,10 @@
   },
   {
     "id": "lead-252",
-    "name": "8675 El Cajon Blvd Property Owner",
+    "name": "DeMarcus Jackson",
     "contactName": "DeMarcus Jackson",
-    "email": "demarcusjackson.adu8675@outlook.com",
-    "phone": "921-555-3075",
+    "email": "demarcusjackson83@att.net",
+    "phone": "619-298-3120",
     "city": "San Diego",
     "county": "San Diego",
     "jurisdiction": "San Diego",
@@ -7860,10 +8037,10 @@
   },
   {
     "id": "lead-253",
-    "name": "8692 Adams Ave Property Owner",
+    "name": "Zoe Kravitz",
     "contactName": "Zoe Kravitz",
-    "email": "zoekravitz.adu8692@gmail.com",
-    "phone": "921-555-3076",
+    "email": "zoe.kravitz@yahoo.com",
+    "phone": "619-234-3163",
     "city": "San Diego",
     "county": "San Diego",
     "jurisdiction": "San Diego",
@@ -7891,10 +8068,10 @@
   },
   {
     "id": "lead-254",
-    "name": "8709 Clairemont Mesa Blvd Property Owner",
+    "name": "Geraldine Wu",
     "contactName": "Geraldine Wu",
-    "email": "geraldinewu.adu8709@yahoo.com",
-    "phone": "921-555-3077",
+    "email": "gwu@sbcglobal.net",
+    "phone": "619-281-3206",
     "city": "San Diego",
     "county": "San Diego",
     "jurisdiction": "San Diego",
@@ -7922,10 +8099,10 @@
   },
   {
     "id": "lead-255",
-    "name": "8726 Balboa Ave Property Owner",
+    "name": "Martin Brody",
     "contactName": "Martin Brody",
-    "email": "martinbrody.adu8726@outlook.com",
-    "phone": "921-555-3078",
+    "email": "martinbrody86@gmail.com",
+    "phone": "619-543-3249",
     "city": "San Diego",
     "county": "San Diego",
     "jurisdiction": "San Diego",
@@ -7953,10 +8130,10 @@
   },
   {
     "id": "lead-256",
-    "name": "8743 Mira Mesa Blvd Property Owner",
+    "name": "Anand Verma",
     "contactName": "Anand Verma",
-    "email": "anandverma.adu8743@gmail.com",
-    "phone": "921-555-3079",
+    "email": "anand.verma@icloud.com",
+    "phone": "619-224-3292",
     "city": "San Diego",
     "county": "San Diego",
     "jurisdiction": "San Diego",
@@ -7988,10 +8165,10 @@
   },
   {
     "id": "lead-257",
-    "name": "8760 Rancho Bernardo Rd Property Owner",
+    "name": "Eugene Fletcher",
     "contactName": "Eugene Fletcher",
-    "email": "eugenefletcher.adu8760@yahoo.com",
-    "phone": "921-555-3080",
+    "email": "efletcher@comcast.net",
+    "phone": "619-291-3335",
     "city": "San Diego",
     "county": "San Diego",
     "jurisdiction": "San Diego",
@@ -8019,10 +8196,10 @@
   },
   {
     "id": "lead-258",
-    "name": "8777 Tierrasanta Blvd Property Owner",
+    "name": "Beverly Sills",
     "contactName": "Beverly Sills",
-    "email": "beverlysills.adu8777@outlook.com",
-    "phone": "921-555-3081",
+    "email": "beverlysills89@outlook.com",
+    "phone": "619-298-3378",
     "city": "San Diego",
     "county": "San Diego",
     "jurisdiction": "San Diego",
@@ -8050,10 +8227,10 @@
   },
   {
     "id": "lead-259",
-    "name": "8794 Carlsbad Blvd Property Owner",
+    "name": "Trevor Hastings",
     "contactName": "Trevor Hastings",
-    "email": "trevorhastings.adu8794@gmail.com",
-    "phone": "920-555-3082",
+    "email": "trevor.hastings@att.net",
+    "phone": "760-438-3421",
     "city": "Carlsbad",
     "county": "San Diego",
     "jurisdiction": "Carlsbad",
@@ -8081,10 +8258,10 @@
   },
   {
     "id": "lead-260",
-    "name": "8811 El Camino Real Property Owner",
+    "name": "Cameron Diaz",
     "contactName": "Cameron Diaz",
-    "email": "camerondiaz.adu8811@yahoo.com",
-    "phone": "920-555-3083",
+    "email": "cdiaz@yahoo.com",
+    "phone": "760-603-3464",
     "city": "Carlsbad",
     "county": "San Diego",
     "jurisdiction": "Carlsbad",
@@ -8112,10 +8289,10 @@
   },
   {
     "id": "lead-261",
-    "name": "8828 Palomar Airport Rd Property Owner",
+    "name": "Lucas Vance",
     "contactName": "Lucas Vance",
-    "email": "lucasvance.adu8828@outlook.com",
-    "phone": "920-555-3084",
+    "email": "lucasvance92@sbcglobal.net",
+    "phone": "760-434-3507",
     "city": "Carlsbad",
     "county": "San Diego",
     "jurisdiction": "Carlsbad",
@@ -8143,10 +8320,10 @@
   },
   {
     "id": "lead-262",
-    "name": "8845 Poinsettia Ln Property Owner",
+    "name": "Allison Becker",
     "contactName": "Allison Becker",
-    "email": "allisonbecker.adu8845@gmail.com",
-    "phone": "920-555-3085",
+    "email": "allison.becker@gmail.com",
+    "phone": "760-729-3550",
     "city": "Carlsbad",
     "county": "San Diego",
     "jurisdiction": "Carlsbad",
@@ -8174,10 +8351,10 @@
   },
   {
     "id": "lead-263",
-    "name": "8862 Mission Ave Property Owner",
+    "name": "Dominic Toretto",
     "contactName": "Dominic Toretto",
-    "email": "dominictoretto.adu8862@yahoo.com",
-    "phone": "920-555-3086",
+    "email": "dtoretto@icloud.com",
+    "phone": "760-757-3593",
     "city": "Oceanside",
     "county": "San Diego",
     "jurisdiction": "Oceanside",
@@ -8209,10 +8386,10 @@
   },
   {
     "id": "lead-264",
-    "name": "8879 Oceanside Blvd Property Owner",
+    "name": "Raul Espinoza",
     "contactName": "Raul Espinoza",
-    "email": "raulespinoza.adu8879@outlook.com",
-    "phone": "920-555-3087",
+    "email": "raulespinoza95@comcast.net",
+    "phone": "760-967-3636",
     "city": "Oceanside",
     "county": "San Diego",
     "jurisdiction": "Oceanside",
@@ -8240,10 +8417,10 @@
   },
   {
     "id": "lead-265",
-    "name": "8896 Vista Way Property Owner",
+    "name": "Craig Robinson",
     "contactName": "Craig Robinson",
-    "email": "craigrobinson.adu8896@gmail.com",
-    "phone": "920-555-3088",
+    "email": "craig.robinson@outlook.com",
+    "phone": "760-722-3679",
     "city": "Oceanside",
     "county": "San Diego",
     "jurisdiction": "Oceanside",
@@ -8271,10 +8448,10 @@
   },
   {
     "id": "lead-266",
-    "name": "8913 Douglas Dr Property Owner",
+    "name": "Evelyn Carter",
     "contactName": "Evelyn Carter",
-    "email": "evelyncarter.adu8913@yahoo.com",
-    "phone": "920-555-3089",
+    "email": "ecarter@att.net",
+    "phone": "760-433-3722",
     "city": "Oceanside",
     "county": "San Diego",
     "jurisdiction": "Oceanside",
@@ -8302,10 +8479,10 @@
   },
   {
     "id": "lead-267",
-    "name": "8930 Third Ave Property Owner",
+    "name": "Guillermo Del Toro",
     "contactName": "Guillermo Del Toro",
-    "email": "guillermodeltoro.adu8930@outlook.com",
-    "phone": "919-555-3090",
+    "email": "guillermodeltoro98@yahoo.com",
+    "phone": "619-691-3765",
     "city": "Chula Vista",
     "county": "San Diego",
     "jurisdiction": "Chula Vista",
@@ -8341,10 +8518,10 @@
   },
   {
     "id": "lead-268",
-    "name": "8947 H St Property Owner",
+    "name": "Maricela Santos",
     "contactName": "Maricela Santos",
-    "email": "maricelasantos.adu8947@gmail.com",
-    "phone": "919-555-3091",
+    "email": "maricela.santos@sbcglobal.net",
+    "phone": "619-409-3808",
     "city": "Chula Vista",
     "county": "San Diego",
     "jurisdiction": "Chula Vista",
@@ -8372,10 +8549,10 @@
   },
   {
     "id": "lead-269",
-    "name": "8964 Eastlake Pkwy Property Owner",
+    "name": "Rogelio Martinez",
     "contactName": "Rogelio Martinez",
-    "email": "rogeliomartinez.adu8964@yahoo.com",
-    "phone": "919-555-3092",
+    "email": "rmartinez@gmail.com",
+    "phone": "619-420-3851",
     "city": "Chula Vista",
     "county": "San Diego",
     "jurisdiction": "Chula Vista",
@@ -8403,10 +8580,10 @@
   },
   {
     "id": "lead-270",
-    "name": "8981 Telegraph Canyon Rd Property Owner",
+    "name": "Consuelo Reyes",
     "contactName": "Consuelo Reyes",
-    "email": "consueloreyes.adu8981@outlook.com",
-    "phone": "919-555-3093",
+    "email": "consueloreyes12@icloud.com",
+    "phone": "619-422-3894",
     "city": "Chula Vista",
     "county": "San Diego",
     "jurisdiction": "Chula Vista",
@@ -8438,10 +8615,10 @@
   },
   {
     "id": "lead-271",
-    "name": "8998 Grand Ave Property Owner",
+    "name": "Lorenzo De Leon",
     "contactName": "Lorenzo De Leon",
-    "email": "lorenzodeleon.adu8998@gmail.com",
-    "phone": "920-555-3094",
+    "email": "lorenzo.deleon@comcast.net",
+    "phone": "760-489-3937",
     "city": "Escondido",
     "county": "San Diego",
     "jurisdiction": "Escondido",
@@ -8469,10 +8646,10 @@
   },
   {
     "id": "lead-272",
-    "name": "115 Valley Pkwy Property Owner",
+    "name": "Wade Wilson",
     "contactName": "Wade Wilson",
-    "email": "wadewilson.adu115@yahoo.com",
-    "phone": "920-555-3095",
+    "email": "wwilson@outlook.com",
+    "phone": "760-738-3980",
     "city": "Escondido",
     "county": "San Diego",
     "jurisdiction": "Escondido",
@@ -8500,10 +8677,10 @@
   },
   {
     "id": "lead-273",
-    "name": "132 Felicita Rd Property Owner",
+    "name": "Geoffrey Chaucer",
     "contactName": "Geoffrey Chaucer",
-    "email": "geoffreychaucer.adu132@outlook.com",
-    "phone": "920-555-3096",
+    "email": "geoffreychaucer15@att.net",
+    "phone": "760-741-4023",
     "city": "Escondido",
     "county": "San Diego",
     "jurisdiction": "Escondido",
@@ -8531,10 +8708,10 @@
   },
   {
     "id": "lead-274",
-    "name": "149 Bear Valley Pkwy Property Owner",
+    "name": "Rhonda Rousey",
     "contactName": "Rhonda Rousey",
-    "email": "rhondarousey.adu149@gmail.com",
-    "phone": "920-555-3097",
+    "email": "rhonda.rousey@yahoo.com",
+    "phone": "760-745-4066",
     "city": "Escondido",
     "county": "San Diego",
     "jurisdiction": "Escondido",
@@ -8562,10 +8739,10 @@
   },
   {
     "id": "lead-275",
-    "name": "166 Colorado Blvd Property Owner",
+    "name": "Franklin Pierce",
     "contactName": "Franklin Pierce",
-    "email": "franklinpierce.adu166@yahoo.com",
-    "phone": "911-555-3098",
+    "email": "fpierce@sbcglobal.net",
+    "phone": "626-795-4109",
     "city": "Pasadena",
     "county": "Los Angeles",
     "jurisdiction": "Pasadena",
@@ -8593,10 +8770,10 @@
   },
   {
     "id": "lead-276",
-    "name": "183 Fair Oaks Ave Property Owner",
+    "name": "Regina King",
     "contactName": "Regina King",
-    "email": "reginaking.adu183@outlook.com",
-    "phone": "911-555-3099",
+    "email": "reginaking18@gmail.com",
+    "phone": "626-395-4152",
     "city": "Pasadena",
     "county": "Los Angeles",
     "jurisdiction": "Pasadena",
@@ -8624,10 +8801,10 @@
   },
   {
     "id": "lead-277",
-    "name": "200 Lake Ave Property Owner",
+    "name": "Stewart Copeland",
     "contactName": "Stewart Copeland",
-    "email": "stewartcopeland.adu200@gmail.com",
-    "phone": "911-555-3100",
+    "email": "stewart.copeland@icloud.com",
+    "phone": "626-793-4195",
     "city": "Pasadena",
     "county": "Los Angeles",
     "jurisdiction": "Pasadena",
@@ -8659,10 +8836,10 @@
   },
   {
     "id": "lead-278",
-    "name": "217 Orange Grove Blvd Property Owner",
+    "name": "Alistair Cooke",
     "contactName": "Alistair Cooke",
-    "email": "alistaircooke.adu217@yahoo.com",
-    "phone": "911-555-3101",
+    "email": "acooke@comcast.net",
+    "phone": "626-449-4238",
     "city": "Pasadena",
     "county": "Los Angeles",
     "jurisdiction": "Pasadena",
@@ -8690,10 +8867,10 @@
   },
   {
     "id": "lead-279",
-    "name": "234 Altadena Dr Property Owner",
+    "name": "Gwendolyn Brooks",
     "contactName": "Gwendolyn Brooks",
-    "email": "gwendolynbrooks.adu234@outlook.com",
-    "phone": "911-555-3102",
+    "email": "gwendolynbrooks21@outlook.com",
+    "phone": "626-384-4281",
     "city": "Pasadena",
     "county": "Los Angeles",
     "jurisdiction": "Pasadena",
@@ -8721,10 +8898,10 @@
   },
   {
     "id": "lead-280",
-    "name": "251 Brand Blvd Property Owner",
+    "name": "Armen Sarkissian",
     "contactName": "Armen Sarkissian",
-    "email": "armensarkissian.adu251@gmail.com",
-    "phone": "912-555-3103",
+    "email": "armen.sarkissian@att.net",
+    "phone": "818-548-4324",
     "city": "Glendale",
     "county": "Los Angeles",
     "jurisdiction": "Glendale",
@@ -8752,10 +8929,10 @@
   },
   {
     "id": "lead-281",
-    "name": "268 Glenoaks Blvd Property Owner",
+    "name": "Vahan Cardashian",
     "contactName": "Vahan Cardashian",
-    "email": "vahancardashian.adu268@yahoo.com",
-    "phone": "912-555-3104",
+    "email": "vcardashian@yahoo.com",
+    "phone": "818-240-4367",
     "city": "Glendale",
     "county": "Los Angeles",
     "jurisdiction": "Glendale",
@@ -8783,10 +8960,10 @@
   },
   {
     "id": "lead-282",
-    "name": "285 Verdugo Rd Property Owner",
+    "name": "Anoush Krikorian",
     "contactName": "Anoush Krikorian",
-    "email": "anoushkrikorian.adu285@outlook.com",
-    "phone": "912-555-3105",
+    "email": "anoushkrikorian24@sbcglobal.net",
+    "phone": "818-242-4410",
     "city": "Glendale",
     "county": "Los Angeles",
     "jurisdiction": "Glendale",
@@ -8814,10 +8991,10 @@
   },
   {
     "id": "lead-283",
-    "name": "302 Colorado St Property Owner",
+    "name": "Hayk Petrosyan",
     "contactName": "Hayk Petrosyan",
-    "email": "haykpetrosyan.adu302@gmail.com",
-    "phone": "912-555-3106",
+    "email": "hayk.petrosyan@gmail.com",
+    "phone": "818-500-4453",
     "city": "Glendale",
     "county": "Los Angeles",
     "jurisdiction": "Glendale",
@@ -8845,10 +9022,10 @@
   },
   {
     "id": "lead-284",
-    "name": "319 Magnolia Blvd Property Owner",
+    "name": "Spike Jonze",
     "contactName": "Spike Jonze",
-    "email": "spikejonze.adu319@yahoo.com",
-    "phone": "915-555-3107",
+    "email": "sjonze@icloud.com",
+    "phone": "818-954-4496",
     "city": "Burbank",
     "county": "Los Angeles",
     "jurisdiction": "Burbank",
@@ -8880,10 +9057,10 @@
   },
   {
     "id": "lead-285",
-    "name": "336 Olive Ave Property Owner",
+    "name": "Clint Eastwood",
     "contactName": "Clint Eastwood",
-    "email": "clinteastwood.adu336@outlook.com",
-    "phone": "915-555-3108",
+    "email": "clinteastwood27@comcast.net",
+    "phone": "818-567-4539",
     "city": "Burbank",
     "county": "Los Angeles",
     "jurisdiction": "Burbank",
@@ -8911,10 +9088,10 @@
   },
   {
     "id": "lead-286",
-    "name": "353 Victory Blvd Property Owner",
+    "name": "Penny Marshall",
     "contactName": "Penny Marshall",
-    "email": "pennymarshall.adu353@gmail.com",
-    "phone": "915-555-3109",
+    "email": "penny.marshall@outlook.com",
+    "phone": "818-845-4582",
     "city": "Burbank",
     "county": "Los Angeles",
     "jurisdiction": "Burbank",
@@ -8950,10 +9127,10 @@
   },
   {
     "id": "lead-287",
-    "name": "370 Glenoaks Blvd Property Owner",
+    "name": "Ridley Scott",
     "contactName": "Ridley Scott",
-    "email": "ridleyscott.adu370@yahoo.com",
-    "phone": "915-555-3110",
+    "email": "rscott@att.net",
+    "phone": "818-841-4625",
     "city": "Burbank",
     "county": "Los Angeles",
     "jurisdiction": "Burbank",
@@ -8981,10 +9158,10 @@
   },
   {
     "id": "lead-288",
-    "name": "387 Hawthorne Blvd Property Owner",
+    "name": "Hiroshi Tanaka",
     "contactName": "Hiroshi Tanaka",
-    "email": "hiroshitanaka.adu387@outlook.com",
-    "phone": "905-555-3111",
+    "email": "hiroshitanaka30@yahoo.com",
+    "phone": "310-533-4668",
     "city": "Torrance",
     "county": "Los Angeles",
     "jurisdiction": "Torrance",
@@ -9012,10 +9189,10 @@
   },
   {
     "id": "lead-289",
-    "name": "404 Sepulveda Blvd Property Owner",
+    "name": "Kenji Sato",
     "contactName": "Kenji Sato",
-    "email": "kenjisato.adu404@gmail.com",
-    "phone": "905-555-3112",
+    "email": "kenji.sato@sbcglobal.net",
+    "phone": "310-618-4711",
     "city": "Torrance",
     "county": "Los Angeles",
     "jurisdiction": "Torrance",
@@ -9043,10 +9220,10 @@
   },
   {
     "id": "lead-290",
-    "name": "421 Torrance Blvd Property Owner",
+    "name": "Mariko Mori",
     "contactName": "Mariko Mori",
-    "email": "marikomori.adu421@yahoo.com",
-    "phone": "905-555-3113",
+    "email": "mmori@gmail.com",
+    "phone": "310-782-4754",
     "city": "Torrance",
     "county": "Los Angeles",
     "jurisdiction": "Torrance",
@@ -9074,10 +9251,10 @@
   },
   {
     "id": "lead-291",
-    "name": "438 Crenshaw Blvd Property Owner",
+    "name": "Daisuke Takahashi",
     "contactName": "Daisuke Takahashi",
-    "email": "daisuketakahashi.adu438@outlook.com",
-    "phone": "905-555-3114",
+    "email": "daisuketakahashi33@icloud.com",
+    "phone": "310-320-4797",
     "city": "Torrance",
     "county": "Los Angeles",
     "jurisdiction": "Torrance",
@@ -9109,10 +9286,10 @@
   },
   {
     "id": "lead-292",
-    "name": "455 Atlantic Ave Property Owner",
+    "name": "Calvin Broadus",
     "contactName": "Calvin Broadus",
-    "email": "calvinbroadus.adu455@gmail.com",
-    "phone": "908-555-3115",
+    "email": "calvin.broadus@comcast.net",
+    "phone": "562-436-4840",
     "city": "Long Beach",
     "county": "Los Angeles",
     "jurisdiction": "Long Beach",
@@ -9140,10 +9317,10 @@
   },
   {
     "id": "lead-293",
-    "name": "472 Long Beach Blvd Property Owner",
+    "name": "Nate Dogg",
     "contactName": "Nate Dogg",
-    "email": "natedogg.adu472@yahoo.com",
-    "phone": "908-555-3116",
+    "email": "ndogg@outlook.com",
+    "phone": "562-597-4883",
     "city": "Long Beach",
     "county": "Los Angeles",
     "jurisdiction": "Long Beach",
@@ -9171,10 +9348,10 @@
   },
   {
     "id": "lead-294",
-    "name": "489 Pacific Coast Hwy Property Owner",
+    "name": "Warren Griffin",
     "contactName": "Warren Griffin",
-    "email": "warrengriffin.adu489@outlook.com",
-    "phone": "908-555-3117",
+    "email": "warrengriffin36@att.net",
+    "phone": "562-424-4926",
     "city": "Long Beach",
     "county": "Los Angeles",
     "jurisdiction": "Long Beach",
@@ -9202,10 +9379,10 @@
   },
   {
     "id": "lead-295",
-    "name": "506 Willow St Property Owner",
+    "name": "Dina Meyer",
     "contactName": "Dina Meyer",
-    "email": "dinameyer.adu506@gmail.com",
-    "phone": "908-555-3118",
+    "email": "dina.meyer@yahoo.com",
+    "phone": "562-434-4969",
     "city": "Long Beach",
     "county": "Los Angeles",
     "jurisdiction": "Long Beach",
@@ -9233,10 +9410,10 @@
   },
   {
     "id": "lead-296",
-    "name": "523 Spring St Property Owner",
+    "name": "Darnell Farris",
     "contactName": "Darnell Farris",
-    "email": "darnellfarris.adu523@yahoo.com",
-    "phone": "908-555-3119",
+    "email": "dfarris@sbcglobal.net",
+    "phone": "562-491-5012",
     "city": "Long Beach",
     "county": "Los Angeles",
     "jurisdiction": "Long Beach",
@@ -9264,10 +9441,10 @@
   },
   {
     "id": "lead-297",
-    "name": "540 Meridian Ave Property Owner",
+    "name": "Prashant Nair",
     "contactName": "Prashant Nair",
-    "email": "prashantnair.adu540@outlook.com",
-    "phone": "951-555-3120",
+    "email": "prashantnair39@gmail.com",
+    "phone": "408-287-5055",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -9295,10 +9472,10 @@
   },
   {
     "id": "lead-298",
-    "name": "557 Willow St Property Owner",
+    "name": "Srinivas Rao",
     "contactName": "Srinivas Rao",
-    "email": "srinivasrao.adu557@gmail.com",
-    "phone": "951-555-3121",
+    "email": "srinivas.rao@icloud.com",
+    "phone": "408-998-5098",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -9330,10 +9507,10 @@
   },
   {
     "id": "lead-299",
-    "name": "574 Almaden Rd Property Owner",
+    "name": "Ravi Shankar",
     "contactName": "Ravi Shankar",
-    "email": "ravishankar.adu574@yahoo.com",
-    "phone": "951-555-3122",
+    "email": "rshankar@comcast.net",
+    "phone": "408-723-5141",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -9361,10 +9538,10 @@
   },
   {
     "id": "lead-300",
-    "name": "591 Capitol Expy Property Owner",
+    "name": "Venkatraman Ram",
     "contactName": "Venkatraman Ram",
-    "email": "venkatramanram.adu591@outlook.com",
-    "phone": "951-555-3123",
+    "email": "venkatramanram42@outlook.com",
+    "phone": "408-371-5184",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -9392,10 +9569,10 @@
   },
   {
     "id": "lead-301",
-    "name": "608 Bascom Ave Property Owner",
+    "name": "Girish Mathur",
     "contactName": "Girish Mathur",
-    "email": "girishmathur.adu608@gmail.com",
-    "phone": "951-555-3124",
+    "email": "girish.mathur@att.net",
+    "phone": "408-629-5227",
     "city": "San Jose",
     "county": "Santa Clara",
     "jurisdiction": "San Jose",
@@ -9423,10 +9600,10 @@
   },
   {
     "id": "lead-302",
-    "name": "625 El Camino Real Property Owner",
+    "name": "Satya Nadella",
     "contactName": "Satya Nadella",
-    "email": "satyanadella.adu625@yahoo.com",
-    "phone": "940-555-3125",
+    "email": "snadella@yahoo.com",
+    "phone": "408-736-5270",
     "city": "Sunnyvale",
     "county": "Santa Clara",
     "jurisdiction": "Sunnyvale",
@@ -9454,10 +9631,10 @@
   },
   {
     "id": "lead-303",
-    "name": "642 Mathilda Ave Property Owner",
+    "name": "Sundar Pichai",
     "contactName": "Sundar Pichai",
-    "email": "sundarpichai.adu642@outlook.com",
-    "phone": "940-555-3126",
+    "email": "sundarpichai45@sbcglobal.net",
+    "phone": "408-245-5313",
     "city": "Sunnyvale",
     "county": "Santa Clara",
     "jurisdiction": "Sunnyvale",
@@ -9485,10 +9662,10 @@
   },
   {
     "id": "lead-304",
-    "name": "659 Fremont Ave Property Owner",
+    "name": "Tim Cook",
     "contactName": "Tim Cook",
-    "email": "timcook.adu659@gmail.com",
-    "phone": "940-555-3127",
+    "email": "tim.cook@gmail.com",
+    "phone": "408-739-5356",
     "city": "Sunnyvale",
     "county": "Santa Clara",
     "jurisdiction": "Sunnyvale",
@@ -9516,10 +9693,10 @@
   },
   {
     "id": "lead-305",
-    "name": "676 Sunnyvale Saratoga Rd Property Owner",
+    "name": "Jensen Huang",
     "contactName": "Jensen Huang",
-    "email": "jensenhuang.adu676@yahoo.com",
-    "phone": "940-555-3128",
+    "email": "jhuang@icloud.com",
+    "phone": "408-524-5399",
     "city": "Sunnyvale",
     "county": "Santa Clara",
     "jurisdiction": "Sunnyvale",
@@ -9551,10 +9728,10 @@
   },
   {
     "id": "lead-306",
-    "name": "693 Fremont Blvd Property Owner",
+    "name": "Arun Kumar",
     "contactName": "Arun Kumar",
-    "email": "arunkumar.adu693@outlook.com",
-    "phone": "945-555-3129",
+    "email": "arunkumar48@comcast.net",
+    "phone": "510-651-5442",
     "city": "Fremont",
     "county": "Alameda",
     "jurisdiction": "Fremont",
@@ -9582,10 +9759,10 @@
   },
   {
     "id": "lead-307",
-    "name": "710 Mission Blvd Property Owner",
+    "name": "Deepak Chopra",
     "contactName": "Deepak Chopra",
-    "email": "deepakchopra.adu710@gmail.com",
-    "phone": "945-555-3130",
+    "email": "deepak.chopra@outlook.com",
+    "phone": "510-792-5485",
     "city": "Fremont",
     "county": "Alameda",
     "jurisdiction": "Fremont",
@@ -9613,10 +9790,10 @@
   },
   {
     "id": "lead-308",
-    "name": "727 Mowry Ave Property Owner",
+    "name": "Ramesh Patel",
     "contactName": "Ramesh Patel",
-    "email": "rameshpatel.adu727@yahoo.com",
-    "phone": "945-555-3131",
+    "email": "rpatel@att.net",
+    "phone": "510-656-5528",
     "city": "Fremont",
     "county": "Alameda",
     "jurisdiction": "Fremont",
@@ -9644,10 +9821,10 @@
   },
   {
     "id": "lead-309",
-    "name": "744 Paseo Padre Pkwy Property Owner",
+    "name": "Karthik Raja",
     "contactName": "Karthik Raja",
-    "email": "karthikraja.adu744@outlook.com",
-    "phone": "945-555-3132",
+    "email": "karthikraja51@yahoo.com",
+    "phone": "510-797-5571",
     "city": "Fremont",
     "county": "Alameda",
     "jurisdiction": "Fremont",
@@ -9675,10 +9852,10 @@
   },
   {
     "id": "lead-310",
-    "name": "761 J St Property Owner",
+    "name": "Gregory Peck",
     "contactName": "Gregory Peck",
-    "email": "gregorypeck.adu761@gmail.com",
-    "phone": "958-555-3133",
+    "email": "gregory.peck@sbcglobal.net",
+    "phone": "916-452-5614",
     "city": "Sacramento",
     "county": "Sacramento",
     "jurisdiction": "Sacramento",
@@ -9706,10 +9883,10 @@
   },
   {
     "id": "lead-311",
-    "name": "778 Folsom Blvd Property Owner",
+    "name": "Bette Davis",
     "contactName": "Bette Davis",
-    "email": "bettedavis.adu778@yahoo.com",
-    "phone": "958-555-3134",
+    "email": "bdavis@gmail.com",
+    "phone": "916-456-5657",
     "city": "Sacramento",
     "county": "Sacramento",
     "jurisdiction": "Sacramento",
@@ -9737,10 +9914,10 @@
   },
   {
     "id": "lead-312",
-    "name": "795 Stockton Blvd Property Owner",
+    "name": "Humphrey Bogart",
     "contactName": "Humphrey Bogart",
-    "email": "humphreybogart.adu795@outlook.com",
-    "phone": "958-555-3135",
+    "email": "humphreybogart54@icloud.com",
+    "phone": "916-488-5700",
     "city": "Sacramento",
     "county": "Sacramento",
     "jurisdiction": "Sacramento",
@@ -9772,10 +9949,10 @@
   },
   {
     "id": "lead-313",
-    "name": "812 Freeport Blvd Property Owner",
+    "name": "Lauren Bacall",
     "contactName": "Lauren Bacall",
-    "email": "laurenbacall.adu812@gmail.com",
-    "phone": "958-555-3136",
+    "email": "lauren.bacall@comcast.net",
+    "phone": "916-442-5743",
     "city": "Sacramento",
     "county": "Sacramento",
     "jurisdiction": "Sacramento",
@@ -9803,10 +9980,10 @@
   },
   {
     "id": "lead-314",
-    "name": "829 Fair Oaks Blvd Property Owner",
+    "name": "Spencer Tracy",
     "contactName": "Spencer Tracy",
-    "email": "spencertracy.adu829@yahoo.com",
-    "phone": "958-555-3137",
+    "email": "stracy@outlook.com",
+    "phone": "916-445-5786",
     "city": "Sacramento",
     "county": "Sacramento",
     "jurisdiction": "Sacramento",
@@ -9834,10 +10011,10 @@
   },
   {
     "id": "lead-315",
-    "name": "846 Broadway Property Owner",
+    "name": "Katharine Hepburn",
     "contactName": "Katharine Hepburn",
-    "email": "katharinehepburn.adu846@outlook.com",
-    "phone": "958-555-3138",
+    "email": "katharinehepburn57@att.net",
+    "phone": "916-739-5829",
     "city": "Sacramento",
     "county": "Sacramento",
     "jurisdiction": "Sacramento",
@@ -9865,10 +10042,10 @@
   },
   {
     "id": "lead-316",
-    "name": "863 Douglas Blvd Property Owner",
+    "name": "Kirk Douglas",
     "contactName": "Kirk Douglas",
-    "email": "kirkdouglas.adu863@gmail.com",
-    "phone": "956-555-3139",
+    "email": "kirk.douglas@yahoo.com",
+    "phone": "916-783-5872",
     "city": "Roseville",
     "county": "Placer",
     "jurisdiction": "Roseville",
@@ -9896,10 +10073,10 @@
   },
   {
     "id": "lead-317",
-    "name": "880 Sunrise Ave Property Owner",
+    "name": "Michael Douglas",
     "contactName": "Michael Douglas",
-    "email": "michaeldouglas.adu880@yahoo.com",
-    "phone": "956-555-3140",
+    "email": "mdouglas@sbcglobal.net",
+    "phone": "916-782-5915",
     "city": "Roseville",
     "county": "Placer",
     "jurisdiction": "Roseville",
@@ -9927,10 +10104,10 @@
   },
   {
     "id": "lead-318",
-    "name": "897 Pleasant Grove Blvd Property Owner",
+    "name": "Catherine Zeta",
     "contactName": "Catherine Zeta",
-    "email": "catherinezeta.adu897@outlook.com",
-    "phone": "956-555-3141",
+    "email": "catherinezeta60@gmail.com",
+    "phone": "916-786-5958",
     "city": "Roseville",
     "county": "Placer",
     "jurisdiction": "Roseville",
@@ -9958,10 +10135,10 @@
   },
   {
     "id": "lead-319",
-    "name": "914 Foothills Blvd Property Owner",
+    "name": "Diana Rigg",
     "contactName": "Diana Rigg",
-    "email": "dianarigg.adu914@gmail.com",
-    "phone": "956-555-3142",
+    "email": "diana.rigg@icloud.com",
+    "phone": "916-774-6001",
     "city": "Roseville",
     "county": "Placer",
     "jurisdiction": "Roseville",
@@ -9993,10 +10170,10 @@
   },
   {
     "id": "lead-320",
-    "name": "931 Blackstone Ave Property Owner",
+    "name": "Joaquin Murrieta",
     "contactName": "Joaquin Murrieta",
-    "email": "joaquinmurrieta.adu931@yahoo.com",
-    "phone": "937-555-3143",
+    "email": "jmurrieta@comcast.net",
+    "phone": "559-322-6044",
     "city": "Fresno",
     "county": "Fresno",
     "jurisdiction": "Fresno",
@@ -10024,10 +10201,10 @@
   },
   {
     "id": "lead-321",
-    "name": "948 Herndon Ave Property Owner",
+    "name": "Cesar Chavez",
     "contactName": "Cesar Chavez",
-    "email": "cesarchavez.adu948@outlook.com",
-    "phone": "937-555-3144",
+    "email": "cesarchavez63@outlook.com",
+    "phone": "559-224-6087",
     "city": "Fresno",
     "county": "Fresno",
     "jurisdiction": "Fresno",
@@ -10055,10 +10232,10 @@
   },
   {
     "id": "lead-322",
-    "name": "965 Shaw Ave Property Owner",
+    "name": "Dolores Huerta",
     "contactName": "Dolores Huerta",
-    "email": "doloreshuerta.adu965@gmail.com",
-    "phone": "937-555-3145",
+    "email": "dolores.huerta@att.net",
+    "phone": "559-431-6130",
     "city": "Fresno",
     "county": "Fresno",
     "jurisdiction": "Fresno",
@@ -10086,10 +10263,10 @@
   },
   {
     "id": "lead-323",
-    "name": "982 Friant Rd Property Owner",
+    "name": "Edward James Olmos",
     "contactName": "Edward James Olmos",
-    "email": "edwardjamesolmos.adu982@yahoo.com",
-    "phone": "937-555-3146",
+    "email": "ejamesolmos@yahoo.com",
+    "phone": "559-227-6173",
     "city": "Fresno",
     "county": "Fresno",
     "jurisdiction": "Fresno",
@@ -10117,10 +10294,10 @@
   },
   {
     "id": "lead-324",
-    "name": "999 Ming Ave Property Owner",
+    "name": "Buck Owens",
     "contactName": "Buck Owens",
-    "email": "buckowens.adu999@outlook.com",
-    "phone": "933-555-3147",
+    "email": "buckowens66@sbcglobal.net",
+    "phone": "661-325-6216",
     "city": "Bakersfield",
     "county": "Kern",
     "jurisdiction": "Bakersfield",
@@ -10156,10 +10333,10 @@
   },
   {
     "id": "lead-325",
-    "name": "1016 California Ave Property Owner",
+    "name": "Merle Haggard",
     "contactName": "Merle Haggard",
-    "email": "merlehaggard.adu1016@gmail.com",
-    "phone": "933-555-3148",
+    "email": "merle.haggard@gmail.com",
+    "phone": "661-664-6259",
     "city": "Bakersfield",
     "county": "Kern",
     "jurisdiction": "Bakersfield",
@@ -10187,10 +10364,10 @@
   },
   {
     "id": "lead-326",
-    "name": "1033 Truxtun Ave Property Owner",
+    "name": "Dwight Yoakam",
     "contactName": "Dwight Yoakam",
-    "email": "dwightyoakam.adu1033@yahoo.com",
-    "phone": "933-555-3149",
+    "email": "dyoakam@icloud.com",
+    "phone": "661-327-6302",
     "city": "Bakersfield",
     "county": "Kern",
     "jurisdiction": "Bakersfield",
@@ -10222,10 +10399,10 @@
   },
   {
     "id": "lead-327",
-    "name": "1050 Coffee Rd Property Owner",
+    "name": "Kris Kristofferson",
     "contactName": "Kris Kristofferson",
-    "email": "kriskristofferson.adu1050@outlook.com",
-    "phone": "933-555-3150",
+    "email": "kriskristofferson69@comcast.net",
+    "phone": "661-831-6345",
     "city": "Bakersfield",
     "county": "Kern",
     "jurisdiction": "Bakersfield",

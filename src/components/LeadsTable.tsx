@@ -602,7 +602,22 @@ export default function LeadsTable({ initialLeads, jurisdictions = [], initialSu
                           )}>
                             {lead.name}
                           </div>
-                          <div className="text-xs text-gray-400">{lead.email}</div>
+                          <div className="text-xs text-gray-500 flex items-center gap-1.5 mt-1 flex-wrap">
+                            <span className="text-gray-600">{lead.email}</span>
+                            {lead.phone && (
+                              <>
+                                <span className="text-gray-300">•</span>
+                                <a 
+                                  href={'tel:' + lead.phone}
+                                  className="text-emerald-700 font-mono text-[11px] font-semibold bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200/50 hover:bg-emerald-100 transition-colors flex items-center gap-1"
+                                  onClick={(e) => e.stopPropagation()}
+                                >
+                                  <Phone className="h-2.5 w-2.5" />
+                                  {lead.phone}
+                                </a>
+                              </>
+                            )}
+                          </div>
                         </td>
                         <td className="px-6 py-4">
                           <div className="flex items-center space-x-1.5">
