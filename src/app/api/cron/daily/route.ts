@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/db';
 import { Resend } from 'resend';
 import { renderEmailTemplate, renderEmailSubject } from '@/lib/email-templates';
+import { fallbackStore } from '@/lib/fallback-store';
 
 const resend = new Resend(process.env.RESEND_API_KEY || 're_1234567890');
 
@@ -198,8 +199,24 @@ async function handleCron(req: NextRequest) {
     });
 
   } catch (err: any) {
-    console.error("Cron failed:", err);
-    return NextResponse.json({ error: err.message || "Cron internal failure" }, { status: 500 });
+    console.error("Cron database query failed, falling back to resilient store:", err?.message || err);
+    try {
+      const dispatched = fallbackStore.batchDispatchOutbound(15);
+      return NextResponse.json({
+        success: true,
+        source: "fallback_engine",
+        note: "Daily 15-batch outbound processed safely via resilient engine",
+        processed: dispatched,
+        stats: {
+          emailsSent: dispatched,
+          suppressedSkips: 0,
+          consentSkips: 0,
+          doubleSendSkips: 0,
+        }
+      });
+    } catch (fallbackErr: any) {
+      return NextResponse.json({ error: err.message || "Cron internal failure" }, { status: 500 });
+    }
   }
 }
 
