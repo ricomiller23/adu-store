@@ -141,7 +141,7 @@ async function handleCron(req: NextRequest) {
           
           if (process.env.RESEND_API_KEY && process.env.RESEND_API_KEY !== 're_1234567890') {
             const mailRes = await resend.emails.send({
-              from: (process.env.RESEND_FROM || 'theadumart@proton.me').includes('<') ? (process.env.RESEND_FROM || 'theadumart@proton.me') : `${process.env.REP_NAME || 'James Haas'}, ${process.env.BRAND_NAME || 'The ADU Store'} <${process.env.RESEND_FROM || 'theadumart@proton.me'}>`,
+              from: (process.env.RESEND_FROM || 'ricomiller@gmail.com').includes('<') ? (process.env.RESEND_FROM || 'ricomiller@gmail.com') : `${process.env.REP_NAME || 'James Haas'}, ${process.env.BRAND_NAME || 'The ADU Store'} <${process.env.RESEND_FROM || 'ricomiller@gmail.com'}>`,
               to: lead.email,
               subject: renderedSubject,
               text: renderedBody,
@@ -302,7 +302,7 @@ The ADU Store CRM Engine
     // Send using Resend if API key is active
     if (process.env.RESEND_API_KEY && process.env.RESEND_API_KEY !== 're_1234567890') {
       await resend.emails.send({
-        from: process.env.RESEND_FROM || 'theadumart@proton.me',
+        from: process.env.RESEND_FROM || 'ricomiller@gmail.com',
         to: digestEmail,
         subject,
         text: digestBody,

@@ -187,7 +187,7 @@ export async function POST(req: NextRequest) {
           // Call Resend if API key is configured (ignore mock key)
           if (process.env.RESEND_API_KEY && process.env.RESEND_API_KEY !== 're_1234567890') {
             await resend.emails.send({
-              from: (process.env.RESEND_FROM || 'theadumart@proton.me').includes('<') ? (process.env.RESEND_FROM || 'theadumart@proton.me') : `${process.env.REP_NAME || 'James Haas'}, ${process.env.BRAND_NAME || 'The ADU Store'} <${process.env.RESEND_FROM || 'theadumart@proton.me'}>`,
+              from: (process.env.RESEND_FROM || 'ricomiller@gmail.com').includes('<') ? (process.env.RESEND_FROM || 'ricomiller@gmail.com') : `${process.env.REP_NAME || 'James Haas'}, ${process.env.BRAND_NAME || 'The ADU Store'} <${process.env.RESEND_FROM || 'ricomiller@gmail.com'}>`,
               to: finalLead.email,
               subject: renderedSubject,
               text: body,

@@ -170,7 +170,7 @@ export default function OutreachPage() {
 
   // Safe Daily 15 Drip
   const handleDailySafeDrip = async () => {
-    if (!confirm("Dispatch today's safe batch of 15 personalized emails from James Haas (theadumart@proton.me)?")) return;
+    if (!confirm("Dispatch today's safe batch of 15 personalized emails from James Haas (ricomiller@gmail.com)?")) return;
     startTransition(async () => {
       const res = await batchDispatchOutboundAction(15);
       showToast(`Dispatched ${res.count || 0} emails under daily safe limit. Account 100% protected!`);
@@ -326,7 +326,7 @@ export default function OutreachPage() {
           </div>
           <div>
             <div className="font-bold text-gray-900">
-              Sender Identity: James Haas &bull; <span className="font-mono text-[#6d4aff]">theadumart@proton.me</span> &bull; Direct: 714-612-4725
+              Sender Identity: James Haas &bull; <span className="font-mono text-red-600 font-bold">ricomiller@gmail.com</span> &bull; Direct: 714-612-4725 &bull; <span className="text-gray-500">The ADU Store</span>
             </div>
             <div className="text-gray-500 mt-0.5">
               Personalized ADU qualification reports link directly to theADUstore.com. Homeowner replies route straight to your Proton Mail inbox.
@@ -816,12 +816,21 @@ export default function OutreachPage() {
                 </button>
 
                 <a
-                  href={'mailto:' + activeEmail.recipientEmail + '?subject=' + encodeURIComponent(editedSubject) + '&body=' + encodeURIComponent(activeEmail.text)}
-                  className="flex items-center gap-1.5 px-3.5 py-2 text-xs font-bold text-[#6d4aff] bg-purple-50 hover:bg-purple-100 border border-purple-200 rounded-lg transition-colors shadow-sm"
-                  title="Open draft directly in Proton Mail or default desktop mail app"
+                  href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(activeEmail.recipientEmail)}&su=${encodeURIComponent(editedSubject)}&body=${encodeURIComponent(activeEmail.text)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 px-3.5 py-2 text-xs font-bold text-red-700 bg-red-50 hover:bg-red-100 border border-red-200 rounded-lg transition-colors shadow-sm"
+                  title="Open pre-filled draft directly in Gmail (ricomiller@gmail.com)"
                 >
                   <ExternalLink className="h-3.5 w-3.5" />
-                  <span>Send in Proton / Mail App</span>
+                  <span>Open & Send in Gmail</span>
+                </a>
+                <a
+                  href={'mailto:' + activeEmail.recipientEmail + '?subject=' + encodeURIComponent(editedSubject) + '&body=' + encodeURIComponent(activeEmail.text)}
+                  className="flex items-center gap-1.5 px-3 py-2 text-xs font-bold text-gray-700 bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg transition-colors"
+                  title="Open in default mail client"
+                >
+                  <span>Mail App</span>
                 </a>
               </div>
 
